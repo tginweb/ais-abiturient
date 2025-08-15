@@ -1,0 +1,15 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation(
+   $id: JSON,
+   $status: String
+) {
+   res: edu_order_admin_set_predzach_status(
+      id: $id,
+      status: $status
+   ) {
+      ...ResultWithPayload
+   }
+}
+
+

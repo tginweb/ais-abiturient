@@ -1,0 +1,12 @@
+export const COrderSectionAchievements = require('./achievements').default
+export const COrderSectionAddress = require('./address').default
+export const COrderSectionApplications = require('./applications').default
+export const COrderSectionEducation = require('./education').default
+export const COrderSectionLog = require('./log').default
+export const COrderSectionOrder = require('./order').default
+export const COrderSectionOther = require('./other').default
+export const COrderSectionPersonal = require('./personal').default
+export const COrderSectionQuotes = require('./quotes').default
+export const COrderSectionSubjects = require('./subjects').default
+export const COrderSectionFiles = require('./files').default
+export const COrderSectionFilesAdmin = require('./files-admin').default

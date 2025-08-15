@@ -1,0 +1,12 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation(
+  $model: JSON
+) {
+   res: edu_ais_message_save(
+      model: $model
+   ) {
+      ...ResultWithPayload
+   }
+}
+

@@ -1,0 +1,68 @@
+
+
+query($id: JSON) {
+    res: edu_order_availableAdmissions(id: $id) {
+        _id
+        id
+        abbr
+        yr
+        name
+        cfac
+        direct_name
+        spec_name
+        cfob
+        clevel
+        ccampaign
+        cdirection
+
+        budgCount
+        budgPlaces
+        lgotQuota
+        specQuota
+        celevQuota
+        comercCount
+
+        subjectsHaveOptional
+
+        fac {
+            id
+            name
+        }
+        level {
+            id
+            name
+            name_ak
+        }
+        direction {
+            id
+            name
+            cod
+        }
+        fob {
+            id
+            name
+        }
+        subjects {
+            number
+            csubject
+            minimal
+            subject {
+                id
+                name
+            }
+        }
+
+        competitionsList {
+            _id
+            csource
+            name
+            admissionNumber
+            source {
+                id
+                name
+            }
+        }
+    }
+}
+
+

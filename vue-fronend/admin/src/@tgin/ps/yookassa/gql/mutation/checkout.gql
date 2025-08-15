@@ -1,0 +1,12 @@
+mutation(
+    $paymentId: Int,
+    $orderId: Int,
+    $autopayAllow: Boolean
+)
+{
+  res: ps_yookassa_checkout(
+    paymentId: $paymentId,
+    orderId: $orderId,
+    autopayAllow: $autopayAllow
+  )
+}

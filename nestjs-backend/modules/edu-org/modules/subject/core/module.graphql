@@ -1,0 +1,33 @@
+type Mutation {
+  edu_subject_syncWithAis: OperationResult
+}
+
+type Query {
+  edu_subject_listRecordset(filter: JSON, nav: QueryInputNav): EduSubjectConnection
+  edu_subject_list(filter: JSON): [EduSubject]
+  edu_subject_single(filter: JSON): EduSubject
+}
+
+type EduSubjectConnection {
+  nodes: [EduSubject]
+  info: QueryInfo
+}
+
+type EduSubject {
+  _id: String
+  id: Int
+  name: String
+  isege: String
+  epguId: Int
+  isEge: Boolean
+  locations: [EduSubjectLocation]
+  cadmission: [Int]
+}
+
+type EduSubjectLocation {
+  id: Int
+  date: String
+  place: String
+}
+
+

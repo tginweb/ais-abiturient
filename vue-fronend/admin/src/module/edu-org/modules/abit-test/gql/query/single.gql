@@ -1,0 +1,11 @@
+#import "../fragment/AbitTest.gql"
+
+query(
+   $filter: JSON
+) {
+   res: edu_test_admin_single(filter: $filter) {
+      ...EduTest
+   }
+}
+
+

@@ -1,0 +1,13 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation(
+    $ids: [String],
+    $instituteId: String
+) {
+    res: edu_order_admin_changeInstitute(
+        ids: $ids,
+        instituteId: $instituteId
+    ) {
+        ...ResultWithPayload
+    }
+}

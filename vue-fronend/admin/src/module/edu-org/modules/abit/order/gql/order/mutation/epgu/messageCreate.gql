@@ -1,0 +1,17 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation(
+  $_id: String,
+  $_ids: [String],
+  $type: String
+) {
+   res: edu_order_admin_epgu_messageCreate(
+      _id: $_id,
+      _ids: $_ids,
+      type: $type
+   ) {
+      ...ResultWithPayload
+   }
+}
+
+

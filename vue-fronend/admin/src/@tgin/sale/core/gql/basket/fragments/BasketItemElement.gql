@@ -1,0 +1,26 @@
+fragment BasketItemElement on ProductElement {
+  ID
+  NAME
+  URL
+  LIST_IMAGE {
+    SRC
+  }
+  MEASURE {
+    NAME
+    RATIO
+  }
+  PRICE {
+    PRICE
+    DISCOUNTED
+    DISCOUNT_PERCENT
+  }
+  ROOT_SECTION {
+    ID
+    NAME
+  }
+  SECTION {
+    ID
+    NAME
+  }
+}
+

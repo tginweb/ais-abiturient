@@ -1,0 +1,54 @@
+type Query {
+  edu_order_public__fetch_by_user: EduOrder
+  edu_order_public__doc(id: String): EduDoc
+  edu_order_public__docs: [EduDoc]
+  edu_order_public__available_admissions: [EduAdmission]
+}
+
+type Mutation {
+  edu_order_public__tests_save(data: JSON): ResultWithPayload
+
+  edu_order_public__ensure_required(type: String): EduOrder
+
+  edu_order_public__create: ResultWithPayload
+  edu_order_public__type_change(orderType: Int): ResultWithPayload
+  edu_order_public__send: ResultWithPayload
+  edu_order_public__send_agreement(data: JSON): ResultWithPayload
+
+  edu_order_public__section_update(section: String, data: JSON): ResultWithPayload
+
+  edu_order_public__subject_update(model: JSON): ResultWithPayload
+  edu_order_public__subject_delete(id: String): ResultWithPayload
+
+  edu_order_public__achievement_update(
+    id: String,
+    action: String,
+    model: JSON
+  ): ResultWithPayload
+
+  edu_order_public__achievement_delete(id: String): ResultWithPayload
+
+  edu_order_public__quota_update(model: JSON): ResultWithPayload
+  edu_order_public__quota_delete(id: String): ResultWithPayload
+
+  edu_order_public__family_update(model: JSON): ResultWithPayload
+  edu_order_public__family_delete(id: String): ResultWithPayload
+
+  edu_order_public__app_add(competitionId: String, specs: [Int]): ResultWithPayload
+  edu_order_public__app_delete(id: String): ResultWithPayload
+  edu_order_public__apps_arrange(items: JSON): ResultWithPayload
+
+  edu_order_public__doc_update(
+    id: String,
+    action: String,
+    model: JSON
+  ): ResultWithPayload
+
+  edu_order_public__doc_delete(
+    id: String
+  ): ResultWithPayload
+
+
+
+}
+

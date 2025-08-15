@@ -1,0 +1,12 @@
+mutation(
+  $iblockId: Int,
+  $elementId: Int,
+  $active: Boolean
+)
+{
+  res: main_admin_iblock_element_set_active(
+    iblockId: $iblockId,
+    elementId: $elementId,
+    active: $active
+  )
+}

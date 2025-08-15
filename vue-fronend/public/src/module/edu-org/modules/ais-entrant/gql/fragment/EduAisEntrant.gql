@@ -1,0 +1,35 @@
+#import "./EduAisEntrantApp.gql"
+#import "./EduAisEntrantSubject.gql"
+
+fragment EduAisEntrant on EduAisEntrant {
+   _id
+   id
+
+   state
+   stateTitle
+   onEpgu
+
+   snils
+   fio
+   lastName
+   firstName
+   secondName
+   phone
+
+   clevel
+
+   apps {
+      ...EduAisEntrantApp
+   }
+
+   subjects {
+      ...EduAisEntrantSubject
+   }
+
+   data
+
+   epgu
+   actions
+   eduEpguLevel
+}
+

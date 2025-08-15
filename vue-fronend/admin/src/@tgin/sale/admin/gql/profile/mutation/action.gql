@@ -1,0 +1,14 @@
+#import "../fragment/ProfileAdmin.gql"
+
+mutation(
+    $id: Int,
+    $action: String
+)
+{
+    res: sale_admin_profile_action(
+        id: $id,
+        action: $action
+    ) {
+       ...OrderProfile
+    }
+}

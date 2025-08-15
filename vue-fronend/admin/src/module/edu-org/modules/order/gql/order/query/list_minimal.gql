@@ -1,0 +1,17 @@
+query(
+    $ids: [String],
+    $nids: [Int],
+    $filter: JSON,
+    $nav: QueryInputNav
+) {
+    res: edu_order_admin_list(
+        ids: $ids,
+        nids: $nids,
+        filter: $filter,
+        nav: $nav
+    ) {
+        id
+        nid
+        fio
+    }
+}

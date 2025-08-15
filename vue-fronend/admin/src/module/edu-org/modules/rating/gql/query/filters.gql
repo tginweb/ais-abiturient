@@ -1,0 +1,4 @@
+query {
+   res: edu_rating_admin_filters
+}
+

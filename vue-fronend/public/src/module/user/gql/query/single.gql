@@ -1,0 +1,12 @@
+#import "../fragment/UserAdmin.gql"
+
+query(
+   $filter: UserFilter,
+   $orderDetail: Boolean = false
+) {
+   res: user_admin_single(filter: $filter) {
+      ...UserAdmin
+   }
+}
+
+

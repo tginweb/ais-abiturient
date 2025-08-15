@@ -1,0 +1,64 @@
+#import "~module/edu-org/modules/direction/gql/fragment/EduDirection.gql"
+#import "~module/edu-org/modules/level/gql/fragment/EduLevel.gql"
+#import "~module/edu-org/modules/campaign/gql/fragment/EduCampaign.gql"
+#import "~module/edu-epgu/gql/fragment/EduEpguState.gql"
+#import "~module/edu-org/gql/fragment/EduEntityRowNode.gql"
+
+fragment EduVolume on EduVolume {
+  _id
+  id
+  uid
+  name
+
+
+  ccampaign
+  cdirection
+  clevel
+
+  budgetO
+  budgetOZ
+  budgetZ
+
+  quotaO
+  quotaOZ
+  quotaZ
+
+  targetO
+  targetOZ
+  targetZ
+
+  paidO
+  paidOZ
+  paidZ
+
+  level {
+    ...EduLevel
+  }
+  direction {
+    ...EduDirection
+  }
+  campaign {
+    ...EduCampaign
+  }
+
+  epgu {
+    ...EduEpguState
+  }
+
+  adminActions
+
+  subdocsTree {
+     ...EduEntityRowNode
+     children {
+       ...EduEntityRowNode
+       children {
+          ...EduEntityRowNode
+          children {
+            ...EduEntityRowNode
+          }
+       }
+     }
+  }
+
+}
+

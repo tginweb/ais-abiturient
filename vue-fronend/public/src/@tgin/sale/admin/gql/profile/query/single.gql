@@ -1,0 +1,10 @@
+#import "../fragment/ProfileAdmin.gql"
+
+query(
+  $filter: OrderProfileFilter
+) {
+  res: sale_admin_profile_single(filter: $filter) {
+    ...OrderProfileAdmin
+  }
+}
+

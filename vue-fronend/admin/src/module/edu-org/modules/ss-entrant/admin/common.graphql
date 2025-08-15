@@ -1,0 +1,21 @@
+type Mutation {
+  edu_ssEntrant_admin_importAppsExcell(ids: [Int]): ResultWithPayload
+  edu_ssEntrant_admin_action(action: String, id: [Int]): ResultWithPayload
+  edu_ssEntrant_admin_actionMultiple(action: String, ids: [String]): ResultWithPayload
+
+  edu_ssEntrant_admin_attachEntrantDocs(id: Int, docs: JSON): ResultWithPayload
+  edu_ssEntrant_admin_memberChangedProcessed(id: Int): ResultWithPayload
+}
+
+type Query {
+  edu_ssEntrant_admin_listRecordset(filter: JSON, nav: QueryInputNav): EduSSEntrantConnection
+  edu_ssEntrant_admin_list(filter: JSON): [EduSSEntrant]
+  edu_ssEntrant_admin_single(filter: JSON): EduSSEntrant
+  edu_ssEntrant_admin_filtersTree: JSON
+}
+
+type EduSSEntrant {
+
+  adminActions: JSON
+  actions: JSON
+}

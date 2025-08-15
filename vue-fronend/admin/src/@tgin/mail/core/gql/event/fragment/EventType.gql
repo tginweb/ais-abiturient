@@ -1,0 +1,6 @@
+fragment MailEventType on MailEventType {
+    ID
+    EVENT_NAME
+    NAME
+}
+

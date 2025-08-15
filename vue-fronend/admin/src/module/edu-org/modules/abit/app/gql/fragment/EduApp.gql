@@ -1,0 +1,62 @@
+#import "~module/edu-org/modules/source/gql/fragment/EduSource.gql"
+#import "./EduAppEpgu.gql"
+#import "./EduAppAis.gql"
+
+fragment EduApp on EduApp {
+    _id
+    nid
+
+    orderId
+    orderNid
+
+    order {
+        fio
+        snils
+    }
+
+    priority
+    eduProgramNid
+    cadmission
+    csource
+    specs
+
+    createAt
+    createSource
+    createSourceTitle
+
+    updateAt
+
+    deleted
+    deletedSource
+
+    agree
+    agreeDeny
+
+    statusCode
+    statusTitle
+
+    admission {
+        id
+        name
+        direct_name
+        fob {
+            name
+        }
+    }
+    specsAdmissions {
+        id
+        name
+    }
+    source {
+        ...EduSource
+    }
+    ais {
+        ...EduAppAis
+    }
+    epgu {
+        ...EduAppEpgu
+    }
+
+    actions
+}
+

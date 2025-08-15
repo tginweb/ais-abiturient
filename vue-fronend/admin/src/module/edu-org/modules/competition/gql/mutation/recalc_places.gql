@@ -1,0 +1,8 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation($ids: [String]) {
+   res: edu_competition_admin_recalc_places(ids: $ids) {
+      ...ResultWithPayload
+   }
+}
+

@@ -1,0 +1,12 @@
+type Query {
+  edu_personDoctype_list(filter: JSON): [EduPersonDoctype]
+}
+
+type EduPersonDoctype {
+  _id: String
+  id: Int
+  name: String
+}
+
+
+

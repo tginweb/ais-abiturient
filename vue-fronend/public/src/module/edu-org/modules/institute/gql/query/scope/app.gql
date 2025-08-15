@@ -1,0 +1,9 @@
+#import "../../fragment/EduInstitute.gql"
+
+query {
+   edu_institute__items: edu_institute_list {
+     ...EduInstitute
+   }
+}
+
+

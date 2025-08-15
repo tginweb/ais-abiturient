@@ -1,0 +1,21 @@
+
+type Query {
+  edu_source_listRecordset(filter: JSON, nav: QueryInputNav): EduSourceConnection
+  edu_source_list(filter: JSON): [EduSource]
+  edu_source_single(filter: JSON): EduSource
+}
+
+type EduSourceConnection {
+  nodes: [EduSource]
+  info: QueryInfo
+}
+
+type EduSource {
+  _id: String
+  id: Int
+  name: String
+  nameShort: String
+}
+
+
+

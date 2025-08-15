@@ -1,0 +1,139 @@
+#import "./EduOrderState.gql"
+#import "./../../orderType/fragment/EduOrderType.gql"
+#import "./EduOrderApplication.gql"
+#import "./EduOrderStepStatus.gql"
+#import "./EduOrderAchievement.gql"
+#import "~module/file/gql/fragment/File.gql"
+
+fragment EduOrder on EduOrder {
+    _id
+    nid
+    userId
+    fio
+    snils
+
+    user {
+        nid
+        email
+    }
+    sendDate
+
+    eduType
+    eduTypeSlug
+    eduTypeAppsLimit
+    eduLevels
+
+    cordersource
+    ordersource
+
+    cfacComputed
+
+    aisPorted
+    aisPortedByOperator
+
+    cinstitute
+    institute {
+        id
+        name
+    }
+
+    anket {
+        status {
+            ...EduOrderStepStatus
+        }
+        personal
+        education
+        benefits
+        entrance {
+            schoolCertificateBall
+            achievements {
+                ...EduOrderAchievement
+            }
+            specialNeeds
+            targetHave
+            targetOrganization
+            targetDogovor
+            subjects {
+                _id
+                subject
+                score
+                status
+                year
+                checked
+                subjectDoc {
+                    name
+                }
+            }
+        }
+    }
+
+    applications {
+        status {
+            ...EduOrderStepStatus
+        }
+        items {
+            ...EduOrderApplication
+        }
+    }
+
+    upload
+    send
+
+    allFiles
+
+    files {
+        ...File
+        children {
+            ...File
+        }
+    }
+
+    createAt
+    updateAt
+
+    stepsInfo
+    messages
+    chat
+
+    state {
+        ...EduOrderState
+    }
+
+    orderType {
+        ...EduOrderType
+    }
+
+    operator {
+        firstName
+        lastName
+    }
+
+    actions
+    perms
+
+    agreementChanged
+    agreementChangedDate
+
+
+    apps {
+        _id
+        csource
+        eduProgramNid
+        orderId
+    }
+
+    epgu {
+        guid
+        snils
+        fetchedAt
+        apps {
+            uidEpgu
+            agree
+            cadmission
+            csource
+            fetched
+            state
+        }
+    }
+}
+

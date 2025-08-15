@@ -1,0 +1,12 @@
+#import "~module/edu-org/modules/competition/gql/fragment/EduCompetitionTeaser.gql"
+
+fragment EduAppTeaser on EduApp {
+    _id
+    nid
+    priority
+    competitionId
+    competition {
+        ...EduCompetitionTeaser
+    }
+}
+

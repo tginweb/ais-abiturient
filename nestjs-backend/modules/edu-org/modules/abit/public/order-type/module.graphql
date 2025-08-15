@@ -1,0 +1,5 @@
+type Query {
+  edu_orderType_public_list(filter: JSON): [EduOrderType]
+}
+
+

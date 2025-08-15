@@ -1,0 +1,19 @@
+
+fragment MenuItem on MenuItem {
+  id
+  parent
+  label
+  url
+  command {
+    code
+    type
+    path
+    params
+    confirm
+  }
+  blank
+  native
+  icon
+}
+
+

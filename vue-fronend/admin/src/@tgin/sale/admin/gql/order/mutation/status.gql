@@ -1,0 +1,14 @@
+#import "../fragment/OrderAdmin.gql"
+
+mutation(
+    $id: Int,
+    $status: String,
+    $orderDetail: Boolean = true
+) {
+    res: sale_admin_order_status(
+        id: $id,
+        status: $status
+    ) {
+        ...OrderAdmin
+    }
+}

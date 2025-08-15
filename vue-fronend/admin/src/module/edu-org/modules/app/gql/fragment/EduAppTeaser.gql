@@ -1,0 +1,45 @@
+#import "~module/edu-org/modules/competition/gql/fragment/EduCompetitionTeaser.gql"
+#import "./EduAppAis.gql"
+#import "./EduAppEpgu.gql"
+#import "./EduAppLk.gql"
+#import "./EduAppStatus.gql"
+
+fragment EduAppTeaser on EduApp {
+    _id
+    nid
+    createAt
+    updateAt
+    registerAt
+    registerAtComputed
+    cancelAt
+    canceled
+    priority
+    statusId
+    statusTitle
+    createSourceTitle
+    competitionId
+    competition {
+        ...EduCompetitionTeaser
+    }
+
+    cancelReasonId
+    cancelReasonTitle
+    cancelReasonMessage
+
+    status {
+        ...EduAppStatus
+    }
+
+    ais {
+        ...EduAppAis
+    }
+
+    epgu {
+        ...EduAppEpgu
+    }
+
+    lk {
+        ...EduAppLk
+    }
+}
+

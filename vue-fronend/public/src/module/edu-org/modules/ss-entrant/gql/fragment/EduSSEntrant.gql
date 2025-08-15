@@ -1,0 +1,85 @@
+#import "../../../ss-app/gql/fragment/EduSSApp.gql"
+#import "../../../order/gql/order/fragment/EduOrderState.gql"
+
+fragment EduSSEntrant on EduSSEntrant {
+    _id
+    id
+    epguId
+    snils
+    fio
+
+    changedEpgu
+    changedAis
+
+    fac {
+        id
+        name
+    }
+
+    appsEpgu {
+        ...EduSSApp
+    }
+
+    appsAis {
+        id
+        state
+        apps {
+            _id
+            ord
+            agreement
+            admission {
+                id
+                name
+                fac {
+                    name
+                }
+            }
+            source {
+                id
+                name
+                nameShort
+            }
+        }
+        achievements {
+            id
+            name
+            cpriemachievement
+            ball
+        }
+    }
+
+    appsOnline {
+        nid
+        cordersource
+        applications {
+            items {
+                priority
+                specs
+                cappsource
+                admission {
+                    id
+                    name
+                }
+                source {
+                    id
+                    name
+                    nameShort
+                }
+            }
+        }
+        state {
+            ...EduOrderState
+        }
+    }
+
+
+
+    epguDocs
+
+    egeRes
+
+    fieldsJson
+    dateRegister
+    actions
+}
+

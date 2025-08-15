@@ -1,0 +1,10 @@
+mutation(
+    $email: String,
+    $code: String
+)
+{
+    res: user_pub_confirm_email_submit(
+        email: $email,
+        code: $code
+    )
+}

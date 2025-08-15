@@ -1,0 +1,31 @@
+type Query {
+  edu_program_listRecordset(filter: JSON, nav: QueryInputNav): EduProgramConnection
+  edu_program_list(filter: JSON): [EduProgram]
+  edu_program_single(filter: JSON): EduProgram
+}
+
+type EduProgramConnection {
+  nodes: [EduProgram]
+  info: QueryInfo
+}
+
+type EduProgram {
+  _id: String
+  id: Int
+  uid: String
+  name: String
+
+  cadmission: Int
+  ccampaign: Int
+  cdirection: Int
+  cfob: Int
+
+  admission: EduAdmission
+  direction: EduDirection
+  fob: EduFob
+
+  epgu: EduEpguState
+}
+
+
+

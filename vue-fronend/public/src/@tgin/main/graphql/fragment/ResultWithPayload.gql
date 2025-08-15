@@ -1,0 +1,10 @@
+#import "./Result.gql"
+
+fragment ResultWithPayload on ResultWithPayload {
+  result {
+   ...Result
+  }
+  payload
+}
+
+

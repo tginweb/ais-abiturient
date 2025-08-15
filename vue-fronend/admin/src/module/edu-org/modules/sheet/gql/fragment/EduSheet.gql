@@ -1,0 +1,9 @@
+fragment EduSheet on EduSheet {
+    _id
+    id
+    nid
+    name
+    excelText
+    actions
+}
+

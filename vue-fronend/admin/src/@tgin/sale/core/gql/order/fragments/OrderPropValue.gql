@@ -1,0 +1,12 @@
+
+fragment OrderPropValue on OrderPropValue {
+  ID
+  CODE
+  NAME
+  VALUE
+  VALUES
+  VALUE_VIEW
+  VALUE_DESCRIPTION
+  IS_READONLY
+}
+

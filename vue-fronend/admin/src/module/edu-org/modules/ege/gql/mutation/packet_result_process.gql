@@ -1,0 +1,9 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation($packet: String) {
+   res: edu_ege_admin__packet_result_process(packet: $packet) {
+      ...ResultWithPayload
+   }
+}
+
+

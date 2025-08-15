@@ -1,0 +1,11 @@
+#import "../fragment/EduEpguMessage.gql"
+
+query(
+   $filter: JSON
+) {
+   res: edu_epgu_message_single(filter: $filter) {
+      ...EduEpguMessage
+   }
+}
+
+

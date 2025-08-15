@@ -1,0 +1,7 @@
+#import "@tgin/sale/core/gql/buyer/fragments/Company.gql"
+
+query {
+  res: sale_pub_buyer_company_list {
+    ...BuyerCompanyElement
+  }
+}

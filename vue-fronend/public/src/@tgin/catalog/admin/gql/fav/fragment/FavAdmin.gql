@@ -1,0 +1,7 @@
+#import "@tgin/catalog/core/gql/fav/fragments/CatalogFav.gql"
+
+fragment CatalogFavAdmin on CatalogFav {
+  ...CatalogFav
+  ACTIONS
+}
+

@@ -1,0 +1,7 @@
+#import "../fragment/EduOrder.gql"
+
+mutation {
+    res: edu_order_public__ensure_required {
+        ...EduOrder
+    }
+}

@@ -1,0 +1,21 @@
+#import "@tgin/tagger/core/gql/tag/fragment/Tag.gql"
+#import "@tgin/main/graphql/fragment/QueryInfo.gql"
+
+query(
+    $filter: JSON,
+    $nav: QueryInputNav
+) {
+    res: tagger_admin_tag_recordset(
+        filter: $filter,
+        nav: $nav
+    ) {
+        info {
+            ...QueryInfo
+        }
+        nodes {
+            ...TaggerTag
+        }
+    }
+}
+
+

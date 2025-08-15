@@ -1,0 +1,23 @@
+#import "../fragment/VorderReserveAdmin.gql"
+#import "@tgin/main/graphql/fragment/QueryInfo.gql"
+
+query(
+   $filter: VorderReserveFilter,
+   $where: Json,
+   $nav: QueryNavInput
+) {
+   res: sale_admin_vorder_reserve_recordset(
+     filter: $filter,
+     where: $where,
+     nav: $nav
+   ) {
+     info {
+       ...QueryInfo
+     }
+     nodes {
+       ...VorderReserveAdmin
+     }
+   }
+}
+
+

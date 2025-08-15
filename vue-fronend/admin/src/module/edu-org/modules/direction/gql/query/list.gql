@@ -1,0 +1,17 @@
+#import "@tgin/main/graphql/fragment/QueryInfo.gql"
+#import "~module/sale/gql/fragments/Order.gql"
+
+query(
+   $where: OrderFilter
+) {
+   res: edu_admission_list(mode: $mode, where: $where, nav: $nav) {
+     pageInfo {
+       ...QueryInfo
+     }
+     nodes {
+       ...EduAdmission
+     }
+   }
+}
+
+

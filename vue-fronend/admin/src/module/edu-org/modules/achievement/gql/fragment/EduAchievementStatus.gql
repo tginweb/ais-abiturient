@@ -1,0 +1,5 @@
+fragment EduAchievementStatus on EduAchievementStatus {
+  id
+  title
+}
+

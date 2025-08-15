@@ -1,0 +1,95 @@
+
+type Query {
+  edu_admission_recordset(filter: JSON, nav: QueryInputNav): EduAdmissionConnection
+  edu_admission_list(filter: JSON, nav: QueryInputNav): [EduAdmission]
+  edu_admission_single(filter: JSON): EduAdmission
+  edu_admission_listAvailableForOrder(orderId: String): [EduAdmission]
+}
+
+type EduAdmissionConnection {
+  nodes: [EduAdmission]
+  info: QueryInfo
+}
+
+type EduAdmissionSubject {
+  csubject: Int
+  minimal: Int
+  cexampasstype: Int
+  centertestType: Int
+  number: Int
+  subject: EduSubject
+}
+
+type EduAdmission {
+  _id: String
+  id: Int
+
+  ccampaign: Int
+  clevel: Int
+
+  cfac: Int
+  ckaf: Int
+  cspec: Int
+  cfob: Int
+  cpodkind: Int
+  accelerated: String
+  yr: Int
+  abbr: String
+  spec_name: String
+  kvalif_name: String
+  direct_name: String
+  name: String
+  celsum: Int
+  comsumf: Int
+  comsumu: Int
+  isegeadmis: String
+  cabitspecgroup: Int
+  cmagdirect: Int
+  mag: String
+  inostr: String
+  active: String
+  cpnr: Int
+  cdirection2years: Int
+  cprofili: Int
+  cendkaf: Int
+  index_adm: Int
+  dateend: String
+  coldfac: Int
+  prbak: String
+  group_osn: Int
+  group_lgot: Int
+  ccatspo: Int
+  cdekanat: Int
+  budgCount: Int
+  budgPlaces: Int
+  lgotQuota: Int
+  celevQuota: Int
+  comercCount: Int
+  oboronQuota: Int
+  specQuota: Int
+  cdirection: Int
+  abitpref: Int
+
+  direction: EduDirection
+  subjects: [EduAdmissionSubject]
+  level: EduLevel
+  campaign: EduCampaign
+  fob: EduFob
+  fac: EduInstitute
+
+  competitionsList: [EduCompetition]
+
+  subjectsHaveOptional: Boolean
+  epguExport: Boolean
+}
+
+type EduCompetition {
+  id: Int
+  name: String
+  csource: Int
+  admissionNumber: Int
+
+  source: EduSource
+}
+
+

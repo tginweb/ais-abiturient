@@ -1,0 +1,9 @@
+#import "../../fragment/EduDoctype.gql"
+
+query {
+   edu_doctype__items: edu_doctype_list {
+     ...EduDoctype
+   }
+}
+
+

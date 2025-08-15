@@ -1,0 +1,27 @@
+#import "../fragments/ProductSection.gql"
+
+query(
+    $filter: ProductSectionFilter,
+
+    $parentInclude: Boolean = false,
+    $parentChildrenInclude: Boolean = false,
+
+    $parentsInclude: Boolean = false,
+
+    $childrenInclude: Boolean = false,
+
+    $elementDetail: Boolean = false,
+
+    $elementsInclude: Boolean = false,
+    $elementsFilter: ProductElementFilter = {},
+    $elementsNav: QueryNavInput = {},
+
+    $childrenElementsInclude: Boolean = false,
+    $childrenElementsNav: QueryNavInput = {},
+    $childrenElementsFilter: ProductElementFilter = {}
+)
+{
+    res: productSection(filter: $filter) {
+        ...ProductSection
+    }
+}

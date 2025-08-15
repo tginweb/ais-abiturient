@@ -1,0 +1,7 @@
+fragment EduInstitute on EduInstitute {
+   _id
+   id
+   name
+   active
+}
+

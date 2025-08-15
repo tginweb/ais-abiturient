@@ -1,0 +1,13 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation(
+    $ids: [String],
+    $decreeNid: Int
+) {
+    res: edu_order_admin_changeDecree(
+        ids: $ids,
+        decreeNid: $decreeNid
+    ) {
+        ...ResultWithPayload
+    }
+}

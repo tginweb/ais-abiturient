@@ -1,0 +1,68 @@
+#import "~module/edu-org/modules/source/gql/fragment/EduSource.gql"
+#import "~module/edu-org/modules/level/gql/fragment/EduLevel.gql"
+#import "~module/edu-org/modules/fob/gql/fragment/EduFob.gql"
+
+fragment EduPrecept on EduPrecept {
+    _id
+    id
+
+    cfob
+    csource
+    clevel
+
+    orderName
+    orderNumber
+    orderDate
+    publishDate
+
+    appsAdd {
+       id
+       epguId
+       fio
+       snils
+       agreement
+       admission {
+          name
+       }
+       source {
+          name
+       }
+    }
+
+    appsRemove{
+        id
+        epguId
+        fio
+        snils
+        agreement
+        admission {
+           name
+        }
+        source {
+           name
+        }
+    }
+
+    source{
+      ...EduSource
+    }
+
+    fob {
+      ...EduFob
+    }
+
+    level {
+      ...EduLevel
+    }
+
+    orderAdmissionStatus {
+      name
+    }
+    orderAdmissionType {
+      name
+    }
+
+    adminActions
+    exportData
+}
+

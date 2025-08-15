@@ -1,0 +1,8 @@
+#import "../../fragment/EduCountry.gql"
+
+query {
+   edu_country__items: edu_country_list {
+     ...EduCountry
+   }
+}
+

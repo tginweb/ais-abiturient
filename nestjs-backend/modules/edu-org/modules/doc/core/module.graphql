@@ -1,0 +1,88 @@
+type Query {
+    edu_doc_roles: [EduDocRole]
+    edu_doc_statuses: [EduDocStatus]
+}
+
+type EduDocStatus {
+    id: String
+    title: String
+    selectable: Boolean
+    final: Boolean
+}
+
+type EduDocRole {
+    id: String
+    title: String
+    required: Boolean
+    haveReq: Boolean
+
+    epgu: Boolean
+    epguDefaultDocTypeId: Int
+    epguRootCats: [Int]
+    epguCats: [Int]
+
+    multiple: Boolean
+    printComponent: String
+    canDelete: Boolean
+    parent: String
+    achievements: Boolean
+    internal: Boolean
+    abitHidden: Boolean
+}
+
+type EduDocConnection {
+    nodes: [EduDoc]
+    info: QueryInfo
+}
+
+type EduDoc {
+    _id: String
+    id: String
+    nid: Int
+    orderId: String
+    order: EduOrder
+
+    isMain: Boolean
+    type: String
+    typeName: String
+    roleInfo: EduDocRole
+
+    statusId: String
+    status: EduDocStatus
+
+    docCategoryId: Int
+    docCategory: EduEpguDictionaryTerm
+
+    docTypeId: Int
+    docType: EduEpguDictionaryTerm
+    docTypeName: String
+
+    docName: String
+    docSeries: String
+    docNumber: String
+    docOrg: String
+    issueDate: String
+
+    fields: JSON
+
+    files: [String]
+    filesDocs: [File]
+
+    downloadPdfUrl: String
+
+    epgu: EduDocEpgu
+
+    createSource: String
+    createSourceInfo: AbitWorkplace
+
+    canDeleteAbit: Boolean
+    canDeleteAdmin: Boolean
+    printComponent: String
+}
+
+type EduDocEpgu {
+    guid: String
+    fui: String
+    data: JSON
+}
+

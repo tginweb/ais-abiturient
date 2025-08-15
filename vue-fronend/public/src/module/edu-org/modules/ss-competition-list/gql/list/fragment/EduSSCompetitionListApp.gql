@@ -1,0 +1,16 @@
+
+fragment EduSSCompetitionListApp on EduSSCompetitionListApp {
+    rating
+    aisId
+    epguId
+    snils
+    fio
+    ball
+    ballAchievement
+    entranceTests
+    agreement
+    withoutTests
+}
+
+
+

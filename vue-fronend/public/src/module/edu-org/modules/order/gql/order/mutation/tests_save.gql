@@ -1,0 +1,13 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation(
+    $data: JSON
+) {
+    res: edu_order_public__tests_save(
+        data: $data
+    ) {
+        ...ResultWithPayload
+    }
+}
+
+

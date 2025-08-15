@@ -1,0 +1,18 @@
+
+fragment CompanyContact on CompanyContact {
+  ID
+  NAME
+  URL
+  DETAIL_IMAGE {
+    SRC
+  }
+  LIST_IMAGE {
+    SRC
+  }
+  PROP_JOB
+  PROP_PHONE_WHATSAPP
+  PROP_EMAIL
+  PROP_PHONE
+
+}
+

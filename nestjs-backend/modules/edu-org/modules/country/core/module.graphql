@@ -1,0 +1,20 @@
+
+type Query {
+  edu_country_listRecordset(filter: JSON, nav: QueryInputNav): EduCountryConnection
+  edu_country_list(filter: JSON): [EduCountry]
+  edu_country_single(filter: JSON): EduCountry
+}
+
+type EduCountryConnection {
+  nodes: [EduCountry]
+  info: QueryInfo
+}
+
+type EduCountry {
+  _id: String
+  id: Int
+  name: String
+}
+
+
+

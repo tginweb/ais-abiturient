@@ -1,0 +1,13 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+query(
+   $ids: [String]
+) {
+   res: edu_ege_admin__packet_generate(
+      ids: $ids
+   ) {
+      ...ResultWithPayload
+   }
+}
+
+

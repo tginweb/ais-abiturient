@@ -1,0 +1,6 @@
+fragment EduPersonDoctype on EduPersonDoctype {
+   _id
+   id
+   name
+}
+

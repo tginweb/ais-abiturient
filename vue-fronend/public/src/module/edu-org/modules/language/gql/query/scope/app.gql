@@ -1,0 +1,9 @@
+#import "../../fragment/EduLanguage.gql"
+
+query {
+   edu_language__items: edu_language_list {
+     ...EduLanguage
+   }
+}
+
+

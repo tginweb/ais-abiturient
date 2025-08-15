@@ -1,0 +1,18 @@
+
+fragment EduSSEntrant on EduSSEntrant {
+    _id
+    id
+    epguId
+    snils
+    fio
+    guid
+    orderId
+    orderNid
+    aisId
+    egeRes
+    fields
+    dateRegister
+    actions
+    adminActions
+}
+

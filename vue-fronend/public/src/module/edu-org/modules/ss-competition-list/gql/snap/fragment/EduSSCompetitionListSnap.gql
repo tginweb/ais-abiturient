@@ -1,0 +1,8 @@
+
+fragment EduSSCompetitionListSnap on EduSSCompetitionListSnap {
+   _id
+   id
+   createAt
+   adminActions
+}
+

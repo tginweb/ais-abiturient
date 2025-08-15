@@ -1,0 +1,20 @@
+#import "~module/edu-org/modules/fob/gql/fragment/EduFob.gql"
+
+fragment EduAdmissionTeaser on EduAdmission {
+  _id
+  id
+  abbr
+  yr
+  name
+  cfac
+  direct_name
+  spec_name
+  cfob
+  clevel
+  ccampaign
+  cdirection
+  fob {
+    ...EduFob
+  }
+}
+

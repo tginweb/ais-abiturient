@@ -1,0 +1,58 @@
+#import "@tgin/main/graphql/fragment/File.gql"
+
+fragment WorkflowDocument on WorkflowDocument {
+  ID
+  NAME
+  ACTIVE
+  CODE
+
+  CREATED(format: "default", withTime: true)
+
+  TEMPLATE_ID
+  TEMPLATE_ELEMENT {
+    ID
+    NAME
+  }
+
+  ENTITY_TYPE_INFO {
+    name
+  }
+  ENTITY_TYPE
+  ENTITY_ID
+  ENTITY {
+    ID
+    NAME
+  }
+
+  DOC_WORD_DOWNLOAD: DOC_URL(format: "word", transport: "download")
+  DOC_WORD_STREAM: DOC_URL(format: "word", transport: "stream")
+
+  DOC_PDF_DOWNLOAD: DOC_URL(format: "pdf", transport: "download")
+  DOC_PDF_STREAM: DOC_URL(format: "pdf", transport: "stream")
+
+  SIGNED_CLIENT_DOWNLOAD: SIGNED_CLIENT_URL(format: "pdf", transport: "download")
+  SIGNED_CLIENT_STREAM: SIGNED_CLIENT_URL(format: "pdf", transport: "stream")
+
+  SIGNED_BOTH_DOWNLOAD: SIGNED_BOTH_URL(format: "pdf", transport: "download")
+  SIGNED_BOTH_STREAM: SIGNED_BOTH_URL(format: "pdf", transport: "stream")
+
+  FILE_WORD_UPLOADED
+
+  FILE_WORD_DATA {
+    ...File
+  }
+
+  FILE_PDF_DATA {
+    ...File
+  }
+
+  FILE_SIGNED_CLIENT_DATA {
+    ...File
+  }
+
+  FILE_SIGNED_BOTH_DATA {
+    ...File
+  }
+
+}
+

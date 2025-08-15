@@ -1,0 +1,11 @@
+query(
+   $filter: JSON,
+   $nav: QueryInputNav
+) {
+   res: edu_order_admin_fisEgePacket(
+     filter: $filter,
+     nav: $nav
+   )
+}
+
+

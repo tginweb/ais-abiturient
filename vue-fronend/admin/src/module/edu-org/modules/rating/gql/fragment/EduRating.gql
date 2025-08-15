@@ -1,0 +1,17 @@
+fragment EduRating on EduRating {
+    _id
+    id
+    nid
+    name
+    createAt
+    updateAt
+    generateStartAt
+    generateEndAt
+    generateTime
+    generateProcess
+    generateAvailable
+    generated
+    actual
+    actions
+}
+

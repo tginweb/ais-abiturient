@@ -1,0 +1,60 @@
+#import "~module/file/gql/fragment/File.gql"
+#import "./EduDocRole.gql"
+#import "./EduDocStatus.gql"
+
+fragment EduDoc on EduDoc {
+   _id
+   id
+   nid
+   orderId
+
+   type
+   typeName
+   roleInfo {
+      ...EduDocRole
+   }
+
+   statusId
+   status {
+      ...EduDocStatus
+   }
+
+   isMain
+
+   docCategoryId
+
+   docTypeId
+   docTypeName
+
+   docName
+   docSeries
+   docNumber
+   docOrg
+   issueDate
+
+   fields
+   files
+   filesDocs {
+      ...File
+   }
+
+   downloadPdfUrl
+
+   epgu {
+      guid
+      fui
+      data
+   }
+
+   createSource
+   createSourceInfo {
+      id
+      title
+   }
+
+   canDeleteAbit
+   canDeleteAdmin
+   printComponent
+   actions
+}
+

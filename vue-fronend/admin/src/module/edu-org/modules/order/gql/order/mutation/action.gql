@@ -1,0 +1,21 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation(
+  $ids: [String],
+  $action: String,
+  $params: JSON,
+  $selectAll: Boolean,
+  $selectFilter: JSON
+) {
+   res: edu_order_admin_action(
+      ids: $ids,
+      action: $action,
+      params: $params,
+      selectAll: $selectAll,
+      selectFilter: $selectFilter
+   ) {
+      ...ResultWithPayload
+   }
+}
+
+

@@ -1,0 +1,77 @@
+#import "./EduCompetitionDetail.gql"
+
+fragment EduCompetitionRating on EduCompetition {
+    ...EduCompetitionDetail
+    appsRating {
+        app {
+            id
+            nid
+            canceled
+            statusId
+            epgu {
+                appGuid
+            }
+            predZach
+            predZachStatus
+        }
+        order {
+            id
+            uid
+            fio
+            phone
+            epgu {
+                guid
+            }
+
+            zachCompetitionId
+
+            prezachCompetitionId
+            prezachCompetition {
+                name
+            }
+            prezachStatus
+            prezachStatusName
+
+            state {
+                statusInfo {
+                    code
+                    titleClient
+                    titleAdmin
+                    bgColor
+                    textColor
+                    color
+                    index
+                    canEdit
+                    selectable
+                }
+            }
+
+            appGroups @include(if: $withApps) {
+                id
+                nid
+                name
+                isBudget
+                appsActive {
+                    priority
+                    statusId
+                    statusTitle
+                    competitionId
+                    competition {
+                       name
+                    }
+                }
+            }
+
+        }
+        fio
+        snils
+        ratingId
+        priority
+        ball
+        achievementBall
+        tests
+        podldoc
+        enoughTests
+    }
+}
+

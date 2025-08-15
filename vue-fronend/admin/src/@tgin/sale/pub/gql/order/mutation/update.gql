@@ -1,0 +1,13 @@
+#import "@tgin/sale/core/gql/order/fragments/Order.gql"
+
+mutation(
+    $id: Int,
+    $order: Json,
+    $orderDetail: Boolean = true
+)
+{
+    res: sale_pub_order_update(id: $id, order: $order) {
+        ...Order
+    }
+}
+

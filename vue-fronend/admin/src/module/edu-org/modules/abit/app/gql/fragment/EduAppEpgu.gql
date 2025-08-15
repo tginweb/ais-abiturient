@@ -1,0 +1,10 @@
+fragment EduAppEpgu on EduAppEpgu {
+    id
+    registerAt
+    updateAt
+    priority
+    statusCode
+    agree
+    diff
+}
+

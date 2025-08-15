@@ -1,0 +1,16 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation(
+  $action: String,
+  $id: Int,
+  $model: JSON
+) {
+   res: edu_subject_action(
+      action: $action,
+      id: $id,
+      model: $model
+   ) {
+      ...ResultWithPayload
+   }
+}
+

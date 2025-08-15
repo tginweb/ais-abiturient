@@ -1,0 +1,19 @@
+#import "./UserRole.gql"
+
+fragment User on User {
+    _id
+    nid
+    email
+    lastName
+    firstName
+    secondName
+    region
+    phone
+    eduType
+    cabinetUrl
+    roles
+    rolesInfo {
+        ...UserRole
+    }
+    snils
+}

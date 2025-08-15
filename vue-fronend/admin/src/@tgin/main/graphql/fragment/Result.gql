@@ -1,0 +1,10 @@
+
+fragment Result on Result {
+    success
+    messages
+    redirect
+    rate
+}
+
+
+

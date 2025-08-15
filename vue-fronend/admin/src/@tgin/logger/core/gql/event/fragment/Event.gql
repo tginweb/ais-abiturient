@@ -1,0 +1,36 @@
+
+fragment LoggerEvent on LoggerEvent {
+   ID
+   _id
+   requestId
+   parent
+
+   type
+   message
+   name
+   apiType
+   apiMethod
+   apiPath
+   apiArgs
+   apiResult @include(if: $detail)
+
+   clientContext
+
+   created
+   ended
+   timer
+
+   userId
+   fuserId
+   sessionId
+   vorderId
+
+   user {
+      ID
+      LOGIN
+      NAME_FULL
+   }
+
+   ACTIONS
+}
+

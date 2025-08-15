@@ -1,0 +1,11 @@
+#import "../fragment/EduAisMessage.gql"
+
+query(
+   $filter: JSON
+) {
+   res: edu_ais_message_single(filter: $filter) {
+      ...EduAisMessage
+   }
+}
+
+

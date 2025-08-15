@@ -1,0 +1,10 @@
+
+fragment PersonType on PersonType {
+   ID
+   NAME
+   SORT
+   CODE
+   RESTRICTED
+   IS_COMPANY
+}
+

@@ -1,0 +1,13 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation(
+    $content: String
+) {
+    res: edu_order_admin_fisEgePacketImport(
+        content: $content
+    ) {
+        ...ResultWithPayload
+    }
+}
+
+

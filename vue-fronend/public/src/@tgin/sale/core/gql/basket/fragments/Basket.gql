@@ -1,0 +1,18 @@
+#import "./BasketItem.gql"
+#import "../../vorder/fragments/Vorder.gql"
+
+fragment Basket on Basket {
+  PRICE
+  MIN_PRICE
+  MIN_PRICE_REACHED
+  COUNT
+  QUANTITY
+  WEIGHT
+  ITEMS {
+    ...BasketItem
+  }
+  VORDER @include(if: $vorderInclude) {
+    ...Vorder
+  }
+}
+

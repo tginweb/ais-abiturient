@@ -1,0 +1,13 @@
+
+mutation(
+    $paymentId: Int,
+    $orderId: Int,
+    $cardSid: String
+)
+{
+  res: ps_yookassa_checkoutSaved(
+    paymentId: $paymentId,
+    orderId: $orderId,
+    cardSid: $cardSid
+  )
+}

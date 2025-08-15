@@ -1,0 +1,11 @@
+
+mutation(
+  $contextName: String,
+  $contextParams: Json
+)
+{
+  res: ps_yookassa_checkoutAuth(
+    contextName: $contextName,
+    contextParams: $contextParams,
+  )
+}

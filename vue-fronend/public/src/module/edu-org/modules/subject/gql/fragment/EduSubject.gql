@@ -1,0 +1,10 @@
+fragment EduSubject on EduSubject {
+  _id
+  id
+  name
+  epguId
+  isEge
+  actions
+  cadmission
+}
+

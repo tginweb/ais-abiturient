@@ -1,0 +1,7 @@
+#import "./EduCompetition.gql"
+fragment EduCompetitionDetail on EduCompetition {
+   ...EduCompetition
+    appsCount
+    ratio
+}
+

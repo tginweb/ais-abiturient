@@ -1,0 +1,15 @@
+type Mutation {
+  edu_volume_admin_syncWithAdmissions(ids: [Int]): ResultWithPayload
+  edu_volume_admin_action(action: String, id: [Int]): ResultWithPayload
+  edu_volume_admin_actionMultiple(action: String, ids: [Int]): ResultWithPayload
+}
+
+type Query {
+  edu_volume_admin_filtersTree: JSON
+}
+
+type EduVolume {
+  adminActions: JSON
+  subdocsTree: [EduEntityRowNode]
+  epgu: EduEpguState
+}

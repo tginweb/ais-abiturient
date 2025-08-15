@@ -1,0 +1,11 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation(
+    $_id: String
+) {
+    res: edu_order_admin_operatorTake(_id: $_id) {
+        ...ResultWithPayload
+    }
+}
+
+

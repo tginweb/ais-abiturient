@@ -1,0 +1,10 @@
+mutation(
+  $iblockId: Int,
+  $elementId: Int
+)
+{
+  res: main_admin_iblock_element_delete(
+    iblockId: $iblockId,
+    elementId: $elementId
+  )
+}

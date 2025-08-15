@@ -1,0 +1,18 @@
+#import "@tgin/main/graphql/fragment/Response.gql"
+
+query (
+   $type: String,
+   $address: String,
+   $lat: Float,
+   $lng: Float
+)
+{
+  res: geo_geocoder(
+    type: $type,
+    address: $address,
+    lat: $lat,
+    lng: $lng
+  ) {
+    ...Response
+  }
+}

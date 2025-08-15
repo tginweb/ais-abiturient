@@ -1,0 +1,98 @@
+
+type Datasource {
+    name: String
+    data: JSON
+}
+
+type PageInfo {
+    hasNext: Boolean
+    hasPrevious: Boolean
+    next: String
+    previous: String
+    total: Int
+}
+
+type QueryInfo {
+    hasNext: Boolean
+    hasPrevious: Boolean
+    next: String
+    previous: String
+    total: Int
+    page: Int
+    nextPage: Int
+    pages: Int
+    limit: Int
+}
+
+input QueryInputNav {
+    page: Int
+    limit: Int
+    maxLimit: Int
+    previous: String
+    next: String
+    sortAscending: Boolean
+    sortField: String,
+    total: Int,
+    cache: JSON
+}
+
+input FilterConditionInt {
+    op: String
+    value: BigInt
+    values: [BigInt]
+}
+
+input FilterConditionString {
+    op: String
+    value: String
+    values: [String]
+}
+
+input FilterConditionDate {
+    op: String
+    value: DateTime
+    values: [DateTime]
+}
+
+
+type ResultInfo {
+    status: String
+    messages: JSON
+}
+
+type OperationResult {
+    _result: JSON
+    result: JSON
+    payload: JSON
+    data: JSON
+}
+
+type Result {
+    messages: JSON
+    success: Boolean
+    redirect: JSON
+    rate: JSON
+}
+
+type ResultWithPayload {
+    _result: JSON
+    result: Result
+    payload: JSON
+}
+
+input SecureActionConfirm {
+    sid: String
+    code: String
+}
+
+input QueryFilterSchemaItem {
+    label: String
+    path: String
+    type: String
+    options: [QueryFilterSchemaItemOption]
+}
+
+input QueryFilterSchemaItemOption {
+    value: String
+    label: String
+}

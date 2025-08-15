@@ -1,0 +1,18 @@
+#import "../fragment/EduPrecept.gql"
+#import "@tgin/main/graphql/fragment/QueryInfo.gql"
+
+query(
+   $filter: JSON,
+   $nav: QueryInputNav
+) {
+   res: edu_precept_listRecordset(filter: $filter, nav: $nav) {
+     info {
+       ...QueryInfo
+     }
+     nodes {
+       ...EduPrecept
+     }
+   }
+}
+
+

@@ -1,0 +1,16 @@
+
+fragment File on File {
+  _id
+  id
+  nid
+  relDocType
+  relDocId
+  relDocPath
+  mimetype
+  originalname
+  filename
+  filesize
+  downloadUrl
+  actions
+}
+

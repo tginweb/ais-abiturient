@@ -1,0 +1,7 @@
+
+fragment EduPreceptApp on EduPreceptApp {
+    _id
+    UIDEpgu
+    UID
+}
+

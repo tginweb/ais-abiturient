@@ -1,0 +1,24 @@
+fragment PaycardPaymentAdmin on PaycardPayment {
+    ID
+    DATE_CREATE
+    PAYCARD_ID
+    USER_ID
+    USER {
+        ID
+        NAME_FULL
+        LOGIN
+    }
+    ORDER_ID
+    ORDER_NUMBER
+    ORDER {
+        ID
+        USER_ID
+    }
+    PAYMENT_ID
+    ATTEMPTS
+    PROCESSED
+    SUCCESS
+    STATUS
+    ACTIONS
+}
+

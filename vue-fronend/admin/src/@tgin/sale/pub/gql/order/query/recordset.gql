@@ -1,0 +1,18 @@
+#import "@tgin/sale/core/gql/order/fragments/Order.gql"
+#import "@tgin/main/graphql/fragment/QueryInfo.gql"
+
+query(
+    $nav: QueryNavInput = {},
+    $filter: OrderFilter = {},
+    $orderDetail: Boolean = false
+)
+{
+    res: sale_pub_order_recordset(filter: $filter, nav: $nav) {
+        nodes {
+            ...Order
+        }
+        info {
+            ...QueryInfo
+        }
+    }
+}

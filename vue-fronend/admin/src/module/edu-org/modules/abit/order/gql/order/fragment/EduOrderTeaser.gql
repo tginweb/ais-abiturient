@@ -1,0 +1,130 @@
+#import "./EduOrderState.gql"
+#import "./../../orderType/fragment/EduOrderType.gql"
+#import "./EduOrderApplicationTeaser.gql"
+#import "./EduOrderStepStatus.gql"
+#import "./EduOrderAchievement.gql"
+#import "~module/edu-org/modules/app/gql/fragment/EduApp.gql"
+
+fragment EduOrderTeaser on EduOrder {
+    _id
+    nid
+    userId
+    fio
+    snils
+    user {
+        nid
+        email
+    }
+    sendDate
+
+    eduType
+    eduTypeSlug
+    eduTypeAppsLimit
+    eduLevels
+
+    cordersource
+    ordersource
+
+    cfacComputed
+
+    aisPorted
+    aisPortedByOperator
+
+    cinstitute
+    institute {
+        id
+        name
+    }
+
+    anket {
+        personal
+        education
+        benefits
+        entrance {
+            schoolCertificateBall
+            achievements {
+                ...EduOrderAchievement
+            }
+            specialNeeds
+            targetHave
+            targetOrganization
+            targetDogovor
+            subjects {
+                _id
+                subject
+                score
+                status
+                year
+                checked
+                subjectDoc {
+                    name
+                }
+            }
+        }
+    }
+
+    applications {
+        status {
+            ...EduOrderStepStatus
+        }
+        items {
+            ...EduOrderApplicationTeaser
+        }
+    }
+
+
+    upload
+    send
+
+    createAt
+    updateAt
+
+    chat
+
+    state {
+        ...EduOrderState
+    }
+
+    orderType {
+        ...EduOrderType
+    }
+
+    operator {
+        firstName
+        lastName
+    }
+
+    actions
+    perms
+
+    agreementChanged
+    agreementChangedDate
+
+    appGroups {
+        ...EduApp
+    }
+
+    app {
+        ...EduApp
+    }
+
+    epgu {
+        guid
+        snils
+        fetchedAt
+        apps {
+            uidEpgu
+            agree
+            cadmission
+            csource
+            fetched
+            state
+        }
+    }
+
+    ais {
+        aisId
+        aisStatusId
+    }
+}
+

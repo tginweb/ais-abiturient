@@ -1,0 +1,16 @@
+#import "../fragment/Entity.gql"
+
+query(
+   $id: Int,
+   $nav: QueryNavInput,
+   $modeDetail: Boolean = true
+) {
+   res: workflow_admin_document_template(
+     id: $id,
+     nav: $nav
+   ) {
+     ...WorkflowDocumentTemplateAdmin
+   }
+}
+
+

@@ -1,0 +1,13 @@
+#import "@tgin/review/core/gql/fragments/Review.gql"
+
+mutation(
+    $model: Json,
+    $elementInclude: Boolean = true,
+    $elementDetail: Boolean = true,
+)
+{
+    res: review_pub_user_product(model: $model) {
+        ...Review
+    }
+}
+

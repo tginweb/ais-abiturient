@@ -1,0 +1,39 @@
+type Query {
+    menu_app_scope: [Menu]
+}
+
+type Command {
+    code: String
+    type: String
+    path: String
+    params: JSON
+    confirm: Boolean
+    phone: Command
+    mobile: Command
+    desktop: Command
+}
+
+type Menu {
+    id: Int
+    code: String,
+    children: [MenuItem]
+}
+
+type MenuItem {
+    _id: String
+    id: Int
+    code: String
+    icon: String
+    url: String
+    label: String
+    parent: Int
+    type: String
+    children: [MenuItem]
+    perms: [String]
+    command: Command
+    blank: Boolean
+    native: Boolean
+}
+
+
+

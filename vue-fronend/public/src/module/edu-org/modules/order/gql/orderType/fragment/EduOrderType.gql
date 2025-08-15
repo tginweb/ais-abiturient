@@ -1,0 +1,9 @@
+
+fragment EduOrderType on EduOrderType {
+  _id
+  id
+  name
+  nameShort
+}
+
+

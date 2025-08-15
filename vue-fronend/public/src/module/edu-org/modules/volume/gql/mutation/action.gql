@@ -1,0 +1,8 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation($action: String, $id: [Int]) {
+   res: edu_volume_admin_action(action: $action, id: $id) {
+      ...ResultWithPayload
+   }
+}
+

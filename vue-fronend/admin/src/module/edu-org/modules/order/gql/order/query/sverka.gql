@@ -1,0 +1,6 @@
+
+query {
+    res: edu_order_admin_list_sverka
+}
+
+

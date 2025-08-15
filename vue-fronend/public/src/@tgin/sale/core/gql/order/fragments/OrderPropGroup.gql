@@ -1,0 +1,7 @@
+
+fragment OrderPropGroup on OrderPropGroup {
+  ID
+  NAME
+  PERSON_TYPE_ID
+}
+

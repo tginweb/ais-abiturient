@@ -1,0 +1,19 @@
+
+
+type EduOrderMessageConnection {
+  nodes: [EduOrderMessage]
+  info: QueryInfo
+}
+
+type EduOrderMessage {
+  _id: String
+  id: Int
+  name: String
+}
+
+type EduOrder {
+  messages: JSON
+}
+
+
+

@@ -1,0 +1,7 @@
+
+fragment FileDef on FileDef {
+  LIMIT_SIZE
+  LIMIT_EXT
+  LINK_GENERATE
+}
+

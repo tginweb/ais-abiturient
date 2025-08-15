@@ -1,0 +1,11 @@
+#import "../order/fragment/EduOrder.gql"
+
+query {
+
+    edu_order__order: edu_order_public__fetch_by_user {
+        ...EduOrder
+    }
+}
+
+
+

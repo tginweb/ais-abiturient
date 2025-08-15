@@ -1,0 +1,12 @@
+#import "../fragment/EduAdmission.gql"
+
+query(
+    $filter: JSON,
+    $nav: QueryInputNav
+) {
+    res: edu_admission_list(filter: $filter, nav: $nav) {
+        ...EduAdmission
+    }
+}
+
+

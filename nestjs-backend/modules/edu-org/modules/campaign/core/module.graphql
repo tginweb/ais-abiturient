@@ -1,0 +1,21 @@
+type Query {
+  edu_campaign_listRecordset(filter: JSON, nav: QueryInputNav): EduCampaignConnection
+  edu_campaign_list(filter: JSON): [EduCampaign]
+  edu_campaign_single(filter: JSON): EduCampaign
+}
+
+type EduCampaignConnection {
+  nodes: [EduCampaign]
+  info: QueryInfo
+}
+
+type EduCampaign {
+  _id: String
+  id: Int
+  uid: String
+  name: String
+  urlAdmin: JSON
+}
+
+
+

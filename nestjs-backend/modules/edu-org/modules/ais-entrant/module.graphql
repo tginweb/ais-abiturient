@@ -1,0 +1,108 @@
+type Query {
+  edu_aisEntrant_recordset(filter: JSON, nav: QueryInputNav): EduAisEntrantConnection
+  edu_aisEntrant_filters: JSON
+  edu_aisEntrant_list(filter: JSON): [EduAisEntrant]
+  edu_aisEntrant_single(filter: JSON, nav: QueryInputNav): EduAisEntrant
+}
+
+type Mutation {
+  edu_aisEntrant_action(ids: [String], action: String, params: JSON): ResultWithPayload
+}
+
+type EduAisEntrantConnection {
+  nodes: [EduAisEntrant]
+  info: QueryInfo
+}
+
+type EduAisEntrantAppEpgu {
+  uid: String
+  epguUid: Int
+  status: Int
+  statusName: String
+  agreement: Boolean
+}
+
+type EduAisEntrantApp {
+  _id: String
+  cadmission: Int
+  csource: Int
+  competitionId: Int
+  competitionUid: String
+  competition: EduCompetition
+  statusId: Int
+  statusName: String
+  cfob: Int
+  ord: Int
+  agreement: Boolean
+  admission: EduAdmission
+  source: EduSource
+  epgu: EduAisEntrantAppEpgu
+  deleted: Boolean
+  notInAis: Boolean
+}
+
+type EduAisEntrantAchievement {
+  id: Int
+  name: String
+  cpriemachievement: Int
+  ball: Int
+}
+
+type EduAisEntrantSubject {
+  csubject: Int
+  mark: Float
+  numege: Int
+  verified: Boolean
+  cresultSourceType: Int
+  markdate: String
+  subject: EduSubject
+}
+
+type EduAisEntrant {
+  _id: String
+  id: Int
+
+  state: Int
+  stateTitle: String
+
+  fio: String
+  lastName: String
+  firstName: String
+  secondName: String
+  phone: String
+  citem: Int
+  appldate: String
+
+  snils: String
+  passport: String
+
+  admission: EduAdmission
+  source: EduSource
+
+  apps: [EduAisEntrantApp]
+  achievements: [EduAisEntrantAchievement]
+
+  subjects: [EduAisEntrantSubject]
+
+  changed: Boolean
+  clevel: Int
+
+  onEpgu: Boolean
+  epgu: JSON
+  actions: JSON
+  data: JSON
+
+  eduEpguLevel: String
+  orderNid: [Int]
+}
+
+type AisEntrantRef {
+  id: Int
+  state: Int
+  stateLabel: String
+  appExists: Boolean
+  priority: Int
+  agreement: Boolean
+}
+
+

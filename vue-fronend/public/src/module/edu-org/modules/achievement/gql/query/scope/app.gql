@@ -1,0 +1,10 @@
+#import "../../fragment/EduAchievementType.gql"
+
+query {
+   edu_achievement__types: edu_achievement_types {
+     ...EduAchievementType
+   }
+}
+
+
+

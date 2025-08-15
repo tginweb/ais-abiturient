@@ -1,0 +1,14 @@
+#import "~module/main/gql/fragments/Result.gql"
+
+mutation(
+   $id: Int,
+   $ids: [Int]
+) {
+   res: edu_epgu_task_remove(id: $id, ids: $ids) {
+     result {
+       ...Result
+     }
+   }
+}
+
+

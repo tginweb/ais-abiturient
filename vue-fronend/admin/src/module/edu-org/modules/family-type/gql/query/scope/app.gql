@@ -1,0 +1,7 @@
+#import "../../fragment/EduFamilyType.gql"
+
+query {
+   edu_familyType__items: edu_familyType_list {
+     ...EduFamilyType
+   }
+}

@@ -1,0 +1,23 @@
+
+type EduAchievementItemConnection {
+  nodes: [EduAchievementItem]
+  info: QueryInfo
+}
+
+type EduAchievementItem {
+  _id: String
+  id: String
+  name: String
+  typeId: Int
+  type: EduAchievementType
+  desc: String
+  orderId: String
+  docId: String
+  doc: EduDoc
+
+  abitCanDelete: Boolean
+  abitCanEdit: Boolean
+}
+
+
+

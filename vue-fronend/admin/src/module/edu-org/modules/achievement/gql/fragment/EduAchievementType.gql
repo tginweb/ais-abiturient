@@ -1,0 +1,8 @@
+fragment EduAchievementType on EduAchievementType {
+  _id
+  id
+  name
+  fields
+  epguDocTypeId
+}
+

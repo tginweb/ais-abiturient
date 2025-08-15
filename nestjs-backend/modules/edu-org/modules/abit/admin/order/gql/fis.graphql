@@ -1,0 +1,11 @@
+type Mutation {
+  edu_order_admin_fisEgePacketImport(
+    content: String
+  ): ResultWithPayload
+
+}
+
+type Query {
+  edu_order_admin_fisEgePacket(filter: JSON, nav: QueryInputNav): [String]
+}
+

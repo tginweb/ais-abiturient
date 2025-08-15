@@ -1,0 +1,10 @@
+#import "../../fragment/EduPersonDoctype.gql"
+
+query {
+   edu_personDoctype__items: edu_personDoctype_list {
+     ...EduPersonDoctype
+   }
+}
+
+
+

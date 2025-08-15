@@ -1,0 +1,7 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation ($model: JSON) {
+  res: edu_order_public__family_update(model: $model) {
+     ...ResultWithPayload
+  }
+}

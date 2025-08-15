@@ -1,0 +1,8 @@
+#import "../fragments/Command.gql"
+
+query {
+   command__commands: command_commands {
+       ...Command
+   }
+}
+

@@ -1,0 +1,7 @@
+.profile-section {
+  margin-bottom: 16px;
+
+  @media (max-width: $breakpoint-md-max) {
+    margin-bottom: 10px;
+  }
+}

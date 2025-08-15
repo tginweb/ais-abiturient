@@ -1,0 +1,28 @@
+
+
+type Query {
+  edu_level_listRecordset(filter: JSON, nav: QueryInputNav): EduLevelConnection
+  edu_level_list(filter: JSON): [EduLevel]
+  edu_level_single(filter: JSON): EduLevel
+}
+
+type EduLevelConnection {
+  nodes: [EduLevel]
+  info: QueryInfo
+}
+
+type EduLevel {
+  _id: String
+  id: Int
+  name: String
+  name_ak: String
+  fisid: Int
+  epgu_id: Int
+}
+
+type EduType {
+  _id: String
+  id: Int
+  name: String
+}
+

@@ -1,0 +1,24 @@
+type Query {
+  edu_epgu_dictionary_term_recordset(filter: JSON, nav: QueryInputNav): EduEpguDictionaryTermRecordset
+  edu_epgu_dictionary_term_list(filter: JSON, nav: QueryInputNav): [EduEpguDictionaryTerm]
+  edu_epgu_dictionary_term_single(filter: JSON): EduEpguDictionaryTerm
+}
+
+type EduEpguDictionaryTermRecordset {
+  nodes: [EduEpguDictionaryTerm]
+  info: QueryInfo
+}
+
+type EduEpguDictionaryTerm {
+  _id: String
+  id: Int
+  taxonomy: String
+  taxonomyLabel: String
+  name: String
+  actual: Boolean
+  fields: JSON
+  aisId: Int
+}
+
+
+

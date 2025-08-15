@@ -1,0 +1,11 @@
+#import "~module/main/gql/fragments/Response.gql"
+
+mutation(
+   $model: JSON
+) {
+   res: user_admin_updateSingle(model: $model) {
+     ...Response
+   }
+}
+
+

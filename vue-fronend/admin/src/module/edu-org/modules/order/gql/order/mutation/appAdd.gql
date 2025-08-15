@@ -1,0 +1,15 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation(
+  $id: JSON,
+  $competitionId: JSON
+) {
+   res: edu_order_admin_appAdd(
+      id: $id,
+      competitionId: $competitionId
+   ) {
+      ...ResultWithPayload
+   }
+}
+
+

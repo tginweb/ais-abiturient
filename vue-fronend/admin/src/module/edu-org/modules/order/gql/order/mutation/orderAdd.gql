@@ -1,0 +1,21 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation(
+    $eduType: Int,
+    $by: String,
+    $snils: String
+    $passportSerial: String,
+    $passportNumber: String,
+) {
+    res: edu_order_admin_add(
+        eduType: $eduType,
+        by: $by,
+        passportSerial: $passportSerial,
+        passportNumber: $passportNumber,
+        snils: $snils
+    ) {
+        ...ResultWithPayload
+    }
+}
+
+

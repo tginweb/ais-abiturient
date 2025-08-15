@@ -1,0 +1,32 @@
+
+
+type EduSheetConnection {
+  nodes: [EduSheet]
+  info: QueryInfo
+}
+
+type EduSheetTest {
+  _id: String
+  nid: Int
+  testId: String
+  test: AbitTest
+  ball: Float
+}
+
+type EduSheet {
+  _id: String
+  id: String
+  nid: Int
+
+  name: String
+  excelText: String
+  tests: [EduSheetTest]
+
+  adminActions: JSON
+}
+
+type EduSheetExcelRow {
+  fields: JSON
+  test: AbitTest
+  order: EduOrder
+}

@@ -1,0 +1,4 @@
+type Mutation {
+  edu_order_message_public_send(chatId: String, data: JSON): ResultWithPayload
+  edu_order_message_public_read(chatId: String): ResultWithPayload
+}

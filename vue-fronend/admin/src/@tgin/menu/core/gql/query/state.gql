@@ -1,0 +1,20 @@
+#import "../fragments/MenuItem.gql"
+
+query {
+   menu__menus: menu_menus {
+     ...MenuItem
+     children {
+        ...MenuItem
+        children {
+           ...MenuItem
+           children {
+              ...MenuItem
+              children {
+                 ...MenuItem
+              }
+           }
+        }
+     }
+   }
+}
+

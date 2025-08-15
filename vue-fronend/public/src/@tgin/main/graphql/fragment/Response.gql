@@ -1,0 +1,10 @@
+#import "./ResponseState.gql"
+
+fragment Response on Response {
+  state {
+   ...ResponseState
+  }
+  payload
+}
+
+

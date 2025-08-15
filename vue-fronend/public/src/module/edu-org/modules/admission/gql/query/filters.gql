@@ -1,0 +1,3 @@
+query {
+   res: edu_admission_admin_filtersTree
+}

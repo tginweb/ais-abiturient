@@ -1,0 +1,45 @@
+#import "~module/edu-org/modules/source/gql/fragment/EduSource.gql"
+
+
+fragment EduOrderApplicationTeaser on EduOrderApplication {
+
+    _id
+    priority
+    eduProgramNid
+    csource
+    specs
+
+    createAt
+    updateAt
+
+    deleted
+    deletedSource
+
+    agree
+    agreeDeny
+
+    statusMessage
+    status {
+        name
+    }
+
+    admission {
+        id
+        name
+    }
+
+    specsAdmissions {
+        id
+        name
+        abbr
+        direct_name
+        spec_name
+    }
+
+    source {
+        ...EduSource
+    }
+
+    cappsource
+}
+

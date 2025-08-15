@@ -1,0 +1,9 @@
+
+fragment QueryInfo on QueryInfo {
+  total
+  page
+  pages
+  limit
+  nextPage
+}
+

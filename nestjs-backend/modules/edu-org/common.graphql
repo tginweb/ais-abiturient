@@ -1,0 +1,14 @@
+
+type EduEntityRowNode {
+  key: String
+  id: String
+  label: String
+  epgu: EduEpguState
+  actions: JSON
+  children: [EduEntityRowNode]
+}
+
+type AbitWorkplace {
+  id: String
+  title: String
+}

@@ -1,0 +1,18 @@
+type Mutation {
+  edu_ssApp_admin_importAppsExcell(ids: [Int]): ResultWithPayload
+  edu_ssApp_admin_action(action: String, id: [Int]): ResultWithPayload
+  edu_ssApp_admin_actionMultiple(action: String, ids: [String]): ResultWithPayload
+}
+
+type Query {
+  edu_ssApp_admin_listRecordset(filter: JSON, nav: QueryInputNav): EduSSAppConnection
+  edu_ssApp_admin_list(filter: JSON): [EduSSApp]
+  edu_ssApp_admin_single(filter: JSON): EduSSApp
+  edu_ssApp_admin_filtersTree: JSON
+}
+
+
+type EduSSApp {
+
+  actions: JSON
+}

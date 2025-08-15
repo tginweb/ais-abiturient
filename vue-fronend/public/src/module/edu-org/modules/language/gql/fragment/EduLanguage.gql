@@ -1,0 +1,6 @@
+fragment EduLanguage on EduLanguage {
+   _id
+   id
+   name
+}
+

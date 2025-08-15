@@ -1,0 +1,14 @@
+#import "../fragment/EduEpguTaskDetail.gql"
+
+query(
+   $filter: JSON
+) {
+   res: edu_epgu_task_single(filter: $filter) {
+      ...EduEpguTaskDetail
+      children {
+        ...EduEpguTaskDetail
+      }
+   }
+}
+
+

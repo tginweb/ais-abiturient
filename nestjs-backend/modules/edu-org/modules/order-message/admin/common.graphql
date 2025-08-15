@@ -1,0 +1,6 @@
+type Mutation {
+  edu_order_message_admin_send(chatId: String, data: JSON): ResultWithPayload
+  edu_order_message_admin_read(chatId: String): ResultWithPayload
+}
+
+

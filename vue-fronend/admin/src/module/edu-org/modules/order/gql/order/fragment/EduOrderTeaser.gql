@@ -1,0 +1,214 @@
+#import "./EduOrderState.gql"
+#import "./../../orderType/fragment/EduOrderType.gql"
+#import "./EduOrderApplicationTeaser.gql"
+#import "./EduOrderStepStatus.gql"
+#import "./EduOrderAchievement.gql"
+#import "~module/edu-org/modules/app/gql/fragment/EduAppTeaser.gql"
+#import "~module/edu-org/modules/app-group/gql/fragment/EduAppGroupTeaser.gql"
+#import "~module/edu-org/modules/abit-test/gql/fragment/AbitTest.gql"
+#import "~module/edu-org/modules/doc/gql/fragment/EduDoc.gql"
+
+fragment EduOrderTeaser on EduOrder {
+    _id
+    nid
+    uid
+    userId
+    regnum
+    ratingId
+    fio
+    snils
+
+    podldocOrg
+    podldocOrgTransferDate
+    podldocOrgTransferType
+
+    podldocAny
+    podldoc
+    podldocEpgu
+    podldocEpguUpdated
+    podldocEpguRecieved
+    podldocEpguCanceled
+
+    user {
+        _id
+        nid
+        email
+    }
+    sendDate
+
+    eduType
+    eduTypeSlug
+    eduTypeAppsLimit
+    eduLevels
+
+    cordersource
+    ordersourceName
+
+    cfacComputed
+
+    aisPorted
+    aisPortedByOperator
+
+    cinstitute
+    institute {
+        id
+        name
+        phone
+        email
+    }
+
+    anket {
+        personal
+        education
+        benefits
+        entrance {
+            schoolCertificateBall
+            achievements {
+                ...EduOrderAchievement
+            }
+            specialNeeds
+            targetHave
+            targetOrganization
+            targetDogovor
+            subjects {
+                _id
+                subject
+                score
+                status
+                year
+                checked
+                subjectDoc {
+                    name
+                }
+            }
+        }
+    }
+
+    applications {
+        status {
+            ...EduOrderStepStatus
+        }
+        items {
+            ...EduOrderApplicationTeaser
+        }
+    }
+
+    state {
+        ...EduOrderState
+    }
+
+    orderType {
+        ...EduOrderType
+    }
+
+    appGroups {
+        ...EduAppGroupTeaser
+    }
+
+    firstApp {
+        _id
+        nid
+        priority
+        statusId
+        statusTitle
+        competitionId
+        cadmission
+        cfac
+        fac {
+            name
+        }
+        competition {
+            name
+            csource
+            admission {
+                abbr
+                name
+                direct_name
+            }
+        }
+    }
+
+    ais {
+        aisId
+        aisStatusId
+    }
+
+    czakaz
+
+    epgu {
+        guid
+    }
+
+    operator {
+        firstName
+        lastName
+    }
+
+    upload
+    send
+    createAt
+    updateAt
+    chat
+    actions
+    perms
+
+    citizenTypeName
+
+    tests {
+        ...AbitTest
+    }
+
+    phone
+    email
+    prevEduLevelName
+
+    portedStatus
+    portedStatusInfo {
+        code
+        titleClient
+        titleAdmin
+        bgColor
+        textColor
+        color
+        index
+        canEdit
+        selectable
+    }
+
+    appsErrors {
+        type
+        competitionUid
+        priority
+    }
+
+    prezachCompetition {
+        name
+        admission {
+            abbr
+            name
+            direct_name
+            fac {
+                name
+            }
+        }
+    }
+
+    prezachStatus
+    prezachStatusName
+
+    decreeNid
+    decree {
+        name
+    }
+
+    docs {
+        ...EduDoc
+    }
+
+    fis {
+        exported
+        exportedSuccessDate
+    }
+
+}
+

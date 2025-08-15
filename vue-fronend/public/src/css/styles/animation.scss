@@ -1,0 +1,31 @@
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+
+.menu-up-enter-active,
+.menu-up-leave-active {
+  transition: transform .5s;
+}
+
+.menu-up-enter,
+.menu-up-leave-to {
+  transform: translateY(-41px);
+}
+
+
+.menu-up-mobile-enter-active,
+.menu-up-mobile-leave-active {
+  transition: transform .5s;
+}
+
+.menu-up-mobile-enter,
+.menu-up-mobile-leave-to {
+  transform: translateY(-71px);
+}

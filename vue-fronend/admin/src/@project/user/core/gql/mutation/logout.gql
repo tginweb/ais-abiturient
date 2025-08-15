@@ -1,0 +1,4 @@
+mutation {
+  res: user_logout
+}
+

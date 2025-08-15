@@ -1,0 +1,13 @@
+type EduEpguState {
+    guid: String
+    step: String
+    status: String
+    statusMessage: [String]
+
+    exported: Boolean
+    exportedDate: String
+
+    imported: Boolean
+    importedDate: String
+}
+

@@ -1,0 +1,11 @@
+fragment EduOrderStatus on EduOrderStatus {
+   code
+   titleClient
+   titleAdmin
+   bgColor
+   textColor
+   color
+   index
+   canEdit
+   selectable
+}

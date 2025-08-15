@@ -1,0 +1,7 @@
+fragment EduLevel on EduLevel {
+   _id
+   id
+   name
+   name_ak
+}
+

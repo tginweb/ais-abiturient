@@ -1,0 +1,4 @@
+query {
+   res: edu_epgu_message_listFilters
+}
+

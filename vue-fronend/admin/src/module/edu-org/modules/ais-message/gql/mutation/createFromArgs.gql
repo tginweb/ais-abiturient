@@ -1,0 +1,14 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation(
+  $messageType: String,
+  $args: JSON
+) {
+   res: edu_ais_message_createFromArgs(
+    messageType: $messageType,
+    args: $args
+   ) {
+      ...ResultWithPayload
+   }
+}
+

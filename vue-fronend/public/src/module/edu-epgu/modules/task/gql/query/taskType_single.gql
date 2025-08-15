@@ -1,0 +1,13 @@
+#import "../fragment/EduEpguTaskType.gql"
+
+query(
+   $code: String
+) {
+   res: edu_epgu_taskType_single(code: $code) {
+     ...EduEpguTaskType
+     form
+     actions
+   }
+}
+
+

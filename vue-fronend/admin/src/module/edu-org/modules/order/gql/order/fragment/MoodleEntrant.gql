@@ -1,0 +1,13 @@
+#import "./EduOrderTeaser.gql"
+
+fragment MoodleEntrant on MoodleEntrant {
+    order {
+        ...EduOrderTeaser
+    }
+    csubject
+    subjectName
+    subject {
+        name
+    }
+}
+

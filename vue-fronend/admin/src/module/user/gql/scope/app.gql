@@ -1,0 +1,10 @@
+#import "../fragment/UserRole.gql"
+
+query {
+    user_admin__roles: user_admin__roles {
+       ...UserRole
+    }
+}
+
+
+

@@ -1,0 +1,28 @@
+type Query {
+  edu_decree_listRecordset(filter: JSON, nav: QueryInputNav): EduDecreeConnection
+  edu_decree_list(filter: JSON): [EduDecree]
+  edu_decree_single(filter: JSON): EduDecree
+}
+
+type EduDecreeConnection {
+  nodes: [EduDecree]
+  info: QueryInfo
+}
+
+type EduDecree {
+  _id: String
+  id: String
+  nid: Int
+  uid: String
+  name: String
+  nameFull: String
+  aisNumber: String
+  aisId: Int
+  pubDate: String
+  ordersCount: Int
+  campaign: EduCampaign
+  actions: JSON
+}
+
+
+

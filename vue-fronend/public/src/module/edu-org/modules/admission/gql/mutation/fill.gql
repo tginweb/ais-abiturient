@@ -1,0 +1,9 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation($ids: [String]) {
+   res: edu_admission_admin_fill(ids: $ids) {
+      ...ResultWithPayload
+   }
+}
+
+

@@ -1,0 +1,17 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation(
+    $id: JSON,
+    $docId: String,
+    $role: String
+) {
+    res: edu_order_admin__doc_set_main(
+        id: $id,
+        docId: $docId,
+        role: $role
+    ) {
+        ...ResultWithPayload
+    }
+}
+
+

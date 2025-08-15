@@ -1,0 +1,24 @@
+#import "../fragment/OrderAdmin.gql"
+#import "@tgin/main/graphql/fragment/QueryInfo.gql"
+
+query(
+   $filter: OrderFilter,
+   $where: Json,
+   $nav: QueryNavInput,
+   $orderDetail: Boolean = true
+) {
+   res: sale_admin_order_recordset(
+     filter: $filter,
+     where: $where,
+     nav: $nav
+   ) {
+     info {
+       ...QueryInfo
+     }
+     nodes {
+       ...OrderAdmin
+     }
+   }
+}
+
+

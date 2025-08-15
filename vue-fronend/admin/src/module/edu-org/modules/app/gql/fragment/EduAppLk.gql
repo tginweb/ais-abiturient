@@ -1,0 +1,11 @@
+fragment EduAppLk on EduAppLk {
+    id
+    statusId
+    status {
+        id
+        title
+    }
+    priority
+    registerAt
+}
+

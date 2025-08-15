@@ -1,0 +1,10 @@
+type Query {
+  edu_institute_public_list(filter: JSON): [EduInstitute]
+}
+
+type EduInstitute {
+  public: String
+}
+
+
+

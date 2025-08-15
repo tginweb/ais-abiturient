@@ -1,0 +1,6 @@
+#import "@tgin/sale/core/gql/vorder-reserve/fragments/VorderReserve.gql"
+
+fragment VorderReserveAdmin on VorderReserve {
+    ...VorderReserve
+    ACTIONS
+}

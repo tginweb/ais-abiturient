@@ -1,0 +1,28 @@
+#import "../fragment/File.gql"
+#import "@tgin/main/graphql/fragment/QueryInfo.gql"
+
+query(
+    $ids: [String],
+    $nids: [Int],
+    $filter: JSON,
+    $nav: QueryInputNav
+) {
+    res: file_admin_recordset(
+        ids: $ids,
+        nids: $nids,
+        filter: $filter,
+        nav: $nav
+    ) {
+        info {
+            ...QueryInfo
+        }
+        nodes {
+            ...File
+            children {
+                ...File
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,23 @@
+#import "@tgin/main/graphql/fragment/QueryInfo.gql"
+#import "../fragment/PaycardAuthAdmin.gql"
+
+query(
+    $filter: PaycardAuthFilter,
+    $where: Json,
+    $nav: QueryNavInput
+) {
+    res: sale_admin_paycard_auth_recordset(
+        filter: $filter,
+        where: $where,
+        nav: $nav
+    ) {
+        info {
+            ...QueryInfo
+        }
+        nodes {
+            ...PaycardAuthAdmin
+        }
+    }
+}
+
+

@@ -1,0 +1,15 @@
+#import "../fragment/EventAdmin.gql"
+
+mutation(
+  $id: Int,
+  $action: String,
+  $detail: Boolean = false
+)
+{
+  res: mail_admin_event(
+    id: $id,
+    action: $action
+  ) {
+    ...MailEventAdmin
+  }
+}

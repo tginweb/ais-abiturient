@@ -1,0 +1,18 @@
+#import "../location/fragments/Location.gql"
+#import "../order/fragments/OrderStatus.gql"
+#import "../department/fragments/Department.gql"
+
+
+query {
+    sale__defaultLocations: sale_locations_default {
+        ...Location
+    }
+
+    sale__orderStatuses: sale_order_statuses {
+        ...OrderStatus
+    }
+
+    sale__departments: sale_departments {
+        ...SaleDepartment
+    }
+}

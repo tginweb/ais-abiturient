@@ -1,0 +1,115 @@
+type Query {
+    edu_app_statusList: [EduAppStatus]
+}
+
+type EduAppStatus {
+    id: Int
+    title: String
+    color: String
+}
+
+type EduAppConnection {
+    nodes: [EduApp]
+    info: QueryInfo
+}
+
+type EduAppEpgu {
+    appGuid: String
+    priority: Int
+    statusId: Int
+    status: EduAppStatus
+    registerAt: String
+}
+
+type EduAppAis {
+    id: Int
+    priority: Int
+    statusId: Int
+    status: EduAppStatus
+    registerAt: String
+}
+
+type EduAppLk {
+    id: Int
+    priority: Int
+    statusId: Int
+    status: EduAppStatus
+    registerAt: String
+}
+
+type EduAppRating {
+    app: EduApp
+    order: EduOrder
+    fio: String
+    snils: String
+    ratingId: String
+    tests: JSON
+    ball: Float
+    priority: Int
+    podldoc: Boolean
+    achievementBall: Int
+    enoughTests: Boolean
+}
+
+type EduApp {
+    _id: String
+    id: String
+    nid: Int
+
+    predZach: Boolean
+    predZachStatus: String
+
+    cancelReasonId: Int
+    cancelReasonTitle: String
+    cancelReasonMessage: String
+
+    canceled: Boolean
+    bvi: Boolean
+
+    orderId: String
+    orderNid: Int
+    order: EduOrder
+
+    appGroupId: String
+    appGroup: EduAppGroup
+
+    competitionId: Int
+    competitionUid: String
+    competition: EduCompetition
+
+    cadmission: Int
+    csource: Int
+    cfob: Int
+    cfac: Int
+    fac: EduInstitute
+
+    priority: Int
+
+    specs: [Int]
+    specsAdmissions: [EduAdmission]
+
+    registerAtComputed: String
+
+    createAt: String
+    createSource: String
+    createSourceTitle: String
+
+    updateAt: String
+    registerAt: String
+
+    isCanceled: Boolean
+    cancelSource: String
+    cancelAt: String
+
+    statusId: Int
+    statusTitle: String
+    status: EduAppStatus
+    availableStatusList: [Int]
+
+    epgu: EduAppEpgu
+    ais: EduAppAis
+    lk: EduAppLk
+
+    canDelete: Boolean
+}
+

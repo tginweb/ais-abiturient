@@ -1,0 +1,36 @@
+
+fragment AbitTest on AbitTest {
+    _id
+    id
+    nid
+    orderId
+    csubject
+
+    abitEgeBall
+    abitEgeReady
+    abitEgeYear
+    abitPassingType
+
+    passingType
+    passingTypeName
+    passedDate
+    passed
+
+    resultBall
+    resultDate
+    resultSourceDocTitle
+    resultVerified
+
+    createSource
+    createSourceTitle
+
+    canDeleteAdmin
+    canDeleteAbit
+    canEditAbit
+
+    createAt
+    updateAt
+
+    actions
+}
+

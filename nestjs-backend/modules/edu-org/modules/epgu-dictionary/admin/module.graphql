@@ -1,0 +1,20 @@
+type Query {
+    edu_epgu_dictionary_term_filters: JSON
+}
+
+type Mutation {
+    edu_epgu_dictionary_admin_sync_with_epgu: ResultWithPayload
+
+    edu_epgu_dictionary_admin_term_action_multiple(
+        action: String
+        ids: [String]
+        models: JSON
+    ): ResultWithPayload
+
+    edu_epgu_dictionary_admin_term_action(
+        action: String
+        id: String
+        model: JSON
+    ): ResultWithPayload
+}
+

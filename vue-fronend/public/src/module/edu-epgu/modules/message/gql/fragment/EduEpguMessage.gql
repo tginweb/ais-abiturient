@@ -1,0 +1,53 @@
+fragment EduEpguMessage on EduEpguMessage {
+   _id
+   id
+   type
+   typeName
+   queue
+
+   args
+
+   request {
+      header {
+         Entity
+         Action
+      }
+      payload
+      payloadXml
+      token
+   }
+
+   response {
+      header {
+        IdJwt
+        PayloadType
+        EntityType
+        Action
+      }
+      payload
+      payloadXml
+      fileId
+   }
+
+   state {
+      step
+      status
+      statusMessage
+      processed
+   }
+
+   actions
+
+   createAt
+   idJwt
+
+   order {
+      nid
+      fio
+   }
+
+   personFio
+   personIdent
+   title
+}
+

@@ -1,0 +1,11 @@
+#import "~module/edu-org/modules/app/gql/fragment/EduAppTeaser.gql"
+
+fragment EduAppGroupTeaser on EduAppGroup {
+    id
+    name
+    isBudget
+    apps {
+        ...EduAppTeaser
+    }
+}
+

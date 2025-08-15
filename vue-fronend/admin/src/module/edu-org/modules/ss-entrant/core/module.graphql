@@ -1,0 +1,41 @@
+type Query {
+  edu_ssEntrant_listRecordset(filter: JSON, nav: QueryInputNav): EduSSEntrantConnection
+  edu_ssEntrant_list(filter: JSON): [EduSSEntrant]
+  edu_ssEntrant_single(filter: JSON): EduSSEntrant
+}
+
+type EduSSEntrantConnection {
+  nodes: [EduSSEntrant]
+  info: QueryInfo
+}
+
+
+
+type EduSSEntrant {
+  _id: String
+  id: Int
+  epguId: Int
+
+
+  fio: String
+
+  snils: String
+  egeRes: JSON
+
+  fac: EduInstitute
+
+  appsEpgu: [EduSSApp]
+  appsAis: [EduAisEntrant]
+  appsOnline: [EduOrder]
+  epguDocs: JSON
+
+
+  changedEpgu: Boolean
+  changedAis: Boolean
+
+  fieldsJson: String
+  dateRegister: String
+}
+
+
+

@@ -1,0 +1,30 @@
+
+fragment EduCompetitionTeaser on EduCompetition {
+    _id
+    id
+    uid
+    name
+    celevOrgName
+    admission {
+        id
+        direct_name
+        spec_name
+        name
+        abbr
+        cfac
+        fob {
+            id
+            name
+        }
+        subjects {
+            csubject
+            number
+            minimal
+        }
+    }
+    source {
+        id
+        name
+    }
+}
+

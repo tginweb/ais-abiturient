@@ -1,0 +1,23 @@
+#import "../fragment/EduFisMessage.gql"
+#import "@tgin/main/graphql/fragment/QueryInfo.gql"
+
+query(
+   $filter: JSON,
+   $where: JSON,
+   $nav: QueryInputNav
+) {
+   res: edu_fis_message_listRecordset(
+      filter: $filter,
+      where: $where,
+      nav: $nav
+   ) {
+     info {
+       ...QueryInfo
+     }
+     nodes {
+       ...EduFisMessage
+     }
+   }
+}
+
+

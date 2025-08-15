@@ -1,0 +1,36 @@
+
+
+type Query {
+  edu_institute_listRecordset(filter: JSON, nav: QueryInputNav): EduInstituteConnection
+  edu_institute_list(filter: JSON): [EduInstitute]
+  edu_institute_single(filter: JSON): EduInstitute
+}
+
+type EduInstituteConnection {
+  nodes: [EduInstitute]
+  info: QueryInfo
+}
+
+type EduInstitute {
+  _id: String
+  id: Int
+  name: String
+  name_ak: String
+  fisid: Int
+  epgu_id: Int
+  active: Boolean
+  phone: String
+  email: String
+}
+
+type EduType {
+  _id: String
+  id: Int
+  name: String
+}
+
+type User {
+  instituteNid: [Int]
+  instituteNids: [Int]
+  institutes: [EduInstitute]
+}

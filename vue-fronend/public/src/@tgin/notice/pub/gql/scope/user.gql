@@ -1,0 +1,7 @@
+#import "@tgin/notice/core/gql/fragments/Notice.gql"
+
+query {
+    notice_pub__userNotices: notice_pub_sess_scope_list {
+        ...Notice
+    }
+}

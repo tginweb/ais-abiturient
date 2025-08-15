@@ -1,0 +1,15 @@
+#import "@tgin/sale/core/gql/profile/fragments/OrderProfile.gql"
+
+fragment OrderProfileAdmin on OrderProfile {
+  ...OrderProfile
+  USER {
+    ID
+    NAME_FULL
+    PROPS {
+      CODE
+      VAL
+    }
+  }
+  ACTIONS
+}
+

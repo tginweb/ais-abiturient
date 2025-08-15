@@ -1,0 +1,11 @@
+#import "@tgin/sale/core/gql/profile/fragments/OrderProfileForm.gql"
+
+query(
+    $id: Int,
+    $personTypeId: Int = null,
+    $profileDetail: Boolean = true
+) {
+    res: sale_pub_profile_form(id: $id, personTypeId: $personTypeId) {
+        ...OrderProfileForm
+    }
+}

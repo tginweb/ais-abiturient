@@ -1,0 +1,12 @@
+fragment EduDirection on EduDirection {
+  _id
+  id
+  cod
+  name
+  cperson
+  cugspec
+  dubl
+  abbr
+  code
+}
+

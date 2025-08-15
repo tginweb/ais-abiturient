@@ -1,0 +1,10 @@
+type Query {
+  edu_fob_public_list(filter: JSON): [EduFob]
+}
+
+type EduFob {
+  public: String
+}
+
+
+

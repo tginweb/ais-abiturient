@@ -1,0 +1,10 @@
+#import "../fragments/PageElement.gql"
+
+query(
+   $URL: String
+)
+{
+  res: page_route(URL: $URL) {
+    ...PageElement
+  }
+}

@@ -1,0 +1,12 @@
+mutation(
+    $action: String,
+    $itemId: Int,
+    $productId: Int
+)
+{
+    res: sale_pub_fav_action(
+        action: $action,
+        itemId: $itemId,
+        productId: $productId
+    )
+}

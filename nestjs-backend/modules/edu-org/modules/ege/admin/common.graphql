@@ -1,0 +1,16 @@
+
+type Query {
+  edu_ege_admin_list(ids: [String], nids: [Int], filter: JSON, nav: QueryInputNav): [EduEge]
+  edu_ege_admin_listRecordset(filter: JSON, nav: QueryInputNav): EduEgeConnection
+  edu_ege_admin__packet_generate(ids: [String]): ResultWithPayload
+}
+
+type Mutation {
+  edu_ege_admin__packet_result_process(packet: String): ResultWithPayload
+  edu_ege_admin__action(
+    action: String,
+    ids: [String],
+    selectAll: Boolean,
+    selectFilter: JSON
+  ): ResultWithPayload
+}

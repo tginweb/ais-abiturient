@@ -1,0 +1,5 @@
+type Mutation {
+  edu_campaign_admin_syncWithAis: ResultWithPayload
+}
+
+

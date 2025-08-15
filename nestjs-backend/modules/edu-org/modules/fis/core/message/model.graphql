@@ -1,0 +1,128 @@
+type Mutation {
+    edu_fis_message_action(
+        ids: [String],
+        action: String,
+        step: String,
+        params: JSON
+    ): ResultWithPayload
+
+    edu_fis_message_runProcess: ResultWithPayload
+
+    edu_fis_message_save(model: JSON): ResultWithPayload
+
+    edu_fis_message_createFromArgs(
+        messageType: String
+        args: JSON
+    ): ResultWithPayload
+
+    edu_fis_message_createFromEntity(
+        messageType: String
+        entityType: String
+        ids: [String]
+    ): ResultWithPayload
+
+    edu_fis_message_createFromEntities(
+        messageType: String
+        entityType: String
+        ids: [String]
+        split: Int
+    ): ResultWithPayload
+}
+
+type Query {
+    edu_fis_message_listRecordset(filter: JSON, where: JSON, nav: QueryInputNav): EduFisMessageConnection
+    edu_fis_message_list(filter: JSON): [EduFisMessage]
+    edu_fis_message_single(filter: JSON): EduFisMessage
+    edu_fis_message_listFilters: JSON
+
+}
+
+type EduFisMessageMultipleOpResult {
+    result: Result
+    payload: [EduFisMessage]
+}
+
+type EduFisMessageOpResult {
+    result: Result
+    payload: EduFisMessage
+}
+
+type EduFisMessageConnection {
+    nodes: [EduFisMessage]
+    info: QueryInfo
+}
+
+
+type EduFisMessageRequestHeader {
+    PayloadType: String
+    EntityType: String
+    Action: String
+}
+
+type EduFisMessageResponseHeader {
+    IdJwt: Int
+    PayloadType: String
+    EntityType: String
+    Entity: String
+    Action: String
+}
+
+type EduFisMessageResponse {
+    header: EduFisMessageResponseHeader
+    payload: JSON
+    payloadXml: String
+    fileId: String
+    GuidApplication: String
+    GuidEntrant: String
+}
+
+type EduFisMessageRequestHeader {
+    Entity: String
+    Action: String
+}
+
+type EduFisMessageRequest {
+    header: EduFisMessageRequestHeader
+    payload: JSON
+    payloadXml: String
+    token: String
+}
+
+type EduFisMessageState {
+    step: String
+    status: String
+    statusMessage: [String]
+    processed: Boolean
+}
+
+type EduFisMessage {
+    _id: String
+    id: Int
+    idJwt: Int
+    taskId: Int
+    queue: String
+
+    type: String
+    typeName: String
+
+    args: JSON
+
+    request: EduFisMessageRequest
+    response: EduFisMessageResponse
+    state: EduFisMessageState
+
+    createAt: String
+    loadedAt: String
+    actions: JSON
+
+    order: EduOrder
+
+    title: String
+    personFio: String
+    personIdent: String
+
+    entrantOrder: EduOrder
+    entrantApp: EduAppGroup
+}
+
+

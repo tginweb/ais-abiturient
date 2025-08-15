@@ -1,0 +1,10 @@
+#import "../fragments/Contact.gql"
+
+query
+{
+  res: company_contacts {
+    nodes {
+      ...CompanyContact
+    }
+  }
+}

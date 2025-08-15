@@ -1,0 +1,21 @@
+#import "../fragments/MenuItem.gql"
+
+query {
+   menu__app_scope: menu_app_scope {
+       id
+       code
+       children {
+         ...MenuItem
+         children {
+            ...MenuItem
+             children {
+               ...MenuItem
+                 children {
+                  ...MenuItem
+               }
+            }
+         }
+       }
+   }
+}
+

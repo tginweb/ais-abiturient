@@ -1,0 +1,8 @@
+type Query {
+  edu_doc_public_list(filter: JSON): [EduDoc]
+}
+
+
+
+
+

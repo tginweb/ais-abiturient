@@ -1,0 +1,12 @@
+fragment EduAppAis on EduAppAis {
+    id
+    statusId
+    status {
+        id
+        title
+    }
+    priority
+    registerAt
+}
+
+

@@ -1,0 +1,6 @@
+mutation ($step: String, $data: JSON) {
+  res: abit_client_OrderStepSave(data: $data, step: $step) {
+    _result
+    payload
+  }
+}

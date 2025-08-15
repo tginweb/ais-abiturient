@@ -1,0 +1,11 @@
+#import "../fragment/EduSSEntrant.gql"
+
+query(
+   $filter: JSON
+) {
+   res: edu_ssEntrant_admin_single(filter: $filter) {
+      ...EduSSEntrant
+   }
+}
+
+

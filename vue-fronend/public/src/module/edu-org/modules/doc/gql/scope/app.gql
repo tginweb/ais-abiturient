@@ -1,0 +1,37 @@
+#import "../fragment/EduDocStatus.gql"
+#import "../fragment/EduDocRole.gql"
+
+query {
+    edu_doc__roles: edu_doc_roles {
+        ...EduDocRole
+    }
+
+    edu_doc__statuses: edu_doc_statuses {
+        ...EduDocStatus
+    }
+
+    edu_doc__docCategories: edu_epgu_dictionary_term_list(filter: {taxonomy: {in: ["DocumentCategoryCls"]}}) {
+        _id
+        id
+        taxonomy
+        taxonomyLabel
+        name
+        actual
+        fields
+        aisId
+    }
+
+    edu_doc__docTypes: edu_epgu_dictionary_term_list(filter: {taxonomy: {in: ["DocumentTypeCls"]}}) {
+        _id
+        id
+        taxonomy
+        taxonomyLabel
+        name
+        actual
+        fields
+        aisId
+    }
+}
+
+
+

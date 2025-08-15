@@ -1,0 +1,9 @@
+#import "@tgin/sale/core/gql/profile/fragments/OrderProfile.gql"
+
+query(
+    $profileDetail: Boolean = false
+) {
+    res: sale_pub_profile_list {
+        ...OrderProfile
+    }
+}

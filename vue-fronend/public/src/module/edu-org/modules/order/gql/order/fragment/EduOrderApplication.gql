@@ -1,0 +1,39 @@
+#import "~module/edu-org/modules/admission/gql/fragment/EduAdmission.gql"
+#import "~module/edu-org/modules/source/gql/fragment/EduSource.gql"
+
+fragment EduOrderApplication on EduOrderApplication {
+
+   _id
+   priority
+   eduProgramNid
+   csource
+   specs
+
+   createAt
+   updateAt
+
+   deleted
+   deletedSource
+
+   agree
+   agreeDeny
+
+   statusMessage
+   status {
+     name
+   }
+
+   admission {
+      ...EduAdmission
+   }
+   source {
+      ...EduSource
+   }
+   specsAdmissions {
+      ...EduAdmission
+   }
+
+   epguState
+   cappsource
+}
+

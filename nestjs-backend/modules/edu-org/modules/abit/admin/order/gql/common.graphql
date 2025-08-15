@@ -1,0 +1,100 @@
+enum CacheControlScope {
+  PUBLIC
+  PRIVATE
+}
+
+directive @cacheControl(
+  maxAge: Int
+  scope: CacheControlScope
+  inheritMaxAge: Boolean
+) on FIELD_DEFINITION | OBJECT | INTERFACE | UNION
+
+type Mutation {
+  edu_order_admin_action(
+    ids: [String],
+    action: String,
+    params: JSON,
+    selectAll: Boolean,
+    selectFilter: JSON
+  ): ResultWithPayload
+
+  edu_order_admin_change_user(
+    id: JSON,
+    userId: String
+  ): ResultWithPayload
+
+  edu_order_admin_set_predzach_status(
+    id: JSON,
+    status: String
+  ): ResultWithPayload
+
+  edu_order_admin_set_predzach_compet(
+    id: JSON,
+    competitionId: Int
+  ): ResultWithPayload
+
+}
+
+type Query {
+  edu_order_admin_users_options(id: String, filter: JSON): JSON
+
+  edu_order_admin_order_ege_list(id: String): [EduEge]
+
+  edu_order_admin_list(ids: [String], nids: [Int], filter: JSON, nav: QueryInputNav): [EduOrder]
+  edu_order_admin_listRecordset(ids: [String], nids: [Int], filter: JSON, nav: QueryInputNav): EduOrderConnection
+
+  edu_order_admin_list_sverka(ids: [String], nids: [Int], filter: JSON, nav: QueryInputNav): JSON
+
+  edu_order_admin_listFilters: JSON
+  edu_order_admin_moodle_filters: JSON
+  edu_order_admin_moodle_recordset(ids: [String], nids: [Int], filter: JSON, nav: QueryInputNav): [MoodleEntrant]
+
+  edu_order_admin_single(ids: [String], filter: JSON, nav: QueryInputNav): EduOrder
+
+  edu_order_admin_statusList: [EduOrderStatus]
+  edu_order_admin_appStatusList: [EduOrderAppStatus]
+}
+
+type MoodleEntrant {
+  order: EduOrder
+  csubject: Int
+  subjectName: String
+  subject: EduSubject
+}
+
+type EduOrder {
+  adminUrl: String
+  operator: UserSafe
+
+  perms: JSON
+  actions: JSON
+
+  user: UserSafe
+  epgu: EduOrderEpgu
+  ais: EduOrderAis
+}
+
+
+type EduOrderEpgu {
+  guid: String
+  snils: String
+  fetchedAt: String
+  apps: [EduOrderEpguApp]
+}
+
+type EduOrderEpguApp {
+  uidEpgu: Int
+  agree: Boolean
+  cadmission: Int
+  csource: Int
+  fetched: Boolean
+  state: JSON
+}
+
+type EduOrderAis {
+  aisId: Int
+  aisStatusId: Int
+  state: JSON
+  diff: Boolean
+}
+

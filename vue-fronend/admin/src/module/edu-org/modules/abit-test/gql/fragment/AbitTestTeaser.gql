@@ -1,0 +1,24 @@
+#import "./AbitTest.gql"
+#import "~module/edu-org/modules/subject/gql/fragment/EduSubject.gql"
+
+fragment AbitTestTeaser on AbitTest {
+    ...AbitTest
+    subject {
+        ...EduSubject
+    }
+    order {
+        uid
+        fio
+        ratingId
+        snils
+        institute {
+            name
+        }
+        firstApp {
+            fac {
+                name
+            }
+        }
+    }
+}
+

@@ -1,0 +1,8 @@
+fragment EduFamilyType on EduFamilyType {
+   _id
+   nid
+   id
+   title
+   name
+}
+

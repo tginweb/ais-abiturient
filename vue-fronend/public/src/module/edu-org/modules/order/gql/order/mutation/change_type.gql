@@ -1,0 +1,7 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation ($orderType: Int) {
+  res: edu_order_public__type_change(orderType: $orderType)  {
+     ...ResultWithPayload
+  }
+}

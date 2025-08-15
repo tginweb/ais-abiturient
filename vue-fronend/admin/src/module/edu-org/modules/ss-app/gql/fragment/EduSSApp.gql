@@ -1,0 +1,33 @@
+
+fragment EduSSApp on EduSSApp {
+   _id
+   nid
+
+   guid
+   guidEntrant
+   entrantId
+
+   fio
+   snils
+
+   isBudget
+   registrationDate
+
+   apps {
+      competition {
+         name
+      }
+      competitionUid
+      statusId
+      status {
+         id
+         title
+      }
+      priorityTarget
+      priorityOther
+      priority
+   }
+
+   fields
+}
+

@@ -1,0 +1,8 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation ($section: String, $data: JSON) {
+  res: edu_order_public__section_update(section: $section, data: $data)  {
+     ...ResultWithPayload
+  }
+}
+

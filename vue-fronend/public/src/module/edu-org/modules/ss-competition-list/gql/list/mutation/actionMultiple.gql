@@ -1,0 +1,8 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation($action: String, $ids: [Int]) {
+   res: edu_ssCompetitionList_actionMultiple(action: $action, ids: $ids) {
+      ...ResultWithPayload
+   }
+}
+

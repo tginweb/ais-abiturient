@@ -1,0 +1,7 @@
+query {
+    res: abit_admin_operatorsList {
+        _id
+        lastName
+        firstName
+    }
+}

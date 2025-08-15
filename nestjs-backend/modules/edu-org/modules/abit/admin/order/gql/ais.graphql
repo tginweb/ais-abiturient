@@ -1,0 +1,4 @@
+type Mutation {
+  edu_order_admin_ais_update_entrants(data: JSON, dataJson: String): ResultWithPayload
+  edu_order_admin_syncWithAis: ResultWithPayload
+}

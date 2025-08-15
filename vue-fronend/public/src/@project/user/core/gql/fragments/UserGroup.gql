@@ -1,0 +1,7 @@
+
+fragment UserGroup on UserGroup {
+  ID
+  NAME
+}
+
+

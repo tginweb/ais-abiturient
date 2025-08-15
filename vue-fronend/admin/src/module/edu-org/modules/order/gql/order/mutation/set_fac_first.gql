@@ -1,0 +1,11 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation(
+    $id: JSON
+) {
+    res: edu_order_admin__set_fac_first(id: $id) {
+        ...ResultWithPayload
+    }
+}
+
+

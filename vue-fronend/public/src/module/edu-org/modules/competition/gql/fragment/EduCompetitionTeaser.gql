@@ -1,0 +1,26 @@
+
+fragment EduCompetitionTeaser on EduCompetition {
+    _id
+    id
+    name
+    celevOrgName
+    admission {
+        id
+        direct_name
+        name
+        abbr
+        fob {
+            id
+            name
+        }
+    }
+    source {
+        id
+        name
+    }
+    fob {
+        id
+        name
+    }
+}
+

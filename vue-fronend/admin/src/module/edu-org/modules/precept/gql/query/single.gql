@@ -1,0 +1,11 @@
+#import "../fragment/EduPrecept.gql"
+
+query(
+   $filter: JSON
+) {
+   res: edu_precept_single(filter: $filter) {
+      ...EduPrecept
+   }
+}
+
+

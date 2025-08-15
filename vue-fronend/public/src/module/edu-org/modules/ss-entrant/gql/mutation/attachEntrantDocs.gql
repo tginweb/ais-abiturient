@@ -1,0 +1,8 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation($id: Int, $docs: JSON) {
+   res: edu_ssEntrant_admin_attachEntrantDocs(id: $id, docs: $docs) {
+      ...ResultWithPayload
+   }
+}
+

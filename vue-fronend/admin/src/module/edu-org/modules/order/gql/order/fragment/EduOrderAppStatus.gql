@@ -1,0 +1,6 @@
+fragment EduOrderAppStatus on EduOrderAppStatus {
+   id
+   name
+   selectable
+   color
+}

@@ -1,0 +1,47 @@
+type Query {
+  edu_competition_list(filter: JSON): [EduCompetition]
+  edu_competition_single(filter: JSON): EduCompetition
+}
+
+
+type EduCompetitionConnection {
+  nodes: [EduCompetition]
+  info: QueryInfo
+}
+
+type EduCompetition {
+  _id: String
+  id: Int
+  uid: String
+
+  name: String
+  admissionNumber: Int
+  usedNumber: Int
+  admissionNumberTotal: Int
+
+  celevOrgName: String
+  celevOrg: String
+
+  cadmission: Int
+  admission: EduAdmission
+
+  csource: Int
+  source: EduSource
+
+  cfob: Int
+  fob: EduFob
+
+  createAt: String
+  updateAt: String
+
+  adminActions: JSON
+
+  ratio: Float
+  appsCount:Int
+
+  appsRating: [EduAppRating]
+
+  isdop: Boolean
+}
+
+

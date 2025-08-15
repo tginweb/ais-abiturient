@@ -1,0 +1,31 @@
+#import "~module/edu-org/modules/subject/gql/fragment/EduSubject.gql"
+
+fragment AbitTest on AbitTest {
+    _id
+    id
+    nid
+    csubject
+
+    subject {
+        ...EduSubject
+    }
+
+    abitPassingType
+    abitEgeBall
+    abitEgeReady
+    abitEgeYear
+
+    passingType
+    passedDate
+    passed
+
+    resultBall
+    resultSourceDocTitle
+    resultVerified
+
+    createSource
+
+    canDeleteAbit
+    canEditAbit
+}
+

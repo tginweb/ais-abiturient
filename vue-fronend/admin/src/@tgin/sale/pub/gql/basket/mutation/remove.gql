@@ -1,0 +1,16 @@
+#import "@tgin/sale/core/gql/basket/fragments/Basket.gql"
+
+mutation(
+    $itemId: Int,
+    $productId: Int,
+    $productHash: String
+)
+{
+  res: sale_pub_basket_remove(
+    itemId: $itemId,
+    productId: $productId
+    productHash: $productHash
+  ) {
+      ...Basket
+  }
+}

@@ -1,0 +1,13 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation (
+  $login: String,
+  $lang: String
+) {
+  res: auth_ActivateRequest(
+    login: $login,
+    lang: $lang
+  ) {
+    ...ResultWithPayload
+  }
+}

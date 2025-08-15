@@ -1,0 +1,12 @@
+mutation(
+    $by: String,
+    $phone: String,
+    $email: String
+)
+{
+    res: user_pub_login_find(
+        by: $by,
+        phone: $phone,
+        email: $email
+    )
+}

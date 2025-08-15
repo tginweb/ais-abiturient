@@ -1,0 +1,6 @@
+
+query {
+    res: tagger_admin_tag_filters
+}
+
+

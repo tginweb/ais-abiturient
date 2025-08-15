@@ -1,0 +1,12 @@
+#import "../fragments/ProductElement.gql"
+
+query(
+    $filter: ProductElementFilter,
+    $nav: QueryNavInput = {},
+    $elementDetail: Boolean = true
+)
+{
+    res: productElement(filter: $filter, nav: $nav) {
+        ...ProductElement
+    }
+}

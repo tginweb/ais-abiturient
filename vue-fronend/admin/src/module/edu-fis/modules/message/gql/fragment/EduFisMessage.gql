@@ -1,0 +1,76 @@
+fragment EduFisMessage on EduFisMessage {
+   _id
+   id
+   type
+   typeName
+   title
+   queue
+
+   args
+
+   request {
+      header {
+         Entity
+         Action
+      }
+      payload
+      payloadXml
+      token
+   }
+
+   response {
+      header {
+        IdJwt
+        PayloadType
+        Entity
+        Action
+      }
+      payload
+      payloadXml
+      fileId
+      GuidApplication
+      GuidEntrant
+   }
+
+   entrantOrder {
+      id
+      nid
+      fio
+      uid
+   }
+
+   entrantApp {
+      id
+      nid
+      isBudget
+      order {
+         id
+         nid
+         fio
+         uid
+      }
+   }
+
+
+   state {
+      step
+      status
+      statusMessage
+      processed
+   }
+
+   actions
+
+   createAt
+   idJwt
+
+   order {
+      nid
+      fio
+   }
+
+   personFio
+   personIdent
+   title
+}
+

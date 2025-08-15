@@ -1,0 +1,6 @@
+#import "@tgin/workflow/core/com/document/gql/fragment/Entity.gql"
+
+fragment WorkflowDocumentAdmin on WorkflowDocument {
+  ...WorkflowDocument
+}
+

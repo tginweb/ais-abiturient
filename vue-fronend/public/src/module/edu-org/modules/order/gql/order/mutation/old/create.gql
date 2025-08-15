@@ -1,0 +1,7 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation {
+  res: edu_order_public_create  {
+     ...ResultWithPayload
+  }
+}

@@ -1,0 +1,16 @@
+
+type Query {
+  messengerGetUserMessages: [MessengerMessage]
+}
+
+
+type Mutation {
+  messengerPostMessage(data: JSON): OperationResult
+}
+
+
+type MessengerMessage {
+  _id: String
+  message: String
+}
+

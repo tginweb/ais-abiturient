@@ -1,0 +1,4 @@
+fragment EduOrderStepStatus on EduOrderStepStatus {
+  status
+  message
+}

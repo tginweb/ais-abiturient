@@ -1,0 +1,21 @@
+
+query {
+    edu_app__statusList: edu_app_statusList {
+        id
+        title
+    }
+
+    edu_app__cancelReasons: edu_epgu_dictionary_term_list(filter: {taxonomy: {in: ["ReasonsRejectionCls"]}}) {
+        _id
+        id
+        taxonomy
+        taxonomyLabel
+        name
+        actual
+        fields
+        aisId
+    }
+}
+
+
+

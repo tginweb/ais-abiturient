@@ -1,0 +1,12 @@
+#import "@tgin/main/gql/fragments/ResultWithPayload.gql"
+
+mutation(
+  $snils: [String]
+) {
+   res: edu_epgu_order_importEntrants(
+      snils: $snils
+   ) {
+      ...ResultWithPayload
+   }
+}
+

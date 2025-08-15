@@ -1,0 +1,34 @@
+type EduRatingConnection {
+  nodes: [EduRating]
+  info: QueryInfo
+}
+
+type EduRatingCompetition {
+  _id: String
+  id: Int
+  uid: String
+  cadmission: Int
+  csource: Int
+  name: String
+  admissionNumber: Int
+  celevOrg: String
+  celevOrgName: String
+  ratingApps: JSON
+}
+
+type EduRating {
+  _id: String
+  id: String
+  nid: Int
+  name: String
+  createAt: String
+  updateAt: String
+  generateStartAt: String
+  generateEndAt: String
+  generateTime: Int
+  generateProcess: Boolean
+  generateAvailable: Boolean
+  generated: Boolean
+  actual: Boolean
+  competitions: [EduRatingCompetition]
+}

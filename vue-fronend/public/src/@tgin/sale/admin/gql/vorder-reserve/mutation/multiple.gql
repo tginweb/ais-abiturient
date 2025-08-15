@@ -1,0 +1,15 @@
+#import "../fragment/VorderAdmin.gql"
+
+mutation(
+  $ids: [Int],
+  $action: String
+)
+{
+  res: sale_admin_vorders(
+    ids: $ids,
+    action: $action
+  ) {
+    ...VorderAdmin
+  }
+}
+

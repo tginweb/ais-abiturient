@@ -1,0 +1,8 @@
+type Mutation {
+  edu_fob_admin_syncWithAis: ResultWithPayload
+}
+
+type Query {
+  edu_institute_admin_list(ids: [String], nids: [Int], filter: JSON, nav: QueryInputNav): [EduInstitute]
+  edu_institute_admin_listRecordset(filter: JSON, nav: QueryInputNav): EduInstituteConnection
+}

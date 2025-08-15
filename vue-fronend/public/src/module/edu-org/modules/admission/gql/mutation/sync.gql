@@ -1,0 +1,10 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation {
+   res: edu_admission_admin_syncWithAis {
+      ...ResultWithPayload
+   }
+}
+
+
+

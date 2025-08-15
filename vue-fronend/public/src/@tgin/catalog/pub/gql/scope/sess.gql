@@ -1,0 +1,3 @@
+query {
+   catalog_pub__favItems: catalog_fav_items
+}

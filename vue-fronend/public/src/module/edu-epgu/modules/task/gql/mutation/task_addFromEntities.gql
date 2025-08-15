@@ -1,0 +1,25 @@
+#import "../fragment/EduEpguTaskTeaser.gql"
+#import "~module/main/gql/fragments/Result.gql"
+
+mutation(
+   $action: String,
+   $entityType: String,
+   $ids: [Int],
+   $scope: String
+) {
+   res: edu_epgu_task_addFromEntities(
+      action: $action,
+      entityType: $entityType,
+      ids: $ids,
+      scope: $scope
+    ) {
+     result {
+       ...Result
+     }
+     payload {
+       ...EduEpguTaskTeaser
+     }
+   }
+}
+
+

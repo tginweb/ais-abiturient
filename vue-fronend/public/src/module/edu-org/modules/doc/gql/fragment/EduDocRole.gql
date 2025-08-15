@@ -1,0 +1,21 @@
+
+fragment EduDocRole on EduDocRole {
+   id
+   title
+   required
+   haveReq
+
+   epgu
+   epguDefaultDocTypeId
+   epguRootCats
+   epguCats
+
+   multiple
+   printComponent
+   canDelete
+   parent
+   achievements
+   internal
+   abitHidden
+}
+

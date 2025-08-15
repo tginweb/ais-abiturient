@@ -1,0 +1,11 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation(
+  $queue: String
+) {
+   res: edu_fis_message_importQueue(queue: $queue) {
+      ...ResultWithPayload
+   }
+}
+
+

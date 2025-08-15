@@ -1,0 +1,12 @@
+#import "../fragment/EduOrder.gql"
+
+query(
+   $filter: JSON
+) {
+   res: edu_order_admin_single(filter: $filter) {
+      ...EduOrder
+      messages
+   }
+}
+
+

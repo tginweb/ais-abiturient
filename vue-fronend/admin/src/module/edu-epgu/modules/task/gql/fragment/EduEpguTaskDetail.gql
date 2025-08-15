@@ -1,0 +1,13 @@
+#import "../fragment/EduEpguTaskBase.gql"
+
+fragment EduEpguTaskDetail on EduEpguTask {
+  ...EduEpguTaskBase
+  header
+  payload
+  scope
+  state
+  actions
+  token
+  infoToken
+}
+

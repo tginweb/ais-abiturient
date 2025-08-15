@@ -1,0 +1,12 @@
+#import "./EduOrderStatus.gql"
+
+fragment EduOrderState on EduOrderState {
+  status
+  statusInfo {
+   ...EduOrderStatus
+  }
+  message
+  userId
+  created
+  changedFromEpgu
+}

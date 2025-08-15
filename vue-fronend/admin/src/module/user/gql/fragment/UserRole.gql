@@ -1,0 +1,4 @@
+fragment UserRole on UserRole {
+    id
+    name
+}

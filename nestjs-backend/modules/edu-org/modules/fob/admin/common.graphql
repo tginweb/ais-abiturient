@@ -1,0 +1,5 @@
+type Mutation {
+  edu_institute_admin_syncWithAis: ResultWithPayload
+}
+
+

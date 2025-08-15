@@ -1,0 +1,11 @@
+#import "../fragment/EduCampaign.gql"
+
+query(
+   $filter: JSON
+) {
+   res: edu_campaign_single(filter: $filter) {
+      ...EduCampaign
+   }
+}
+
+

@@ -1,0 +1,15 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation(
+  $id: JSON,
+  $data: JSON
+) {
+   res: edu_order_admin_achievementsSave(
+      id: $id,
+      data: $data
+   ) {
+      ...ResultWithPayload
+   }
+}
+
+

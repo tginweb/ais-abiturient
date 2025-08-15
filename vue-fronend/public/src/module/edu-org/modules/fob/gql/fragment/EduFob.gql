@@ -1,0 +1,6 @@
+fragment EduFob on EduFob {
+   _id
+   id
+   name
+}
+

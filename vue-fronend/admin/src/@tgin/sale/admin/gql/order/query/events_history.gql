@@ -1,0 +1,11 @@
+#import "@tgin/mail/core/gql/event/fragment/Event.gql"
+
+query(
+    $id: Int
+) {
+    res: sale_admin_order_events_history(id: $id) {
+        ...MailEvent
+    }
+}
+
+

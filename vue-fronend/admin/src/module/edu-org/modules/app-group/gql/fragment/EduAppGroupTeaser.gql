@@ -1,0 +1,17 @@
+#import "~module/edu-org/modules/app/gql/fragment/EduAppTeaser.gql"
+
+fragment EduAppGroupTeaser on EduAppGroup {
+    id
+    nid
+    name
+    isBudget
+    isDopnabor
+    appsActive {
+        ...EduAppTeaser
+    }
+    appsCanceled {
+        ...EduAppTeaser
+    }
+    epguGuid
+}
+

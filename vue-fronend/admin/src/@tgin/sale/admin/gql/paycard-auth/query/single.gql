@@ -1,0 +1,12 @@
+#import "../fragment/OrderAdmin.gql"
+
+query(
+    $filter: PaycardAuthFilter,
+    $orderDetail: Boolean = true
+) {
+   res: sale_admin_paycard_auth_single(filter: $filter) {
+       ...PaycardAuthAdmin
+   }
+}
+
+

@@ -1,0 +1,13 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation (
+    $competitionId: String,
+    $specs: [Int]
+) {
+  res: edu_order_public__app_add(
+      competitionId: $competitionId
+      specs: $specs
+  )  {
+     ...ResultWithPayload
+  }
+}

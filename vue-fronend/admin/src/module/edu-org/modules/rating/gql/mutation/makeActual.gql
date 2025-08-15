@@ -1,0 +1,13 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation(
+    $id: String
+) {
+    res: edu_rating_admin_make_actual(
+        id: $id
+    ) {
+        ...ResultWithPayload
+    }
+}
+
+

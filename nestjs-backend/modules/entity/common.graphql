@@ -1,0 +1,7 @@
+
+type EntityEvent {
+  relEntityType: String
+  relEntityId: String
+  eventType: String
+  eventData: JSON
+}

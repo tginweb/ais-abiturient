@@ -1,0 +1,9 @@
+#import "../fragment/EduSheetTest.gql"
+
+query ($sheetId: String) {
+    res: edu_sheet_admin_tests_fetch(sheetId: $sheetId) {
+        ...EduSheetTest
+    }
+}
+
+

@@ -1,0 +1,18 @@
+#import "../fragment/EduEpguTaskTeaser.gql"
+#import "~module/main/gql/fragments/Result.gql"
+
+mutation(
+   $targets: [String],
+   $action: String
+) {
+   res: edu_epgu_task_addFromTargets(action: $action, targets: $targets) {
+     result {
+       ...Result
+     }
+     payload {
+       ...EduEpguTaskTeaser
+     }
+   }
+}
+
+

@@ -1,0 +1,11 @@
+#import "../fragment/PaycardAdmin.gql"
+
+query(
+    $filter: PaycardFilter
+) {
+    res: sale_admin_paycard_single(filter: $filter) {
+        ...PaycardAdmin
+    }
+}
+
+

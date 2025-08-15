@@ -1,0 +1,9 @@
+#import "~module/edu-org/modules/doc/gql/fragment/EduDoc.gql"
+
+query {
+    res: edu_order_public__docs {
+        ...EduDoc
+    }
+}
+
+

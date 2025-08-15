@@ -1,0 +1,14 @@
+#import "@tgin/main/iblock/gql/fragment/ElementProp.gql"
+
+fragment BuyerCompanyElement on BuyerCompanyElement {
+  ID
+  ACTIVE
+  ACTIVE_FROM(format: "default")
+  CODE
+  NAME
+  URL
+  PROPS(includeEmptyValues: true) {
+    ...ElementProp
+  }
+}
+

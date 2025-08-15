@@ -1,0 +1,16 @@
+#import "@tgin/sale/core/gql/order/fragments/Payment.gql"
+
+query(
+  $id: Int,
+  $hash: String,
+  $paymentId: Int
+)
+{
+  res: sale_pub_order_pay(
+    id: $id,
+    hash: $hash,
+    paymentId: $paymentId,
+  ) {
+     ...Payment
+  }
+}

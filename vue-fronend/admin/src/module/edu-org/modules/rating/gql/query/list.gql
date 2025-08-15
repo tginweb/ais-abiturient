@@ -1,0 +1,12 @@
+#import "../fragment/EduRating.gql"
+
+query(
+   $filter: JSON,
+   $nav: QueryInputNav
+) {
+   res: edu_rating_admin_list(filter: $filter, nav: $nav) {
+       ...EduRating
+   }
+}
+
+

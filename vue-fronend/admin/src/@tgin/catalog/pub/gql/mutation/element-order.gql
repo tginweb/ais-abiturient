@@ -1,0 +1,17 @@
+#import "../../../core/gql/product/fragments/ProductElement.gql"
+#import "../../../core/gql/product/fragments/ProductSectionBase.gql"
+
+query(
+    $elementId: Int,
+    $username: String,
+    $email: String,
+    $phone: String
+)
+{
+    res: catalog_element_order(
+        id: $id,
+        username: $username,
+        email: $email,
+        phone: $phone
+    )
+}

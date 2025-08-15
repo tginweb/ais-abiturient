@@ -1,0 +1,10 @@
+#import "../../fragment/EduSubject.gql"
+
+query {
+   edu_subject__items: edu_subject_list {
+     ...EduSubject
+   }
+}
+
+
+

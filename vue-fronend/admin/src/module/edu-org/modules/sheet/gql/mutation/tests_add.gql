@@ -1,0 +1,15 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation(
+    $sheetId: String,
+    $testIds: [String]
+) {
+    res: edu_sheet_admin_tests_add(
+        sheetId: $sheetId,
+        testIds: $testIds
+    ) {
+        ...ResultWithPayload
+    }
+}
+
+

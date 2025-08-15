@@ -1,0 +1,12 @@
+#import "../fragment/OrderAdmin.gql"
+
+query(
+    $filter: OrderFilter,
+    $orderDetail: Boolean = true
+) {
+   res: sale_admin_order_single(filter: $filter) {
+      ...OrderAdmin
+   }
+}
+
+

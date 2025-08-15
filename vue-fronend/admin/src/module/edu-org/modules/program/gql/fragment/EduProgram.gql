@@ -1,0 +1,29 @@
+#import "~module/edu-org/modules/direction/gql/fragment/EduDirection.gql"
+#import "~module/edu-org/modules/fob/gql/fragment/EduFob.gql"
+#import "~module/edu-epgu/gql/fragment/EduEpguState.gql"
+
+fragment EduProgram on EduProgram {
+  _id
+  id
+  uid
+  name
+
+  cadmission
+  cdirection
+  cfob
+
+  fob {
+    ...EduFob
+  }
+
+  direction {
+    ...EduDirection
+  }
+
+  epgu {
+    ...EduEpguState
+  }
+
+
+}
+

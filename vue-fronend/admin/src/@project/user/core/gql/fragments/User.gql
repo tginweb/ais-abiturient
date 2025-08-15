@@ -1,0 +1,14 @@
+fragment User on User {
+  _id
+  email
+  lastName
+  firstName
+  secondName
+  region
+  phone
+  eduType
+  cabinetUrl
+  roles
+}
+
+

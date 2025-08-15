@@ -1,0 +1,15 @@
+
+fragment EduEntityRowNode on EduEntityRowNode {
+   key
+   id
+   label
+   epgu {
+     step
+     status
+     statusMessage
+     exported
+   }
+   actions
+}
+
+

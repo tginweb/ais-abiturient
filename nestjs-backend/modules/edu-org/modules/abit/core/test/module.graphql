@@ -1,0 +1,45 @@
+type AbitTestConnection {
+    nodes: [AbitTest]
+    info: QueryInfo
+}
+
+
+type AbitTest {
+    _id: String
+    id: String
+    nid: Int
+    orderId: String
+
+    csubject: Int
+    subject: EduSubject
+
+    abitPassingType: String
+    abitPassingTypeName: String
+
+    abitEgeBall: Float
+    abitEgeReady: Boolean
+    abitEgeYear: Int
+
+    passingType: String
+    passingTypeName: String
+
+    passedDate: String
+    passed: Boolean
+
+    resultDate: String
+    resultVerified: Boolean
+    resultBall: Float
+    resultSourceDocTitle: String
+
+    createSource: String
+    createSourceTitle: String
+    createAt: String
+    updateAt: String
+
+    canDeleteAdmin: Boolean
+    canDeleteAbit: Boolean
+    canEditAbit: Boolean
+
+    order: EduOrder
+}
+

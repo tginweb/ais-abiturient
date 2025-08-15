@@ -1,0 +1,10 @@
+
+query {
+    edu_app__statusList: edu_app_statusList {
+        id
+        title
+    }
+}
+
+
+

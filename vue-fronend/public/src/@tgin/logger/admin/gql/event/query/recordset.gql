@@ -1,0 +1,22 @@
+#import "@tgin/logger/core/gql/event/fragment/Event.gql"
+#import "@tgin/main/graphql/fragment/QueryInfo.gql"
+
+query(
+    $filter: LoggerEventFilter,
+    $nav: QueryNavInput,
+    $detail: Boolean = false
+) {
+    res: logger_admin_events(
+        filter: $filter,
+        nav: $nav
+    ) {
+        info {
+            ...QueryInfo
+        }
+        nodes {
+            ...LoggerEvent
+        }
+    }
+}
+
+

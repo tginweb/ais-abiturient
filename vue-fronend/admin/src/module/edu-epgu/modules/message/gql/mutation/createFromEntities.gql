@@ -1,0 +1,18 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation(
+  $messageType: String,
+  $entityType: String,
+  $ids: [String],
+  $split: Int
+) {
+   res: edu_epgu_message_createFromEntities(
+    messageType: $messageType,
+    entityType: $entityType,
+    ids: $ids,
+    split:$split
+   ) {
+      ...ResultWithPayload
+   }
+}
+

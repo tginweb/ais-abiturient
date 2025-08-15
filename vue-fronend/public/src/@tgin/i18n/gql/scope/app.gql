@@ -1,0 +1,7 @@
+#import "../fragments/MenuItem.gql"
+
+query {
+
+   i18n__translates: i18n_Translates
+}
+

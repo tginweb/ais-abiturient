@@ -1,0 +1,17 @@
+#import "~module/edu-org/modules/app/gql/fragment/EduApp.gql"
+
+fragment EduAppGroup on EduAppGroup {
+    _id
+    id
+    nid
+    name
+    isBudget
+    epguGuid
+    appsActive {
+        ...EduApp
+    }
+    appsCanceled {
+        ...EduApp
+    }
+}
+

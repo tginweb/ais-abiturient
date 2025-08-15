@@ -1,0 +1,18 @@
+#import "../fragment/EduFob.gql"
+#import "@tgin/main/graphql/fragment/QueryInfo.gql"
+
+query(
+   $filter: JSON,
+   $nav: QueryInputNav
+) {
+   res: edu_fob_listRecordset(filter: $filter, nav: $nav) {
+     info {
+       ...QueryInfo
+     }
+     nodes {
+       ...EduFob
+     }
+   }
+}
+
+

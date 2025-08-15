@@ -1,0 +1,78 @@
+#import "../../order/fragments/OrderPropDetail.gql"
+#import "./VorderFields.gql"
+
+fragment VorderForm on VorderForm {
+    STATE
+
+    PROPS {
+        ID
+        CODE
+        VALUE
+        VALUE_VIEW
+        VALUE_DESCRIPTION
+        IS_READONLY
+        PROP {
+            ...OrderPropDetail
+        }
+    }
+
+    FIELDS {
+        ...VorderFields
+    }
+
+    PERSON_TYPES {
+        ID
+        NAME
+        IS_COMPANY
+    }
+
+    PROFILE_ID
+    PROFILES {
+        ID
+        NAME
+        CAPTION
+        COMPANY_ID
+        COMPANY {
+            ID
+            NAME
+        }
+    }
+
+    COMPANY_ID
+    COMPANIES {
+        ID
+        NAME
+    }
+
+    PAYSYSTEMS {
+        ID
+        NAME
+        PRICE
+        SERVICE {
+            ID
+            IS_BILL
+            IS_ONLINE
+            IS_ONLINE_DELAYED
+        }
+    }
+
+    DELIVERY_CALCULATED
+    DELIVERY_FREE_FROM_PRICE
+    DELIVERIES {
+        ID
+        NAME
+        PRICE
+        SERVICE {
+            ID
+            TRANSPORT_TYPE
+        }
+    }
+
+    PAYCARDS {
+        NAME
+        VALUE
+    }
+
+    BONUSES_AVAILABLE
+    COUPON_CAN_ADD
+}

@@ -1,0 +1,11 @@
+
+type Query {
+  edu_test_admin_recordset(filter: JSON, nav: QueryInputNav): AbitTestConnection
+  edu_test_admin_list(filter: JSON, nav: QueryInputNav): [AbitTest]
+  edu_test_admin_single(filter: JSON, nav: QueryInputNav): AbitTest
+  edu_test_admin_filters: JSON
+}
+
+type AbitTest {
+  actions: JSON
+}

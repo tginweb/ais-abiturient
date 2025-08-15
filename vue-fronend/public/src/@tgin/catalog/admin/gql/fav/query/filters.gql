@@ -1,0 +1,3 @@
+query {
+   res: catalog_admin_fav_filters
+}

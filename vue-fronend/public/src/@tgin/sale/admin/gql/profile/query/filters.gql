@@ -1,0 +1,4 @@
+query {
+   res: sale_admin_profile_filters
+}
+

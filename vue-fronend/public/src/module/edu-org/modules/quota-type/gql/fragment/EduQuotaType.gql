@@ -1,0 +1,6 @@
+fragment EduQuotaType on EduQuotaType {
+   _id
+   id
+   name
+}
+

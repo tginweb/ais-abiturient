@@ -1,0 +1,9 @@
+#import "../fragment/FavAdmin.gql"
+
+query(
+    $filter: CatalogFavFilter
+) {
+    res: catalog_admin_fav_single(filter: $filter) {
+        ...CatalogFavAdmin
+    }
+}

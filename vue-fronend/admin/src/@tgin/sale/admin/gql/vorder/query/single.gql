@@ -1,0 +1,10 @@
+#import "../fragment/VorderAdmin.gql"
+
+query(
+    $filter: VorderFilter
+) {
+   res: sale_admin_vorder_single(filter: $filter) {
+      ...VorderAdmin
+   }
+}
+

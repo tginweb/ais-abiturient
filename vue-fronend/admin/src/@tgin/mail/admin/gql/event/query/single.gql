@@ -1,0 +1,12 @@
+#import "../fragment/EventAdmin.gql"
+
+query(
+    $filter: MailEventFilter,
+    $detail: Boolean = true
+) {
+    res: mail_admin_event_single(
+        filter: $filter
+    ) {
+        ...MailEventAdmin
+    }
+}

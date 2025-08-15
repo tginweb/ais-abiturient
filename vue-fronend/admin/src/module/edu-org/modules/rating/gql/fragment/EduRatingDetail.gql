@@ -1,0 +1,18 @@
+#import "./EduRating.gql"
+
+fragment EduRatingDetail on EduRating {
+    ...EduRating
+    competitions {
+        _id
+        id
+        uid
+        cadmission
+        csource
+        name
+        admissionNumber
+        celevOrg
+        celevOrgName
+        ratingApps
+    }
+}
+

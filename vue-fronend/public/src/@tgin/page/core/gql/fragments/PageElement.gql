@@ -1,0 +1,38 @@
+
+fragment PageElement on PageElement {
+
+  ID
+  NAME
+  URL
+
+  DETAIL_IMAGE {
+    SRC
+  }
+  LIST_IMAGE {
+    SRC
+  }
+
+  DETAIL_TEXT
+
+  PROP_TPL_PAGE_VIEW
+  PROP_TPL_PAGE_CONTENT
+
+  CONTENT_CHUNKS {
+   GROUP
+   NAME
+   CODE
+   VALUE
+  }
+
+  DATA_CHUNKS {
+    CODE
+    VALUE
+  }
+
+  META {
+    TITLE
+    DESCRIPTION
+    KEYWORDS
+  }
+}
+

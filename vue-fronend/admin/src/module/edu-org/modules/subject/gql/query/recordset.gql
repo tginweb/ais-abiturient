@@ -1,0 +1,18 @@
+#import "@tgin/main/graphql/fragment/QueryInfo.gql"
+#import "../fragment/EduSubject.gql"
+
+query(
+   $filter: JSON,
+   $nav: QueryInputNav
+) {
+   res: edu_subject_listRecordset(filter: $filter, nav: $nav) {
+     info {
+       ...QueryInfo
+     }
+     nodes {
+       ...EduSubject
+     }
+   }
+}
+
+

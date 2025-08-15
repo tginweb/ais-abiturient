@@ -1,0 +1,29 @@
+#import "~module/edu-org/modules/order/gql/order/fragment/EduOrderState.gql"
+
+query (
+    $data: JSON
+) {
+    res: edu_sheet_admin_excel_load(
+        data: $data
+    ) {
+        fields
+        test {
+            id
+            orderId
+            passingTypeName
+            resultBall
+            subject {
+                name
+            }
+        }
+        order {
+            fio
+            uid
+            state {
+                ...EduOrderState
+            }
+        }
+    }
+}
+
+

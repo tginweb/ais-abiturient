@@ -1,0 +1,13 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation(
+    $id: String
+) {
+    res: edu_order_public__doc_delete(
+        id: $id
+    ) {
+        ...ResultWithPayload
+    }
+}
+
+

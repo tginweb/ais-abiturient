@@ -1,0 +1,11 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation(
+  $chatId: String
+) {
+   res: edu_order_message_public_send(chatId: $chatId) {
+      ...ResultWithPayload
+   }
+}
+
+

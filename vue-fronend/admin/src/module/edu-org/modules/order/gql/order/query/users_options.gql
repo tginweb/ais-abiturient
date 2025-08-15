@@ -1,0 +1,9 @@
+query(
+   $id: String,
+   $filter: JSON
+) {
+   res: edu_order_admin_users_options(
+      id: $id,
+      filter: $filter
+   )
+}

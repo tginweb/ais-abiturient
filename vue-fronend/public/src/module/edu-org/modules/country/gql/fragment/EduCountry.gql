@@ -1,0 +1,6 @@
+fragment EduCountry on EduCountry {
+   _id
+   id
+   name
+}
+

@@ -1,0 +1,11 @@
+fragment Notice on Notice {
+    ID
+    EVENT_NAME
+    DATE_CREATE
+    TITLE
+    BODY
+    READED
+}
+
+
+

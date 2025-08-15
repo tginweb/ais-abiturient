@@ -1,0 +1,34 @@
+type Mutation {
+  edu_direction_syncWithAis: OperationResult
+}
+
+type Query {
+  edu_direction_listGraph(filter: JSON, nav: QueryInputNav): EduDirectionConnection
+  edu_direction_list(filter: JSON): [EduDirection]
+  edu_direction_single(filter: JSON): EduDirection
+}
+
+type EduDirectionConnection {
+  nodes: [EduDirection]
+  info: QueryInfo
+}
+
+type EduDirection {
+  _id: String
+  id: Int
+  cod: String
+  name: String
+  cperson: String
+  cugspec: String
+  dubl: String
+  cpnr: String
+  abbr: String
+  cspeczvanie: String
+  cspecprice: String
+  code: String
+  deprecated: String
+  name_en: String
+}
+
+
+

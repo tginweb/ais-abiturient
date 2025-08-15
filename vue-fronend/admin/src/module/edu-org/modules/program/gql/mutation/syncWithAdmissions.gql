@@ -1,0 +1,9 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation($ids: [Int]) {
+   res: edu_program_admin_syncWithAdmissions(ids: $ids) {
+      ...ResultWithPayload
+   }
+}
+
+

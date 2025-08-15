@@ -1,0 +1,10 @@
+type Query {
+  edu_source_public_list(filter: JSON): [EduSource]
+}
+
+type EduSource {
+  public: String
+}
+
+
+

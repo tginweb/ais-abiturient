@@ -1,0 +1,35 @@
+#import "@tgin/user/core/gql/fragments/UserSafe.gql"
+#import "@tgin/main/iblock/gql/fragment/ElementProp.gql"
+
+fragment Review on ReviewElement {
+    ID
+    NAME
+    ACTIVE_FROM(format: "d F")
+    PROPS(detail: $elementDetail) {
+        ...ElementProp
+    }
+    DETAIL_IMAGE {
+        SRC
+    }
+    DETAIL_TEXT
+    DETAIL_TEXT_FORMATTED: DETAIL_TEXT(format: true)
+    ELEMENT @include(if: $elementInclude) {
+        ID
+        NAME
+        URL
+        LIST_IMAGE {
+            SRC
+        }
+    }
+    ORDER_ID
+    ORDER {
+        DATE_FORMATTED
+        ACCOUNT_NUMBER
+    }
+    USER {
+        ...UserSafe
+    }
+}
+
+
+

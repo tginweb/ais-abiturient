@@ -1,0 +1,11 @@
+#import "../fragment/EduDecree.gql"
+
+query(
+   $filter: JSON
+) {
+   res: edu_decree_list(filter: $filter) {
+       ...EduDecree
+   }
+}
+
+

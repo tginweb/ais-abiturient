@@ -1,0 +1,10 @@
+fragment EduAppAis on EduAppAis {
+    id
+    priority
+    changedDate
+    cisStatus
+    cstudstate
+    agree
+    diff
+}
+

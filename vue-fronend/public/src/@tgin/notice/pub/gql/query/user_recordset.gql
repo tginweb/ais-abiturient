@@ -1,0 +1,17 @@
+#import "@tgin/notice/core/gql/fragments/Notice.gql"
+#import "@tgin/main/graphql/fragment/QueryInfo.gql"
+
+query(
+    $filter: NoticeFilter,
+    $nav: QueryNavInput = {}
+)
+{
+    res: notice_pub_user_notices_recordset(filter: $filter, nav: $nav) {
+        nodes {
+            ...Notice
+        }
+        info {
+            ...QueryInfo
+        }
+    }
+}

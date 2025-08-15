@@ -1,0 +1,68 @@
+#import "~module/edu-org/modules/subject/gql/fragment/EduSubject.gql"
+#import "~module/edu-org/modules/direction/gql/fragment/EduDirection.gql"
+#import "~module/edu-org/modules/level/gql/fragment/EduLevel.gql"
+#import "~module/edu-org/modules/campaign/gql/fragment/EduCampaign.gql"
+#import "~module/edu-org/modules/fob/gql/fragment/EduFob.gql"
+
+fragment EduAdmission on EduAdmission {
+    _id
+    id
+    abbr
+    yr
+    name
+    cfac
+    direct_name
+    spec_name
+    cfob
+    clevel
+    ccampaign
+    cdirection
+
+    budgCount
+    budgPlaces
+    lgotQuota
+    specQuota
+    celevQuota
+    comercCount
+
+    subjectsHaveOptional
+
+    actions
+    adminUrl
+
+    campaign {
+        ...EduCampaign
+    }
+    level {
+        ...EduLevel
+    }
+    direction {
+        ...EduDirection
+    }
+    fob {
+        ...EduFob
+    }
+    subjects {
+        number
+        csubject
+        minimal
+        subject {
+            ...EduSubject
+        }
+    }
+
+    competitionsList {
+        _id
+        id
+        csource
+        name
+        admissionNumber
+        source {
+            id
+            name
+        }
+    }
+
+    epguExport
+}
+

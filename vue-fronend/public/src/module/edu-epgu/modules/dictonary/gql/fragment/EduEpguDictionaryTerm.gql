@@ -1,0 +1,11 @@
+fragment EduEpguDictionaryTerm on EduEpguDictionaryTerm {
+   _id
+   id
+   taxonomy
+   taxonomyLabel
+   name
+   actual
+   fields
+   aisId
+}
+

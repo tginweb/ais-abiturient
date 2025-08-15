@@ -1,0 +1,7 @@
+fragment EduAppStatus on EduAppStatus {
+    id
+    title
+    color
+}
+
+

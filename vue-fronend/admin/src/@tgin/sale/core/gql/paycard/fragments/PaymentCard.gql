@@ -1,0 +1,7 @@
+
+fragment Paycard on Paycard {
+  VALUE
+  NAME
+  DEFAULT
+}
+

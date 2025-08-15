@@ -1,0 +1,13 @@
+type Query {
+  edu_language_list(filter: JSON): [EduLanguage]
+}
+
+type EduLanguage {
+  _id: String
+  id: Int
+  name: String
+
+}
+
+
+

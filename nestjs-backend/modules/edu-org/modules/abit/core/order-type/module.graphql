@@ -1,0 +1,14 @@
+type Query {
+  edu_order_types: [EduOrderType]
+}
+
+type EduOrderType {
+  _id: String
+  id: Int
+  uid: String
+  name: String
+  nameShort: String
+}
+
+
+

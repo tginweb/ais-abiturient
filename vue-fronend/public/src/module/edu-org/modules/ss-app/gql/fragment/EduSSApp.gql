@@ -1,0 +1,71 @@
+#import "~module/edu-org/modules/source/gql/fragment/EduSource.gql"
+
+fragment EduSSApp on EduSSApp {
+   _id
+   id
+   uid
+   epguId
+   changed
+
+   fio
+
+   snils
+   competitionName
+   finsourceName
+
+   cstatus
+   statusName
+
+   dateRegister
+   dateChanged
+
+   originalEdudocName
+
+   agreement
+   agreementDate
+
+   deny
+   denyDate
+
+   obshegNeedName
+
+   cadmission
+   csource
+   cstatus
+
+   admission {
+      id
+      name
+      fac {
+         name
+      }
+      fob {
+         name
+      }
+   }
+
+
+   source {
+      ...EduSource
+   }
+   status {
+      name
+   }
+
+   actions
+   epguData
+
+   rating
+   agreementRating
+   admissionNumber
+
+   aisEntrants {
+      id
+      state
+      stateLabel
+      appExists
+      priority
+      agreement
+   }
+}
+

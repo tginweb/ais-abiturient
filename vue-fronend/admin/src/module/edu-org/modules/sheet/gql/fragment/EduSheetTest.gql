@@ -1,0 +1,27 @@
+#import "~module/edu-org/modules/subject/gql/fragment/EduSubject.gql"
+#import "~module/edu-org/modules/order/gql/order/fragment/EduOrderState.gql"
+
+fragment EduSheetTest on EduSheetTest {
+    _id
+    nid
+    testId
+    test {
+        passingTypeName
+        resultBall
+        subject {
+            ...EduSubject
+        }
+        order {
+            nid
+            uid
+            fio
+            ratingId
+            snils
+            state {
+                ...EduOrderState
+            }
+        }
+    }
+    ball
+}
+

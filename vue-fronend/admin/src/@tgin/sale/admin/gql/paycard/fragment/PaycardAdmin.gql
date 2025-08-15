@@ -1,0 +1,15 @@
+
+fragment PaycardAdmin on Paycard {
+  ID
+  TITLE
+  DEFAULT
+  USER_ID
+  USER {
+    ID
+    NAME_FULL
+    LOGIN
+  }
+  DATE_CREATE
+  ACTIONS
+}
+

@@ -1,0 +1,22 @@
+#import "../fragments/ProductElement.gql"
+#import "@tgin/main/graphql/fragment/QueryInfo.gql"
+
+query(
+    $filter: ProductElementFilter,
+    $nav: QueryNavInput = {},
+    $nocache: Boolean = false,
+    $elementDetail: Boolean = false
+)
+{
+    res: productElements(filter: $filter, nav: $nav, nocache: $nocache) {
+        nodes {
+            ...ProductElement
+            OFFERS {
+                ...ProductElement
+            }
+        }
+        info {
+            ...QueryInfo
+        }
+    }
+}

@@ -1,0 +1,25 @@
+#import "../fragment/EduOrderTeaser.gql"
+#import "@tgin/main/graphql/fragment/QueryInfo.gql"
+
+query(
+    $ids: [String],
+    $nids: [Int],
+    $filter: JSON,
+    $nav: QueryInputNav
+) {
+    res: edu_order_admin_listRecordset(
+        ids: $ids,
+        nids: $nids,
+        filter: $filter,
+        nav: $nav
+    ) {
+        info {
+            ...QueryInfo
+        }
+        nodes {
+            ...EduOrderTeaser
+        }
+    }
+}
+
+

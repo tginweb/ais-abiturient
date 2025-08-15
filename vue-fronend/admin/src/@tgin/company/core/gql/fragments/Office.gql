@@ -1,0 +1,12 @@
+
+fragment CompanyOffice on CompanyOffice {
+  ID
+  NAME
+  URL
+  PROPS {
+    CODE
+    VAL
+  }
+}
+
+

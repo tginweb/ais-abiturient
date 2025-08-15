@@ -1,0 +1,9 @@
+#import "../fragment/EduEpguTaskType.gql"
+
+query {
+   res: edu_epgu_taskType_list {
+     ...EduEpguTaskType
+   }
+}
+
+

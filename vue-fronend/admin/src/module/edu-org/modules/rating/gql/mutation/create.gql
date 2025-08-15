@@ -1,0 +1,9 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation {
+    res: edu_rating_admin_create {
+        ...ResultWithPayload
+    }
+}
+
+

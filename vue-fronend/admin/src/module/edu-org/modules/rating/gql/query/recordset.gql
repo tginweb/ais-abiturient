@@ -1,0 +1,18 @@
+#import "../fragment/EduRating.gql"
+#import "@tgin/main/graphql/fragment/QueryInfo.gql"
+
+query(
+   $filter: JSON,
+   $nav: QueryInputNav
+) {
+   res: edu_rating_admin_recordset(filter: $filter, nav: $nav) {
+       info {
+           ...QueryInfo
+       }
+       nodes {
+           ...EduRating
+       }
+   }
+}
+
+

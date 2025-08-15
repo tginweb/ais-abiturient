@@ -1,0 +1,15 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation(
+  $id: JSON,
+  $achievementId: JSON
+) {
+   res: edu_order_admin_achievementDelete(
+      id: $id,
+      achievementId: $achievementId
+   ) {
+      ...ResultWithPayload
+   }
+}
+
+

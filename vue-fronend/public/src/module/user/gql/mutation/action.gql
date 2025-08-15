@@ -1,0 +1,19 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation(
+  $ids: [String],
+  $nids: [Int],
+  $action: String,
+  $params: JSON
+) {
+  res: user_admin_action(
+    ids: $ids,
+    nids: $nids,
+    action: $action,
+    params: $params
+  ) {
+    ...ResultWithPayload
+  }
+}
+
+

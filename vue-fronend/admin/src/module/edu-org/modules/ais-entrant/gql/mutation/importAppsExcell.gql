@@ -1,0 +1,8 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation {
+   res: edu_ssApp_admin_importAppsExcell {
+      ...ResultWithPayload
+   }
+}
+

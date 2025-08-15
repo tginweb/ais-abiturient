@@ -1,0 +1,298 @@
+type Query {
+    edu_order_availableAdmissions(id: JSON): [EduAdmission]
+}
+
+
+type EduOrderConnection {
+    nodes: [EduOrder]
+    info: QueryInfo
+}
+
+type EduOrder {
+    _id: String
+    id: String
+    uid: String
+    nid: Int
+    regnum: Int
+    ratingId: String
+    statusName: String
+    userId: String
+
+    eduType: Int
+    orderType: EduOrderType
+
+    eduTypeSlug: String
+    eduTypeAppsLimit: Int
+    eduLevels: [Int]
+
+    cordersource: String
+    ordersourceName: String
+
+    cinstitute: Int
+    institute: EduInstitute
+    cfacComputed: Int
+
+    citizenTypeName: String
+
+    aisPorted: String
+    aisPortedByOperator: Boolean
+
+    state: EduOrderState
+
+    anket: EduOrderStepAnket
+    applications: EduOrderStepApplications
+    upload: JSON
+    send: JSON
+
+    allFiles: JSON
+    createAt: String
+    updateAt: String
+    sendDate: String
+
+    stepsInfo: JSON
+
+    lastDoneStep: JSON
+
+    userAccess: JSON
+
+    chat: JSON
+    messages: JSON
+    log: JSON
+
+    agreementChanged: Boolean
+    agreementChangedDate: String
+
+    firstApp: EduApp
+    apps: [EduApp]
+    app: EduApp
+
+    files: [File]
+
+    passport: String
+    snils: String
+    phone: String
+    email: String
+
+    fio: String
+    phone: String
+    email: String
+
+    tests: [AbitTest]
+    docs: [EduDoc]
+    appGroups: [EduAppGroup]
+
+    docsRoles: [EduDocRole]
+    achievements: [EduAchievementItem]
+
+    podldocOrg: String
+    podldocOrgTransferDate: String
+    podldocOrgTransferType: Int
+
+    podldocAny: Boolean
+
+    podldoc: Boolean
+    podldocUpdated: String
+
+    podldocEpgu: Boolean
+    podldocEpguRecieved: String
+    podldocEpguCanceled: String
+    podldocEpguUpdated: String
+
+    prevEduLevelName: String
+
+    subject: JSON
+
+    portedStatus: String
+    portedStatusInfo: EduOrderStatus
+    appsErrors: [OrderAppError]
+
+    zachCompetitionId: Int
+
+    prezachCompetitionId: Int
+    prezachCompetition: EduCompetition
+    prezachStatus: String
+    prezachStatusName: String
+
+    ege: [EduEge]
+    decree: EduDecree
+    decreeNid: Int
+    isdop: Boolean
+
+    czakaz: Int
+    fis: OrderFis
+}
+
+type OrderFis {
+    exported: Boolean
+    exportedSuccessDate: String
+}
+
+type OrderAppError {
+    type: String
+    competitionUid: String
+    priority: Int
+}
+
+type OrderMail {
+    sendDate: String
+    sendStatusMessage: String
+}
+
+
+type EduOrderType {
+    id: Int
+    name: String
+}
+
+type EduOrderState {
+    status: String
+    statusInfo: EduOrderStatus
+    message: String
+    userId: String
+    created: String
+    changedFromEpgu: Boolean
+}
+
+type EduOrderStatus {
+    code: String
+    titleClient: String
+    titleAdmin: String
+    bgColor: String
+    textColor: String
+    color: String
+    index: Int
+    canEdit: JSON
+    selectable: Boolean
+}
+
+type EduOrderAppStatus {
+    id: Int
+    name: String
+    color: String
+    selectable: Boolean
+}
+
+
+type EduOrderStepStatus {
+    status: String
+    message: String
+}
+
+
+type EduOrderStepApplications {
+    status: EduOrderStepStatus
+    items: [EduOrderApplication]
+}
+
+type EduOrderEpguAchievements {
+    UIDEpgu: Int
+    IDCategory: Int
+    Name: String
+}
+
+type EduOrderEpguApplication {
+    _id: String
+    UIDEpgu: Int
+    UIDCompetitiveGroup: String
+    AppNumber: Int
+    RegistrationDate: String
+    IDStatus: Int
+    Priority: Int
+    FirstHigherEducation: Boolean
+    NeedHostel: Boolean
+    achievements: [EduOrderEpguAchievements]
+
+    status: EduEpguDictionaryTerm
+}
+
+type EduOrderApplication {
+    _id: String
+
+    deleted: Boolean
+    deletedSource: String
+
+    createAt: String
+    updateAt: String
+
+    eduProgramNid: Int
+    specs: [Int]
+    specsAdmissions: [EduAdmission]
+
+    csource: Int
+    priority: Int
+
+    statusId: Int
+    statusMessage: String
+    status: EduEpguDictionaryTerm
+
+    agree: Boolean
+    agreeDate: String
+
+    agreeDeny: Boolean
+    agreeDenyDate: String
+
+    admission: EduAdmission
+    source: EduSource
+
+    epguData: EduOrderEpguApplication
+    epguState: JSON
+
+    cappsource: String
+}
+
+type EduOrderStepAnket {
+    status: EduOrderStepStatus
+    personal: JSON
+    education: JSON
+    benefits: JSON
+    entrance: EduOrderEntrance
+}
+
+type EduOrderAchievement {
+    _id: String
+    id: String
+    achievementType: Int
+    desc: String
+    haveDoc: Boolean
+    doc: JSON
+    docFile: [String]
+    docFileModel: JSON
+    docId: String
+    statusId: String
+    status: EduDocStatus
+    ball: Int
+    achievementTypeDoc: EduAchievementType
+    canDeleteAdmin: Boolean
+    canDeleteAbit: Boolean
+}
+
+type EduOrderEntrance {
+    schoolCertificateBall: Float
+    achievements: [EduOrderAchievement]
+    specialNeeds: String
+    targetHave: Boolean
+    targetOrganization: String
+    targetDogovor: String
+    subjects: [EduOrderEntranceSubject]
+}
+
+type EduOrderEntranceSubject {
+    _id: String
+    subject: Int
+    score: Int
+    status: String
+    year: Int
+    checked: Boolean
+    subjectDoc: EduSubject
+}
+
+
+type EduOrderStepSend {
+    consentDocFile: [String]
+    consentDocFileDoc: [JSON]
+}
+
+type User {
+    abitOrders: [EduOrder]
+    abitOrdersCount: Int
+}

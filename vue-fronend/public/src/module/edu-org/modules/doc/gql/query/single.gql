@@ -1,0 +1,11 @@
+#import "../fragment/EduDoc.gql"
+
+query(
+    $filter: JSON
+) {
+    res: edu_doc_admin_single(filter: $filter) {
+        ...EduDoc
+    }
+}
+
+

@@ -1,0 +1,12 @@
+type Query {
+  edu_doctype_list(filter: JSON): [EduDoctype]
+}
+
+type EduDoctype {
+  _id: String
+  id: Int
+  name: String
+}
+
+
+

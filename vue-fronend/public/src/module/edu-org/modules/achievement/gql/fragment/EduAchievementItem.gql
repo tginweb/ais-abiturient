@@ -1,0 +1,20 @@
+fragment EduAchievementItem on EduAchievementItem {
+  _id
+  id
+  name
+  typeId
+  type {
+    name
+  }
+  docId
+  doc {
+    id
+    docTypeName
+    docNumber
+  }
+  desc
+  orderId
+  abitCanDelete
+  abitCanEdit
+}
+

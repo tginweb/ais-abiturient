@@ -1,0 +1,17 @@
+#import "./User.gql"
+#import "~module/edu-org/modules/order/gql/orderType/fragment/EduOrderType.gql"
+
+fragment UserAdmin on User {
+    ...User
+    actions
+    abitOrdersCount
+    abitOrders {
+        nid
+        fio
+        snils
+        eduType
+        orderType {
+            ...EduOrderType
+        }
+    }
+}

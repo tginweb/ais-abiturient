@@ -1,0 +1,6 @@
+
+fragment SecureAction on SecureAction {
+  SID
+  HITS_LEFT
+}
+

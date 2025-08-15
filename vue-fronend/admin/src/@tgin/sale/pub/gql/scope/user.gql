@@ -1,0 +1,15 @@
+#import "@tgin/sale/core/gql/buyer/fragments/Company.gql"
+#import "@tgin/sale/core/gql/order/fragments/OrderTeaser.gql"
+
+query {
+
+    sale_pub__userOrdersActive: sale_pub_order_list(filter: {MODE: "active"}, nav: {limit:3}) {
+        ...OrderTeaser
+    }
+    sale_pub__userOrdersHistory: sale_pub_order_list(filter: {MODE: "history"}, nav: {limit:6}) {
+        ...OrderTeaser
+    }
+    sale_pub__userBuyerCompanies: sale_pub_buyer_company_scope_list {
+        ...BuyerCompanyElement
+    }
+}

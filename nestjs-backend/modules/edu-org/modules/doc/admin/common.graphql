@@ -1,0 +1,30 @@
+type Query {
+  edu_doc_admin_listRecordset(filter: JSON, nav: QueryInputNav): EduDocConnection
+  edu_doc_admin_list(filter: JSON): [EduDoc]
+  edu_doc_admin_single(filter: JSON): EduDoc
+  edu_doc_admin_filters: JSON
+}
+
+type Mutation {
+  edu_doc_admin_update(
+    id: String,
+    action: String,
+    orderId: String,
+    model: JSON
+  ): ResultWithPayload
+
+  edu_doc_admin_delete(
+    id: String
+  ): ResultWithPayload
+
+  edu_doc_admin_action(
+    action: String,
+    ids: [String]
+  ): ResultWithPayload
+}
+
+
+type EduDoc {
+  actions: JSON
+}
+

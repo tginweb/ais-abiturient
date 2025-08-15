@@ -1,0 +1,20 @@
+#import "../fragment/Entity.gql"
+#import "@tgin/main/graphql/fragment/QueryInfo.gql"
+
+query(
+   $nav: QueryNavInput,
+   $modeDetail: Boolean = false
+) {
+   res: workflow_admin_document_templates(
+     nav: $nav
+   ) {
+     info {
+       ...QueryInfo
+     }
+     nodes {
+       ...WorkflowDocumentTemplateAdmin
+     }
+   }
+}
+
+

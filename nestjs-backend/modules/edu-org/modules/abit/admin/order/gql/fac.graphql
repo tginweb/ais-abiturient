@@ -1,0 +1,45 @@
+type Mutation {
+  edu_order_admin_setAisToPort(_id: String): ResultWithPayload
+  edu_order_admin_setAgreementChangedProcessed(_id: String): ResultWithPayload
+
+  edu_order_admin_appAdd(
+    id: JSON,
+    competitionId: JSON
+  ): ResultWithPayload
+
+  edu_order_admin__doc_set_main(
+    id: JSON,
+    role: String,
+    docId: String
+  ): ResultWithPayload
+
+  edu_order_admin__docs_save(
+    id: JSON,
+    data: JSON
+  ): ResultWithPayload
+
+  edu_order_admin_appsSave(
+    id: JSON,
+    data: JSON
+  ): ResultWithPayload
+
+  edu_order_admin_testsSave(
+    id: JSON,
+    data: JSON
+  ): ResultWithPayload
+
+  edu_order_admin_achievementsSave(
+    id: JSON,
+    data: JSON
+  ): ResultWithPayload
+
+  edu_order_admin_achievementDelete(
+    id: JSON,
+    achievementId: JSON
+  ): ResultWithPayload
+
+  edu_order_admin__set_fac_first(
+    id: JSON,
+  ): ResultWithPayload
+
+}

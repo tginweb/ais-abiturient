@@ -1,0 +1,20 @@
+
+type Query {
+  edu_fob_listRecordset(filter: JSON, nav: QueryInputNav): EduFobConnection
+  edu_fob_list(filter: JSON): [EduFob]
+  edu_fob_single(filter: JSON): EduFob
+}
+
+type EduFobConnection {
+  nodes: [EduFob]
+  info: QueryInfo
+}
+
+type EduFob {
+  _id: String
+  id: Int
+  name: String
+}
+
+
+

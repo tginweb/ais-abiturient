@@ -1,0 +1,16 @@
+#import "@tgin/sale/core/gql/buyer/fragments/Company.gql"
+
+mutation(
+    $id: Int,
+    $name: String,
+    $props: Json
+)
+{
+    res: sale_pub_buyer_company_save(
+        id: $id,
+        name: $name,
+        props: $props
+    ) {
+        ...BuyerCompanyElement
+    }
+}

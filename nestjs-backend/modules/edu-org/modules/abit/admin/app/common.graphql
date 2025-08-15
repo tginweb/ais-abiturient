@@ -1,0 +1,31 @@
+type Mutation {
+  edu_app_admin_setStatus(
+    _id: String,
+    status: String,
+    message: String,
+    notify: Boolean
+  ): ResultWithPayload
+  edu_app_admin_actionMultiple(
+    ids: [String],
+    action: String,
+    params: JSON,
+    selectAll: Boolean,
+    selectFilter: JSON
+  ): ResultWithPayload
+
+  edu_app_admin_set_predzach(
+    id: String,
+    status: Boolean
+  ): ResultWithPayload
+
+}
+
+type Query {
+  edu_app_admin_recordset(filter: JSON, nav: QueryInputNav): EduAppConnection
+  edu_app_admin_single(filter: JSON, nav: QueryInputNav): EduApp
+  edu_app_admin_filters: JSON
+}
+
+type EduApp {
+  actions: JSON
+}

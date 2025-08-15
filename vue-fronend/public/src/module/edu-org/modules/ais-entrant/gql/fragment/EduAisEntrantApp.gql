@@ -1,0 +1,25 @@
+fragment EduAisEntrantApp on EduAisEntrantApp {
+    _id
+    ord
+    cfob
+    agreement
+    deleted
+    notInAis
+    admission {
+        id
+        name
+    }
+    source {
+        id
+        name
+        nameShort
+    }
+    epgu {
+        uid
+        epguUid
+        status
+        statusName
+        agreement
+    }
+}
+

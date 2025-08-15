@@ -1,0 +1,10 @@
+#import "../fragment/EduCompetition.gql"
+
+query  {
+   edu_competition__competitions: edu_competition_list {
+      ...EduCompetition
+   }
+}
+
+
+

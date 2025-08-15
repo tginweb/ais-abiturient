@@ -1,0 +1,6 @@
+fragment VorderFields on VorderFields {
+    PERSON_TYPE_ID
+    DELIVERY_ID
+    PAY_SYSTEM_ID
+    USER_DESCRIPTION
+}

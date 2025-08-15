@@ -1,0 +1,23 @@
+type Mutation {
+
+    edu_order_admin_add(
+        eduType: Int,
+        by: String,
+        snils: String,
+        passportSerial: String,
+        passportNumber: String
+    ): ResultWithPayload
+
+    edu_order_admin_setAisPorted(_id: String): ResultWithPayload
+    edu_order_admin_operatorTake(_id: String): ResultWithPayload
+    edu_order_admin_setStatus(
+        _id: String,
+        status: String,
+        message: String,
+        notify: Boolean,
+        setInstitute: Boolean
+    ): ResultWithPayload
+}
+
+
+

@@ -1,0 +1,12 @@
+#import "../fragment/EduCompetitionRating.gql"
+
+query(
+   $filter: JSON,
+   $withApps: Boolean!
+) {
+   res: edu_competition_admin_single(filter: $filter) {
+      ...EduCompetitionRating
+   }
+}
+
+

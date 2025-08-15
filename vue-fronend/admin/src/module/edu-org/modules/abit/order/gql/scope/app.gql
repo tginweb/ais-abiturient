@@ -1,0 +1,20 @@
+#import "../order/fragment/EduOrderStatus.gql"
+#import "../order/fragment/EduOrderAppStatus.gql"
+#import "../orderType/fragment/EduOrderType.gql"
+
+query {
+    edu_order__statuses: edu_order_admin_statusList {
+        ...EduOrderStatus
+    }
+
+    edu_order__appStatuses: edu_order_admin_appStatusList {
+        ...EduOrderAppStatus
+    }
+
+    edu_order__eduTypes: edu_order_types {
+        ...EduOrderType
+    }
+}
+
+
+

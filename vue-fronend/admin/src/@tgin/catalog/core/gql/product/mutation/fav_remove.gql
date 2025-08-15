@@ -1,0 +1,6 @@
+mutation(
+    $productId: Int
+)
+{
+  res: catalog_fav_remove (productId: $productId)
+}

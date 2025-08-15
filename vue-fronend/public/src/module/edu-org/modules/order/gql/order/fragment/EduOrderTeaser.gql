@@ -1,0 +1,106 @@
+#import "./EduOrderState.gql"
+#import "./../../orderType/fragment/EduOrderType.gql"
+#import "./EduOrderApplicationTeaser.gql"
+#import "./EduOrderStepStatus.gql"
+#import "./EduOrderAchievement.gql"
+#import "~module/edu-org/modules/app/gql/fragment/EduAppTeaser.gql"
+#import "~module/edu-org/modules/app-group/gql/fragment/EduAppGroupTeaser.gql"
+
+fragment EduOrderTeaser on EduOrder {
+    _id
+    nid
+    userId
+    fio
+    snils
+    user {
+        nid
+        email
+    }
+    sendDate
+
+    eduType
+    eduTypeSlug
+    eduTypeAppsLimit
+    eduLevels
+
+    cordersource
+    ordersourceName
+
+    cfacComputed
+
+    aisPorted
+    aisPortedByOperator
+
+    cinstitute
+    institute {
+        id
+        name
+    }
+
+    anket {
+        personal
+        education
+        benefits
+        entrance {
+            schoolCertificateBall
+            achievements {
+                ...EduOrderAchievement
+            }
+            specialNeeds
+            targetHave
+            targetOrganization
+            targetDogovor
+            subjects {
+                _id
+                subject
+                score
+                status
+                year
+                checked
+                subjectDoc {
+                    name
+                }
+            }
+        }
+    }
+
+    applications {
+        status {
+            ...EduOrderStepStatus
+        }
+        items {
+            ...EduOrderApplicationTeaser
+        }
+    }
+
+    state {
+        ...EduOrderState
+    }
+
+    orderType {
+        ...EduOrderType
+    }
+
+    appGroups {
+        ...EduAppGroupTeaser
+    }
+
+    ais {
+        aisId
+        aisStatusId
+    }
+
+    operator {
+        firstName
+        lastName
+    }
+
+    upload
+    send
+    createAt
+    updateAt
+    chat
+    actions
+    perms
+}
+

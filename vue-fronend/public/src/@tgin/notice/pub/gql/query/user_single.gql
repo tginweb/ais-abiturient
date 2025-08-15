@@ -1,0 +1,10 @@
+#import "@tgin/notice/core/gql/fragments/Notice.gql"
+
+query(
+    $filter: NoticeFilter
+)
+{
+    res: notice_pub_user_single(filter: $filter, nav: $nav) {
+        ...Notice
+    }
+}

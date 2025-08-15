@@ -1,0 +1,18 @@
+#import "@tgin/main/iblock/gql/fragment/Element.gql"
+#import "@tgin/main/graphql/fragment/QueryInfo.gql"
+
+query(
+  $filter: ElementFilter,
+  $nav: QueryNavInput = {},
+  $elementDetail: Boolean = false
+)
+{
+  res: promo_elements(filter: $filter, nav: $nav) {
+    nodes {
+      ...Element
+    }
+    info {
+      ...QueryInfo
+    }
+  }
+}

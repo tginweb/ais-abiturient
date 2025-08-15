@@ -1,0 +1,9 @@
+
+mutation(
+    $id: Int,
+)
+{
+    res: sale_pub_profile_default(
+        id: $id
+    )
+}

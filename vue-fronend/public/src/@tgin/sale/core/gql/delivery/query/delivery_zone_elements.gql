@@ -1,0 +1,10 @@
+#import "../fragments/DeliveryZoneElement.gql"
+
+query
+{
+  res: sale_delivery_zone_elements {
+      nodes {
+        ...DeliveryZoneElement
+      }
+  }
+}

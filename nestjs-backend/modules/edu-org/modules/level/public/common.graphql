@@ -1,0 +1,11 @@
+type Query {
+  edu_level_public_list(filter: JSON): [EduLevel]
+  edu_type_public_list(filter: JSON): [EduType]
+}
+
+type EduLevel {
+  public: String
+}
+
+
+

@@ -1,0 +1,15 @@
+type Query {
+  edu_familyType_list(filter: JSON): [EduFamilyType]
+}
+
+type EduFamilyType {
+  _id: String
+  nid: Int
+  title: String
+
+  id: Int
+  name: String
+}
+
+
+

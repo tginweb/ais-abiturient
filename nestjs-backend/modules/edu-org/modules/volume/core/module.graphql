@@ -1,0 +1,50 @@
+type Query {
+  edu_volume_listRecordset(filter: JSON, nav: QueryInputNav): EduVolumeConnection
+  edu_volume_list(filter: JSON): [EduVolume]
+  edu_volume_single(filter: JSON): EduVolume
+}
+
+type EduVolumeConnection {
+  nodes: [EduVolume]
+  info: QueryInfo
+}
+
+type EduVolume {
+  _id: String
+  id: Int
+  uid: String
+  name: String
+
+  ccampaign: Int
+  cdirection: Int
+  clevel: Int
+
+  budgetO: Int
+  budgetOZ: Int
+  budgetZ: Int
+
+  quotaO: Int
+  quotaOZ: Int
+  quotaZ: Int
+
+  targetO: Int
+  targetOZ: Int
+  targetZ: Int
+
+  paidO: Int
+  paidOZ: Int
+  paidZ: Int
+
+  otdelO: Int
+  otdelOZ: Int
+  otdelZ: Int
+
+  direction: EduDirection
+  level: EduLevel
+  campaign: EduCampaign
+
+  actions: JSON
+}
+
+
+

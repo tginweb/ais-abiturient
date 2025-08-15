@@ -1,0 +1,12 @@
+#import "../fragment/EduAisEntrant.gql"
+
+query(
+    $filter: JSON,
+    $nav: QueryInputNav
+) {
+    res: edu_aisEntrant_single(filter: $filter, nav: $nav) {
+        ...EduAisEntrant
+    }
+}
+
+

@@ -1,0 +1,11 @@
+#import "../fragment/EduSSCompetitionListSnap.gql"
+
+query(
+   $filter: JSON
+) {
+   res: edu_ssCompetitionListSnap_single(filter: $filter) {
+      ...EduSSCompetitionListSnap
+   }
+}
+
+

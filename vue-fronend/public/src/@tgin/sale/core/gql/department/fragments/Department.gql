@@ -1,0 +1,7 @@
+
+fragment SaleDepartment on SaleDepartment {
+  ID
+  CID
+  NAME
+}
+

@@ -1,0 +1,9 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation {
+   res: edu_epgu_dictionary_syncWithEpgu {
+      ...ResultWithPayload
+   }
+}
+
+

@@ -1,0 +1,18 @@
+#import "../fragment/Entity.gql"
+
+mutation(
+  $id: Int,
+  $action: String,
+  $model: Json,
+  $params: Json
+)
+{
+  res: school_admin_contract(
+    id: $id,
+    action: $action,
+    model: $model,
+    params: $params
+  ) {
+    ...WorkflowDocumentAdmin
+  }
+}

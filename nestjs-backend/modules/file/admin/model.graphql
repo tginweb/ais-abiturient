@@ -1,0 +1,7 @@
+type Query {
+  file_admin_recordset(ids: [String], nids: [Int], filter: JSON, nav: QueryInputNav): FileConnection
+  file_admin_list(ids: [String], nids: [Int], filter: JSON, nav: QueryInputNav): [File]
+  file_admin_single(filter: JSON, nav: QueryInputNav): File
+  file_admin_filters: JSON
+}
+

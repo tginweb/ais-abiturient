@@ -1,0 +1,17 @@
+
+fragment TaggerTag on TaggerTag {
+   _id
+   nid
+   name
+   entityType
+   global
+   color
+   userId
+   perms {
+      role
+      canAdd
+      canDelete
+   }
+   actions
+}
+

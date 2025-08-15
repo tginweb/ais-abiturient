@@ -1,0 +1,4 @@
+type Query {
+    edu_admission_public_list(filter: JSON, nav: QueryInputNav): [EduAdmission]
+}
+

@@ -1,0 +1,27 @@
+type Query {
+    edu_ege_listRecordset(filter: JSON, nav: QueryInputNav): EduEgeConnection
+    edu_ege_list(filter: JSON): [EduEge]
+    edu_ege_single(filter: JSON): EduEge
+}
+
+type EduEgeConnection {
+    nodes: [EduEge]
+    info: QueryInfo
+}
+
+type EduEge {
+    _id: String
+    id: String
+    passportSer: String
+    passportNum: String
+    firstName: String
+    lastName: String
+    secondName: String
+    subjectName: String
+    csubject: String
+    svid: String
+    year: Int
+    mark: Int
+    dateStr: String
+    orderId: [String]
+}

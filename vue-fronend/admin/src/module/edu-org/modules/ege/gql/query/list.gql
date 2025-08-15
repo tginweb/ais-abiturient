@@ -1,0 +1,19 @@
+#import "../fragment/EduEge.gql"
+
+query(
+    $ids: [String],
+    $nids: [Int],
+    $filter: JSON,
+    $nav: QueryInputNav
+) {
+    res: edu_ege_admin_list(
+        ids: $ids,
+        nids: $nids,
+        filter: $filter,
+        nav: $nav
+    ) {
+        ...EduEge
+    }
+}
+
+

@@ -1,0 +1,8 @@
+#import "../../fragment/EduLevel.gql"
+
+query {
+   edu_level__items: edu_level_list {
+     ...EduLevel
+   }
+}
+

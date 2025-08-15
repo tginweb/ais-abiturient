@@ -1,0 +1,17 @@
+fragment EduEge on EduEge {
+   _id
+   id
+   passportSer
+   passportNum
+   firstName
+   lastName
+   secondName
+   subjectName
+   csubject
+   svid
+   year
+   mark
+   dateStr
+   orderId
+}
+

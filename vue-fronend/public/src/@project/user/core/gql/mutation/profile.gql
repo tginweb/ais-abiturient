@@ -1,0 +1,12 @@
+#import "../fragments/User.gql"
+
+mutation(
+    $form: Json
+)
+{
+    res: user_profile(
+        form: $form
+    ) {
+        ...User
+    }
+}

@@ -1,0 +1,17 @@
+#import "../fragment/File.gql"
+
+query(
+    $ids: [String],
+    $nids: [Int],
+    $filter: JSON,
+    $nav: QueryInputNav
+) {
+    res: file_admin_list(
+        ids: $ids,
+        nids: $nids,
+        filter: $filter,
+        nav: $nav
+    ) {
+        ...File
+    }
+}

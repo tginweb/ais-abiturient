@@ -1,0 +1,8 @@
+
+fragment EduDocStatus on EduDocStatus {
+   id
+   title
+   selectable
+   final
+}
+

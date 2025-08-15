@@ -1,0 +1,44 @@
+#import "../order/fragment/EduOrderStatus.gql"
+#import "../order/fragment/EduOrderAppStatus.gql"
+#import "../orderType/fragment/EduOrderType.gql"
+
+query {
+
+
+    edu_order__statuses: edu_order_admin_statusList {
+        ...EduOrderStatus
+    }
+
+    edu_order__appStatuses: edu_order_admin_appStatusList {
+        ...EduOrderAppStatus
+    }
+
+    edu_order__epguDocCategories: edu_epgu_dictionary_term_list(filter: {taxonomy: {in: ["DocumentCategoryCls"]}}) {
+        _id
+        id
+        taxonomy
+        taxonomyLabel
+        name
+        actual
+        fields
+        aisId
+    }
+
+    edu_order__epguDocTypes: edu_epgu_dictionary_term_list(filter: {taxonomy: {in: ["DocumentTypeCls"]}}) {
+        _id
+        id
+        taxonomy
+        taxonomyLabel
+        name
+        actual
+        fields
+        aisId
+    }
+
+    edu_order__eduTypes: edu_order_types {
+        ...EduOrderType
+    }
+}
+
+
+

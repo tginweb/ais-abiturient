@@ -1,0 +1,33 @@
+fragment Command on Command {
+    code
+    type
+    path
+    params
+    confirm
+
+    phone {
+        code
+        type
+        path
+        params
+        confirm
+    }
+
+    mobile {
+        code
+        type
+        path
+        params
+        confirm
+    }
+
+    desktop {
+        code
+        type
+        path
+        params
+        confirm
+    }
+}
+
+

@@ -1,0 +1,20 @@
+type EduAppGroupConnection {
+    nodes: [EduAppGroup]
+    info: QueryInfo
+}
+
+
+type EduAppGroup {
+    _id: String
+    id: String
+    nid: Int
+    name: String
+    isBudget: Boolean
+    order: EduOrder
+    apps: [EduApp]
+    appsActive: [EduApp]
+    appsCanceled: [EduApp]
+    epguGuid: String
+    isDopnabor: Boolean
+}
+

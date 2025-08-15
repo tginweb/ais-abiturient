@@ -1,0 +1,130 @@
+type Mutation {
+    edu_epgu_message_importQueue(queue: String): ResultWithPayload
+
+    edu_epgu_message_action(
+        ids: [String],
+        action: String,
+        step: String,
+        params: JSON
+    ): ResultWithPayload
+
+    edu_epgu_message_runProcess: ResultWithPayload
+
+    edu_epgu_message_save(model: JSON): ResultWithPayload
+
+    edu_epgu_message_createFromArgs(
+        messageType: String
+        args: JSON
+    ): ResultWithPayload
+
+    edu_epgu_message_createFromEntity(
+        messageType: String
+        entityType: String
+        ids: [String]
+    ): ResultWithPayload
+
+    edu_epgu_message_createFromEntities(
+        messageType: String
+        entityType: String
+        ids: [String]
+        split: Int
+    ): ResultWithPayload
+}
+
+type Query {
+    edu_epgu_message_listRecordset(filter: JSON, where: JSON, nav: QueryInputNav): EduEpguMessageConnection
+    edu_epgu_message_list(filter: JSON): [EduEpguMessage]
+    edu_epgu_message_single(filter: JSON): EduEpguMessage
+    edu_epgu_message_listFilters: JSON
+
+}
+
+type EduEpguMessageMultipleOpResult {
+    result: Result
+    payload: [EduEpguMessage]
+}
+
+type EduEpguMessageOpResult {
+    result: Result
+    payload: EduEpguMessage
+}
+
+type EduEpguMessageConnection {
+    nodes: [EduEpguMessage]
+    info: QueryInfo
+}
+
+
+type EduEpguMessageRequestHeader {
+    PayloadType: String
+    EntityType: String
+    Action: String
+}
+
+type EduEpguMessageResponseHeader {
+    IdJwt: Int
+    PayloadType: String
+    EntityType: String
+    Entity: String
+    Action: String
+}
+
+type EduEpguMessageResponse {
+    header: EduEpguMessageResponseHeader
+    payload: JSON
+    payloadXml: String
+    fileId: String
+    GuidApplication: String
+    GuidEntrant: String
+}
+
+type EduEpguMessageRequestHeader {
+    Entity: String
+    Action: String
+}
+
+type EduEpguMessageRequest {
+    header: EduEpguMessageRequestHeader
+    payload: JSON
+    payloadXml: String
+    token: String
+}
+
+type EduEpguMessageState {
+    step: String
+    status: String
+    statusMessage: [String]
+    processed: Boolean
+}
+
+type EduEpguMessage {
+    _id: String
+    id: Int
+    idJwt: Int
+    taskId: Int
+    queue: String
+
+    type: String
+    typeName: String
+
+    args: JSON
+
+    request: EduEpguMessageRequest
+    response: EduEpguMessageResponse
+    state: EduEpguMessageState
+
+    createAt: String
+    loadedAt: String
+    actions: JSON
+
+    order: EduOrder
+
+    title: String
+    personFio: String
+    personIdent: String
+
+    entrantOrder: EduOrder
+    entrantApp: EduAppGroup
+}
+
+

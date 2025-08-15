@@ -1,0 +1,5 @@
+query {
+    res: sale_pub_bonuses {
+        VALUE
+    }
+}

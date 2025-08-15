@@ -1,0 +1,23 @@
+#import "../fragment/ProfileAdmin.gql"
+#import "@tgin/main/graphql/fragment/QueryInfo.gql"
+
+query(
+  $filter: OrderProfileFilter,
+  $where: Json,
+  $nav: QueryNavInput
+) {
+  res: sale_admin_profile_recordset(
+    filter: $filter,
+    where: $where,
+    nav: $nav
+  ) {
+    info {
+      ...QueryInfo
+    }
+    nodes {
+      ...OrderProfileAdmin
+    }
+  }
+}
+
+

@@ -1,0 +1,9 @@
+type Mutation {
+  edu_program_admin_syncWithAdmissions(ids: [Int]): ResultWithPayload
+  edu_program_admin_action(action: String, id: [Int]): ResultWithPayload
+  edu_program_admin_actionMultiple(action: String, ids: [Int]): ResultWithPayload
+}
+
+type Query {
+  edu_program_admin_filtersTree: JSON
+}

@@ -1,0 +1,127 @@
+type Mutation {
+    edu_ais_message_action(
+        ids: [String],
+        action: String,
+        step: String,
+        params: JSON
+    ): ResultWithPayload
+
+    edu_ais_message_runProcess: ResultWithPayload
+
+    edu_ais_message_save(model: JSON): ResultWithPayload
+
+    edu_ais_message_createFromArgs(
+        messageType: String
+        args: JSON
+    ): ResultWithPayload
+
+    edu_ais_message_createFromEntity(
+        messageType: String
+        entityType: String
+        ids: [String]
+    ): ResultWithPayload
+
+    edu_ais_message_createFromEntities(
+        messageType: String
+        entityType: String
+        ids: [String]
+        split: Int
+    ): ResultWithPayload
+}
+
+type Query {
+    edu_ais_message_listRecordset(filter: JSON, where: JSON, nav: QueryInputNav): EduAisMessageConnection
+    edu_ais_message_list(filter: JSON): [EduAisMessage]
+    edu_ais_message_single(filter: JSON): EduAisMessage
+    edu_ais_message_listFilters: JSON
+}
+
+type EduAisMessageMultipleOpResult {
+    result: Result
+    payload: [EduAisMessage]
+}
+
+type EduAisMessageOpResult {
+    result: Result
+    payload: EduAisMessage
+}
+
+type EduAisMessageConnection {
+    nodes: [EduAisMessage]
+    info: QueryInfo
+}
+
+
+type EduAisMessageRequestHeader {
+    PayloadType: String
+    EntityType: String
+    Action: String
+}
+
+type EduAisMessageResponseHeader {
+    IdJwt: Int
+    PayloadType: String
+    EntityType: String
+    Entity: String
+    Action: String
+}
+
+type EduAisMessageResponse {
+    header: EduAisMessageResponseHeader
+    payload: JSON
+    payloadXml: String
+    fileId: String
+    GuidApplication: String
+    GuidEntrant: String
+}
+
+type EduAisMessageRequestHeader {
+    Entity: String
+    Action: String
+}
+
+type EduAisMessageRequest {
+    header: EduAisMessageRequestHeader
+    payload: JSON
+    payloadXml: String
+    token: String
+}
+
+type EduAisMessageState {
+    step: String
+    status: String
+    statusMessage: [String]
+    processed: Boolean
+}
+
+type EduAisMessage {
+    _id: String
+    id: Int
+    idJwt: Int
+    taskId: Int
+    queue: String
+
+    type: String
+    typeName: String
+
+    args: JSON
+
+    request: EduAisMessageRequest
+    response: EduAisMessageResponse
+    state: EduAisMessageState
+
+    createAt: String
+    loadedAt: String
+    actions: JSON
+
+    order: EduOrder
+
+    title: String
+    personFio: String
+    personIdent: String
+
+    entrantOrder: EduOrder
+    entrantApp: EduAppGroup
+}
+
+

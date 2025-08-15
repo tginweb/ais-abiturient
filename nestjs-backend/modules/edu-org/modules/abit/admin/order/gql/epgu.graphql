@@ -1,0 +1,6 @@
+type Mutation {
+  edu_order_admin_epguAction(
+    ids: [String],
+    action: String
+  ): ResultWithPayload
+}

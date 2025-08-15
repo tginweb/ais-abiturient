@@ -1,0 +1,7 @@
+
+query {
+    res: mail_admin_event_filters
+}
+
+
+

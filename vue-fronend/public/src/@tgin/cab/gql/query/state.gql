@@ -1,0 +1,8 @@
+query {
+   cab__cabinets: cabinet_cabinetsByUser {
+     NAME
+     CODE
+     CURRENT
+   }
+}
+

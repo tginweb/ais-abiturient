@@ -1,0 +1,7 @@
+fragment EduSource on EduSource {
+   _id
+   id
+   name
+   nameShort
+}
+

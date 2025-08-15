@@ -1,0 +1,18 @@
+
+fragment EduDecree on EduDecree {
+  _id
+  nid
+  uid
+  name
+  nameFull
+  aisNumber
+  aisId
+  pubDate
+  ordersCount
+  campaign {
+    name
+  }
+  actions
+}
+
+

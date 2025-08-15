@@ -1,0 +1,11 @@
+#import "@tgin/main/iblock/gql/fragment/Element.gql"
+
+query(
+   $filter: ElementFilter,
+   $elementDetail: Boolean = true
+)
+{
+  res: promo_element(filter: $filter) {
+      ...Element
+  }
+}

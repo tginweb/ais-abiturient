@@ -1,0 +1,16 @@
+#import "~module/edu-org/modules/source/gql/fragment/EduSource.gql"
+#import "~module/edu-org/modules/achievement/gql/fragment/EduAchievement.gql"
+
+fragment EduOrderAchievement on EduOrderAchievement {
+  _id
+  achievementType
+  desc
+  haveDoc
+  doc
+  docFile
+  docFileModel
+  achievementTypeDoc {
+    ...EduAchievement
+  }
+}
+

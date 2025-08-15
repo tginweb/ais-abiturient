@@ -1,0 +1,13 @@
+
+fragment EduEpguState on EduEpguState {
+   step
+   status
+   statusMessage
+
+   exported
+   exportedDate
+   imported
+   importedDate
+}
+
+

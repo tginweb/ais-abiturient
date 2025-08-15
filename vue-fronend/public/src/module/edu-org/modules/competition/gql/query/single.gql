@@ -1,0 +1,11 @@
+#import "../fragment/EduCompetition.gql"
+
+query(
+   $filter: JSON
+) {
+   res: edu_competition_admin_single(filter: $filter) {
+      ...EduCompetition
+   }
+}
+
+

@@ -1,0 +1,7 @@
+
+fragment WorkflowDocumentTemplate on WorkflowDocumentTemplate {
+  ID
+  NAME
+  ACTIVE
+}
+

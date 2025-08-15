@@ -1,0 +1,36 @@
+#import "~module/edu-org/modules/admission/gql/fragment/EduAdmission.gql"
+#import "~module/edu-org/modules/source/gql/fragment/EduSource.gql"
+#import "./EduSSCompetitionListApp.gql"
+#import "../../snap/fragment/EduSSCompetitionListSnap.gql"
+
+fragment EduSSCompetitionList on EduSSCompetitionList {
+   _id
+   id
+   cadmission
+   csource
+   admissionNumber
+
+   admission {
+     ...EduAdmission
+   }
+   source {
+     ...EduSource
+   }
+   snap {
+     ...EduSSCompetitionListSnap
+   }
+
+
+   apps {
+     ...EduSSCompetitionListApp
+   }
+
+   appsExport
+   appsExportXml
+
+   createAt
+   updateAt
+   adminActions
+}
+
+

@@ -1,0 +1,11 @@
+#import "../fragment/EduAdmission.gql"
+
+query(
+   $filter: JSON
+) {
+   res: edu_admission_single(filter: $filter) {
+      ...EduAdmission
+   }
+}
+
+

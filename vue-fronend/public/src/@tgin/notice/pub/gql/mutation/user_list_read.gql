@@ -1,0 +1,11 @@
+#import "@tgin/notice/core/gql/fragments/Notice.gql"
+
+mutation(
+    $filter: NoticeFilter
+)
+{
+    res: notice_pub_user_list_read(filter: $filter) {
+        ...Notice
+    }
+}
+

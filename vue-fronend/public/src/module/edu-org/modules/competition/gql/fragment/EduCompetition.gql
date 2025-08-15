@@ -1,0 +1,35 @@
+
+fragment EduCompetition on EduCompetition {
+    _id
+    id
+
+    cadmission
+    csource
+
+    name
+
+    admissionNumber
+
+    celevOrg
+    celevOrgName
+
+    admission {
+        id
+        direct_name
+        name
+        abbr
+        fob {
+            id
+            name
+        }
+    }
+
+    source {
+        id
+        name
+    }
+
+    actions
+    adminUrl
+}
+

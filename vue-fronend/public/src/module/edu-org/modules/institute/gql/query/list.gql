@@ -1,0 +1,19 @@
+#import "../fragment/EduInstitute.gql"
+
+query(
+    $ids: [String],
+    $nids: [Int],
+    $filter: JSON,
+    $nav: QueryInputNav
+) {
+    res: edu_institute_admin_list(
+        ids: $ids,
+        nids: $nids,
+        filter: $filter,
+        nav: $nav
+    ) {
+        ...EduInstitute
+    }
+}
+
+

@@ -1,0 +1,42 @@
+type Query {
+  edu_ssApp_listRecordset(filter: JSON, nav: QueryInputNav): EduSSAppConnection
+  edu_ssApp_list(filter: JSON): [EduSSApp]
+  edu_ssApp_single(filter: JSON): EduSSApp
+}
+
+type EduSSAppConnection {
+  nodes: [EduSSApp]
+  info: QueryInfo
+}
+
+type EduSSAppCompetition {
+  competitionUid: String
+  statusId: Int
+  status: EduAppStatus
+  priorityTarget: Int
+  priorityOther: Int
+  priority: Int
+  competition: EduCompetition
+}
+
+type EduSSApp {
+  _id: String
+  nid: String
+
+  guid: String
+  guidEntrant: String
+  entrantId: String
+
+  fio: String
+  snils: String
+
+  isBudget: Boolean
+  registrationDate: String
+
+  apps: [EduSSAppCompetition]
+
+  fields: JSON
+}
+
+
+

@@ -1,0 +1,17 @@
+#import "@tgin/main/graphql/fragment/ResultWithPayload.gql"
+
+mutation(
+  $action: String,
+  $ids: [String],
+  $models: JSON
+) {
+   res: edu_epgu_dictionaryTerm_actionMultiple(
+      action: $action,
+      ids: $ids,
+      models: $models
+   ) {
+      ...ResultWithPayload
+   }
+}
+
+

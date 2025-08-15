@@ -1,0 +1,6 @@
+
+fragment EduEpguTaskType on EduEpguTaskType {
+  code
+  label
+}
+

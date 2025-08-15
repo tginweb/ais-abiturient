@@ -1,0 +1,95 @@
+#import "./OrderPropValue.gql"
+#import "./Payment.gql"
+#import "../../basket/fragments/BasketItem.gql"
+
+
+fragment Order on Order {
+    ID
+    ACCOUNT_NUMBER
+    URL
+    ACCESS_HASH
+
+    DATE_INSERT
+    DATE_UPDATE
+    DATE_FORMATTED
+    DATE_TIME_FORMATTED
+
+    USER_ID
+    USER {
+        ID
+        NAME
+        NAME_FULL
+        EMAIL
+        LOGIN
+    }
+
+    STATUS_ID
+    STATUS_NAME
+    STATUS_COLOR
+
+    CSTATUS_ID
+    CSTATUS_NAME
+    CSTATUS_COLOR
+
+    IS_PAID
+    IS_ACTIVE
+    IS_CANCELED
+    IS_FINISHED
+    IS_CAN_PAY
+    IS_CAN_PAY_ONLINE
+    IS_CAN_PAY_BILL
+
+    PAYSYSTEM_ID
+    PAYSYSTEM {
+        ID
+        NAME
+    }
+
+    DELIVERY_CALCULATED
+    DELIVERY_ID
+    DELIVERY {
+        ID
+        NAME
+        TRANSPORT_TYPE
+    }
+
+    DELIVERY_DEPARTMENT {
+        ID
+        NAME
+    }
+
+    PRICE
+    PRICE_BASKET
+    PRICE_BASKET_BASE
+    PRICE_DISCOUNT
+    PRICE_DELIVERY
+    PRICE_TOTAL
+    PRICE_PAY
+
+    USER_DESCRIPTION
+
+    PAYMENTS @include(if: $orderDetail) {
+        ...Payment
+    }
+
+    BASKET @include(if: $orderDetail) {
+        ...BasketItem
+    }
+
+    PROPS @include(if: $orderDetail) {
+        ...OrderPropValue
+    }
+
+    COUPONS @include(if: $orderDetail) {
+        ID
+        COUPON
+        MODE
+        STATUS
+        STATUS_CODE
+        STATUS_CODE_TEXT
+        DISCOUNT_NAME
+    }
+
+    BONUSES
+}
+

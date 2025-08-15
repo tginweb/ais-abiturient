@@ -1,0 +1,47 @@
+#import "~module/edu-org/modules/competition/gql/fragment/EduCompetitionTeaser.gql"
+
+fragment EduApp on EduApp {
+    _id
+    id
+    nid
+
+    orderId
+    orderNid
+    appGroupId
+
+    order {
+        fio
+        snils
+    }
+
+    competitionId
+    competition {
+        ...EduCompetitionTeaser
+    }
+
+    cadmission
+    csource
+    specs
+    priority
+
+    createAt
+    createSource
+    createSourceTitle
+    updateAt
+
+    isCanceled
+    cancelSource
+    cancelAt
+
+    specsAdmissions {
+        id
+        name
+    }
+
+    statusId
+    statusTitle
+    availableStatusList
+
+    actions
+}
+

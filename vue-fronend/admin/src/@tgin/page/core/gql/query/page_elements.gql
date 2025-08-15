@@ -1,0 +1,13 @@
+#import "../fragments/PageElement.gql"
+
+query(
+   $filter: PageElementFilter,
+   $nav: QueryNavInput = {}
+)
+{
+  res: page_elements(filter: $filter, nav: $nav) {
+    nodes {
+      ...PageElement
+    }
+  }
+}

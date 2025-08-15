@@ -1,0 +1,15 @@
+type Query {
+  edu_quotaType_list(filter: JSON): [EduQuotaType]
+}
+
+type EduQuotaType {
+  _id: String
+  nid: Int
+  title: String
+
+  id: Int
+  name: String
+}
+
+
+

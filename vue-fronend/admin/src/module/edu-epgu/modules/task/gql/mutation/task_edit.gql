@@ -1,0 +1,17 @@
+#import "~module/main/gql/fragments/Result.gql"
+#import "../fragment/EduEpguTaskDetail.gql"
+
+mutation(
+   $model: JSON
+) {
+   res: edu_epgu_task_edit(model: $model) {
+     result {
+       ...Result
+     }
+     payload {
+       ...EduEpguTaskDetail
+     }
+   }
+}
+
+

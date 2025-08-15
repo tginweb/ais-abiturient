@@ -1,0 +1,25 @@
+type Mutation {
+  edu_sheet_admin_update(
+    id: String,
+    action: String,
+    model: JSON
+  ): ResultWithPayload
+  edu_sheet_admin_tests_add(
+    sheetId: String,
+    testIds: [String]
+  ): ResultWithPayload
+}
+
+
+type Query {
+  edu_sheet_admin_recordset(filter: JSON, nav: QueryInputNav): EduSheetConnection
+  edu_sheet_admin_filters: JSON
+  edu_sheet_admin_single(filter: JSON, nav: QueryInputNav): EduSheet
+  edu_sheet_admin_tests_fetch(sheetId: String): [EduSheetTest]
+  edu_sheet_admin_excel_load(data: JSON): [EduSheetExcelRow]
+}
+
+type EduSheet {
+  adminUrl: String
+  actions: JSON
+}

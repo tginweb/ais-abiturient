@@ -1,0 +1,6 @@
+mutation ($id: String) {
+  res: abit_client_OrderFamilyDelete(id: $id) {
+    _result
+    payload
+  }
+}

@@ -1,0 +1,17 @@
+#import "~module/main/gql/fragments/Result.gql"
+
+mutation(
+   $id: Int,
+   $step: String
+) {
+   res: edu_epgu_task_step(
+    id: $id,
+    step: $step
+   ) {
+     result {
+       ...Result
+     }
+   }
+}
+
+

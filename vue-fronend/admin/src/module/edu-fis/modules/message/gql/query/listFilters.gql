@@ -1,0 +1,4 @@
+query {
+   res: edu_fis_message_listFilters
+}
+

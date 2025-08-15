@@ -1,0 +1,11 @@
+#import "../fragment/EduEpguDictionaryTerm.gql"
+
+query(
+    $filter: JSON
+) {
+    res: edu_epgu_dictionary_term_list(filter: $filter) {
+        ...EduEpguDictionaryTerm
+    }
+}
+
+

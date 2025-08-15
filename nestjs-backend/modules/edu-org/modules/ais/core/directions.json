@@ -1,0 +1,1376 @@
+[
+  {
+    "NewCode": "01.06.01",
+    "DirectionID": 12956,
+    "Name": "Математика и механика",
+    "QualificationCode": "",
+    "UGSCode": "01.00.00",
+    "UGSName": "Математика и механика",
+    "ParentDirectionID": 403,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "03.06.01",
+    "DirectionID": 13115,
+    "Name": "Физика и астрономия",
+    "QualificationCode": "",
+    "UGSCode": "03.00.00",
+    "UGSName": "Физика и астрономия",
+    "ParentDirectionID": 286,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "04.04.01",
+    "DirectionID": 13291,
+    "Name": "Химия",
+    "QualificationCode": "",
+    "UGSCode": "04.00.00",
+    "UGSName": "Химия",
+    "ParentDirectionID": 60,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "04.06.01",
+    "DirectionID": 13294,
+    "Name": "Химические науки",
+    "QualificationCode": "",
+    "UGSCode": "04.00.00",
+    "UGSName": "Химия",
+    "ParentDirectionID": 60,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "05.04.06",
+    "DirectionID": 13352,
+    "Name": "Экология и природопользование",
+    "QualificationCode": "",
+    "UGSCode": "05.00.00",
+    "UGSName": "Науки о земле",
+    "ParentDirectionID": 145,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "05.06.01",
+    "DirectionID": 13360,
+    "Name": "Науки о земле",
+    "QualificationCode": "",
+    "UGSCode": "05.00.00",
+    "UGSName": "Науки о земле",
+    "ParentDirectionID": 145,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "06.06.01",
+    "DirectionID": 13586,
+    "Name": "Биологические науки",
+    "QualificationCode": "",
+    "UGSCode": "06.00.00",
+    "UGSName": "Биологические науки",
+    "ParentDirectionID": 87,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "07.03.01",
+    "DirectionID": 13659,
+    "Name": "Архитектура",
+    "QualificationCode": "",
+    "UGSCode": "07.00.00",
+    "UGSName": "Архитектура",
+    "ParentDirectionID": 103,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "07.03.02",
+    "DirectionID": 13660,
+    "Name": "Реконструкция и реставрация архитектурного наследия",
+    "QualificationCode": "",
+    "UGSCode": "07.00.00",
+    "UGSName": "Архитектура",
+    "ParentDirectionID": 103,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "07.03.03",
+    "DirectionID": 13661,
+    "Name": "Дизайн архитектурной среды",
+    "QualificationCode": "",
+    "UGSCode": "07.00.00",
+    "UGSName": "Архитектура",
+    "ParentDirectionID": 103,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "07.03.04",
+    "DirectionID": 13662,
+    "Name": "Градостроительство",
+    "QualificationCode": "",
+    "UGSCode": "07.00.00",
+    "UGSName": "Архитектура",
+    "ParentDirectionID": 103,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "07.06.01",
+    "DirectionID": 13667,
+    "Name": "Архитектура",
+    "QualificationCode": "",
+    "UGSCode": "07.00.00",
+    "UGSName": "Архитектура",
+    "ParentDirectionID": 103,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "08.05.02",
+    "DirectionID": 13895,
+    "Name": "Строительство, эксплуатация, восстановление и техническое прикрытие автомобильных дорог, мостов и тоннелей",
+    "QualificationCode": "",
+    "UGSCode": "08.00.00",
+    "UGSName": "Техника и технологии строительства",
+    "ParentDirectionID": 47,
+    "EducationLevel": "Специалитет"
+  },
+  {
+    "NewCode": "08.06.01",
+    "DirectionID": 13896,
+    "Name": "Техника и технологии строительства",
+    "QualificationCode": "",
+    "UGSCode": "08.00.00",
+    "UGSName": "Техника и технологии строительства",
+    "ParentDirectionID": 47,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "09.03.01",
+    "DirectionID": 14038,
+    "Name": "Информатика и вычислительная техника",
+    "QualificationCode": "",
+    "UGSCode": "09.00.00",
+    "UGSName": "Информатика и вычислительная техника",
+    "ParentDirectionID": 44,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "09.03.02",
+    "DirectionID": 14039,
+    "Name": "Информационные системы и технологии",
+    "QualificationCode": "",
+    "UGSCode": "09.00.00",
+    "UGSName": "Информатика и вычислительная техника",
+    "ParentDirectionID": 44,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "09.06.01",
+    "DirectionID": 14047,
+    "Name": "Информатика и вычислительная техника",
+    "QualificationCode": "",
+    "UGSCode": "09.00.00",
+    "UGSName": "Информатика и вычислительная техника",
+    "ParentDirectionID": 44,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "10.03.01",
+    "DirectionID": 14104,
+    "Name": "Информационная безопасность",
+    "QualificationCode": "",
+    "UGSCode": "10.00.00",
+    "UGSName": "Информационная безопасность",
+    "ParentDirectionID": 85,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "10.04.01",
+    "DirectionID": 14105,
+    "Name": "Информационная безопасность",
+    "QualificationCode": "",
+    "UGSCode": "10.00.00",
+    "UGSName": "Информационная безопасность",
+    "ParentDirectionID": 85,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "11.03.01",
+    "DirectionID": 14248,
+    "Name": "Радиотехника",
+    "QualificationCode": "",
+    "UGSCode": "11.00.00",
+    "UGSName": "Электроника, радиотехника и системы связи",
+    "ParentDirectionID": 353,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "11.03.02",
+    "DirectionID": 14249,
+    "Name": "Инфокоммуникационные технологии и системы связи",
+    "QualificationCode": "",
+    "UGSCode": "11.00.00",
+    "UGSName": "Электроника, радиотехника и системы связи",
+    "ParentDirectionID": 353,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "11.06.01",
+    "DirectionID": 14260,
+    "Name": "Электроника, радиотехника и системы связи",
+    "QualificationCode": "",
+    "UGSCode": "11.00.00",
+    "UGSName": "Электроника, радиотехника и системы связи",
+    "ParentDirectionID": 353,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "13.03.01",
+    "DirectionID": 14453,
+    "Name": "Теплоэнергетика и теплотехника",
+    "QualificationCode": "",
+    "UGSCode": "13.00.00",
+    "UGSName": "Электро- и теплоэнергетика",
+    "ParentDirectionID": 1,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "13.03.02",
+    "DirectionID": 14454,
+    "Name": "Электроэнергетика и электротехника",
+    "QualificationCode": "",
+    "UGSCode": "13.00.00",
+    "UGSName": "Электро- и теплоэнергетика",
+    "ParentDirectionID": 1,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "13.06.01",
+    "DirectionID": 14460,
+    "Name": "Электро- и теплотехника",
+    "QualificationCode": "",
+    "UGSCode": "13.00.00",
+    "UGSName": "Электро- и теплоэнергетика",
+    "ParentDirectionID": 1,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "14.06.01",
+    "DirectionID": 14603,
+    "Name": "Ядерная, тепловая и возобновляемая энергетика и сопутствующие технологии",
+    "QualificationCode": "",
+    "UGSCode": "14.00.00",
+    "UGSName": "Ядерная энергетика и технологии",
+    "ParentDirectionID": 144,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "15.03.01",
+    "DirectionID": 14755,
+    "Name": "Машиностроение",
+    "QualificationCode": "",
+    "UGSCode": "15.00.00",
+    "UGSName": "Машиностроение",
+    "ParentDirectionID": 451,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "15.03.02",
+    "DirectionID": 14756,
+    "Name": "Технологические машины и оборудование",
+    "QualificationCode": "",
+    "UGSCode": "15.00.00",
+    "UGSName": "Машиностроение",
+    "ParentDirectionID": 451,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "15.03.04",
+    "DirectionID": 14758,
+    "Name": "Автоматизация технологических процессов и производств",
+    "QualificationCode": "",
+    "UGSCode": "15.00.00",
+    "UGSName": "Машиностроение",
+    "ParentDirectionID": 451,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "15.03.05",
+    "DirectionID": 14759,
+    "Name": "Конструкторско-технологическое обеспечение машиностроительных производств",
+    "QualificationCode": "",
+    "UGSCode": "15.00.00",
+    "UGSName": "Машиностроение",
+    "ParentDirectionID": 451,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "15.03.06",
+    "DirectionID": 14760,
+    "Name": "Мехатроника и робототехника",
+    "QualificationCode": "",
+    "UGSCode": "15.00.00",
+    "UGSName": "Машиностроение",
+    "ParentDirectionID": 451,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "15.06.01",
+    "DirectionID": 14768,
+    "Name": "Машиностроение",
+    "QualificationCode": "",
+    "UGSCode": "15.00.00",
+    "UGSName": "Машиностроение",
+    "ParentDirectionID": 451,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "18.03.01",
+    "DirectionID": 15017,
+    "Name": "Химическая технология",
+    "QualificationCode": "",
+    "UGSCode": "18.00.00",
+    "UGSName": "Химические технологии",
+    "ParentDirectionID": 430,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "18.06.01",
+    "DirectionID": 15023,
+    "Name": "Химическая технология",
+    "QualificationCode": "",
+    "UGSCode": "18.00.00",
+    "UGSName": "Химические технологии",
+    "ParentDirectionID": 430,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "19.03.01",
+    "DirectionID": 15128,
+    "Name": "Биотехнология",
+    "QualificationCode": "",
+    "UGSCode": "19.00.00",
+    "UGSName": "Промышленная экология и биотехнологии",
+    "ParentDirectionID": 129,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "19.03.02",
+    "DirectionID": 15129,
+    "Name": "Продукты питания из растительного сырья",
+    "QualificationCode": "",
+    "UGSCode": "19.00.00",
+    "UGSName": "Промышленная экология и биотехнологии",
+    "ParentDirectionID": 129,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "19.03.04",
+    "DirectionID": 15131,
+    "Name": "Технология продукции и организация общественного питания",
+    "QualificationCode": "",
+    "UGSCode": "19.00.00",
+    "UGSName": "Промышленная экология и биотехнологии",
+    "ParentDirectionID": 129,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "19.06.01",
+    "DirectionID": 15137,
+    "Name": "Промышленная экология и биотехнологии",
+    "QualificationCode": "",
+    "UGSCode": "19.00.00",
+    "UGSName": "Промышленная экология и биотехнологии",
+    "ParentDirectionID": 129,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "20.03.01",
+    "DirectionID": 15265,
+    "Name": "Техносферная безопасность",
+    "QualificationCode": "",
+    "UGSCode": "20.00.00",
+    "UGSName": "Техносферная безопасность и природообустройство",
+    "ParentDirectionID": 424,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "20.06.01",
+    "DirectionID": 15270,
+    "Name": "Техносферная безопасность",
+    "QualificationCode": "",
+    "UGSCode": "20.00.00",
+    "UGSName": "Техносферная безопасность и природообустройство",
+    "ParentDirectionID": 424,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "21.02.01",
+    "DirectionID": 15309,
+    "Name": "Разработка и эксплуатация нефтяных и газовых месторождений",
+    "QualificationCode": "",
+    "UGSCode": "21.00.00",
+    "UGSName": "Прикладная геология, горное дело, нефтегазовое дело и геодезия",
+    "ParentDirectionID": 393,
+    "EducationLevel": "СПО"
+  },
+  {
+    "NewCode": "21.02.01",
+    "DirectionID": 15310,
+    "Name": "Разработка и эксплуатация нефтяных и газовых месторождений",
+    "QualificationCode": "",
+    "UGSCode": "21.00.00",
+    "UGSName": "Прикладная геология, горное дело, нефтегазовое дело и геодезия",
+    "ParentDirectionID": 393,
+    "EducationLevel": "СПО"
+  },
+  {
+    "NewCode": "21.02.12",
+    "DirectionID": 15325,
+    "Name": "Технология и техника разведки месторождений полезных ископаемых",
+    "QualificationCode": "",
+    "UGSCode": "21.00.00",
+    "UGSName": "Прикладная геология, горное дело, нефтегазовое дело и геодезия",
+    "ParentDirectionID": 393,
+    "EducationLevel": "СПО"
+  },
+  {
+    "NewCode": "21.03.02",
+    "DirectionID": 15334,
+    "Name": "Землеустройство и кадастры",
+    "QualificationCode": "",
+    "UGSCode": "21.00.00",
+    "UGSName": "Прикладная геология, горное дело, нефтегазовое дело и геодезия",
+    "ParentDirectionID": 393,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "21.04.01",
+    "DirectionID": 15336,
+    "Name": "Нефтегазовое дело",
+    "QualificationCode": "",
+    "UGSCode": "21.00.00",
+    "UGSName": "Прикладная геология, горное дело, нефтегазовое дело и геодезия",
+    "ParentDirectionID": 393,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "21.06.01",
+    "DirectionID": 15345,
+    "Name": "Геология, разведка и разработка полезных ископаемых",
+    "QualificationCode": "",
+    "UGSCode": "21.00.00",
+    "UGSName": "Прикладная геология, горное дело, нефтегазовое дело и геодезия",
+    "ParentDirectionID": 393,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "22.03.02",
+    "DirectionID": 15457,
+    "Name": "Металлургия",
+    "QualificationCode": "",
+    "UGSCode": "22.00.00",
+    "UGSName": "Технологии материалов",
+    "ParentDirectionID": 216,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "22.06.01",
+    "DirectionID": 15460,
+    "Name": "Технологии материалов",
+    "QualificationCode": "",
+    "UGSCode": "22.00.00",
+    "UGSName": "Технологии материалов",
+    "ParentDirectionID": 216,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "23.03.01",
+    "DirectionID": 15580,
+    "Name": "Технология транспортных процессов",
+    "QualificationCode": "",
+    "UGSCode": "23.00.00",
+    "UGSName": "Техника и технологии наземного транспорта",
+    "ParentDirectionID": 166,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "23.03.02",
+    "DirectionID": 15581,
+    "Name": "Наземные транспортно-технологические комплексы",
+    "QualificationCode": "",
+    "UGSCode": "23.00.00",
+    "UGSName": "Техника и технологии наземного транспорта",
+    "ParentDirectionID": 166,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "23.03.03",
+    "DirectionID": 15582,
+    "Name": "Эксплуатация транспортно-технологических машин и комплексов",
+    "QualificationCode": "",
+    "UGSCode": "23.00.00",
+    "UGSName": "Техника и технологии наземного транспорта",
+    "ParentDirectionID": 166,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "23.06.01",
+    "DirectionID": 15592,
+    "Name": "Техника и технологии наземного транспорта",
+    "QualificationCode": "",
+    "UGSCode": "23.00.00",
+    "UGSName": "Техника и технологии наземного транспорта",
+    "ParentDirectionID": 166,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "24.06.01",
+    "DirectionID": 15686,
+    "Name": "Авиационная и ракетно-космическая техника",
+    "QualificationCode": "",
+    "UGSCode": "24.00.00",
+    "UGSName": "Авиационная и ракетно-космическая техника",
+    "ParentDirectionID": 343,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "25.03.01",
+    "DirectionID": 15800,
+    "Name": "Техническая эксплуатация летательных аппаратов и двигателей",
+    "QualificationCode": "",
+    "UGSCode": "25.00.00",
+    "UGSName": "Аэронавигация и эксплуатация авиационной и ракетно-космической техники",
+    "ParentDirectionID": 176,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "27.03.02",
+    "DirectionID": 16017,
+    "Name": "Управление качеством",
+    "QualificationCode": "",
+    "UGSCode": "27.00.00",
+    "UGSName": "Управление в технических системах",
+    "ParentDirectionID": 414,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "27.03.05",
+    "DirectionID": 16020,
+    "Name": "Инноватика",
+    "QualificationCode": "",
+    "UGSCode": "27.00.00",
+    "UGSName": "Управление в технических системах",
+    "ParentDirectionID": 414,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "27.06.01",
+    "DirectionID": 16031,
+    "Name": "Управление в технических системах",
+    "QualificationCode": "",
+    "UGSCode": "27.00.00",
+    "UGSName": "Управление в технических системах",
+    "ParentDirectionID": 414,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "28.03.01",
+    "DirectionID": 16173,
+    "Name": "Нанотехнологии и микросистемная техника",
+    "QualificationCode": "",
+    "UGSCode": "28.00.00",
+    "UGSName": "Нанотехнологии и наноматериалы",
+    "ParentDirectionID": 298,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "28.04.01",
+    "DirectionID": 16176,
+    "Name": "Нанотехнологии и микросистемная техника",
+    "QualificationCode": "",
+    "UGSCode": "28.00.00",
+    "UGSName": "Нанотехнологии и наноматериалы",
+    "ParentDirectionID": 298,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "29.03.04",
+    "DirectionID": 16240,
+    "Name": "Технология художественной обработки материалов",
+    "QualificationCode": "",
+    "UGSCode": "29.00.00",
+    "UGSName": "Технологии легкой промышленности",
+    "ParentDirectionID": 137,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "35.03.02",
+    "DirectionID": 16470,
+    "Name": "Технология лесозаготовительных и деревоперерабатывающих производств",
+    "QualificationCode": "",
+    "UGSCode": "35.00.00",
+    "UGSName": "Сельское, лесное и рыбное хозяйство",
+    "ParentDirectionID": 272,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "35.03.10",
+    "DirectionID": 16478,
+    "Name": "Ландшафтная архитектура",
+    "QualificationCode": "",
+    "UGSCode": "35.00.00",
+    "UGSName": "Сельское, лесное и рыбное хозяйство",
+    "ParentDirectionID": 272,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "37.03.01",
+    "DirectionID": 16517,
+    "Name": "Психология",
+    "QualificationCode": "",
+    "UGSCode": "37.00.00",
+    "UGSName": "Психологические науки",
+    "ParentDirectionID": 174,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "37.04.01",
+    "DirectionID": 16519,
+    "Name": "Психология",
+    "QualificationCode": "",
+    "UGSCode": "37.00.00",
+    "UGSName": "Психологические науки",
+    "ParentDirectionID": 174,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "38.03.01",
+    "DirectionID": 16550,
+    "Name": "Экономика",
+    "QualificationCode": "",
+    "UGSCode": "38.00.00",
+    "UGSName": "Экономика и управление",
+    "ParentDirectionID": 94,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "38.03.02",
+    "DirectionID": 16551,
+    "Name": "Менеджмент",
+    "QualificationCode": "",
+    "UGSCode": "38.00.00",
+    "UGSName": "Экономика и управление",
+    "ParentDirectionID": 94,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "38.03.03",
+    "DirectionID": 16552,
+    "Name": "Управление персоналом",
+    "QualificationCode": "",
+    "UGSCode": "38.00.00",
+    "UGSName": "Экономика и управление",
+    "ParentDirectionID": 94,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "38.03.07",
+    "DirectionID": 16556,
+    "Name": "Товароведение",
+    "QualificationCode": "",
+    "UGSCode": "38.00.00",
+    "UGSName": "Экономика и управление",
+    "ParentDirectionID": 94,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "38.05.01",
+    "DirectionID": 16566,
+    "Name": "Экономическая безопасность",
+    "QualificationCode": "",
+    "UGSCode": "38.00.00",
+    "UGSName": "Экономика и управление",
+    "ParentDirectionID": 94,
+    "EducationLevel": "Специалитет"
+  },
+  {
+    "NewCode": "38.06.01",
+    "DirectionID": 16568,
+    "Name": "Экономика",
+    "QualificationCode": "",
+    "UGSCode": "38.00.00",
+    "UGSName": "Экономика и управление",
+    "ParentDirectionID": 94,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "39.03.01",
+    "DirectionID": 16598,
+    "Name": "Социология",
+    "QualificationCode": "",
+    "UGSCode": "39.00.00",
+    "UGSName": "Социология и социальная работа",
+    "ParentDirectionID": 205,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "39.03.02",
+    "DirectionID": 16599,
+    "Name": "Социальная работа",
+    "QualificationCode": "",
+    "UGSCode": "39.00.00",
+    "UGSName": "Социология и социальная работа",
+    "ParentDirectionID": 205,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "39.04.01",
+    "DirectionID": 16601,
+    "Name": "Социология",
+    "QualificationCode": "",
+    "UGSCode": "39.00.00",
+    "UGSName": "Социология и социальная работа",
+    "ParentDirectionID": 205,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "39.06.01",
+    "DirectionID": 16604,
+    "Name": "Социологические науки",
+    "QualificationCode": "",
+    "UGSCode": "39.00.00",
+    "UGSName": "Социология и социальная работа",
+    "ParentDirectionID": 205,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "40.05.01",
+    "DirectionID": 16612,
+    "Name": "Правовое обеспечение национальной безопасности",
+    "QualificationCode": "",
+    "UGSCode": "40.00.00",
+    "UGSName": "Юриспруденция",
+    "ParentDirectionID": 149,
+    "EducationLevel": "Специалитет"
+  },
+  {
+    "NewCode": "40.06.01",
+    "DirectionID": 16615,
+    "Name": "Юриспруденция",
+    "QualificationCode": "",
+    "UGSCode": "40.00.00",
+    "UGSName": "Юриспруденция",
+    "ParentDirectionID": 149,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "42.03.01",
+    "DirectionID": 16635,
+    "Name": "Реклама и связи с общественностью",
+    "QualificationCode": "",
+    "UGSCode": "42.00.00",
+    "UGSName": "Средства массовой информации и информационно-библиотечное дело",
+    "ParentDirectionID": 313,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "42.03.02",
+    "DirectionID": 16636,
+    "Name": "Журналистика",
+    "QualificationCode": "",
+    "UGSCode": "42.00.00",
+    "UGSName": "Средства массовой информации и информационно-библиотечное дело",
+    "ParentDirectionID": 313,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "45.06.01",
+    "DirectionID": 16698,
+    "Name": "Языкознание и литературоведение",
+    "QualificationCode": "",
+    "UGSCode": "45.00.00",
+    "UGSName": "Языкознание и литературоведение",
+    "ParentDirectionID": 177,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "46.06.01",
+    "DirectionID": 16710,
+    "Name": "Исторические науки и археология",
+    "QualificationCode": "",
+    "UGSCode": "46.00.00",
+    "UGSName": "История и археология",
+    "ParentDirectionID": 376,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "49.06.01",
+    "DirectionID": 16730,
+    "Name": "Физическая культура и спорт",
+    "QualificationCode": "",
+    "UGSCode": "49.00.00",
+    "UGSName": "Физическая культура и спорт",
+    "ParentDirectionID": 420,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "50.03.03",
+    "DirectionID": 16733,
+    "Name": "История искусств",
+    "QualificationCode": "",
+    "UGSCode": "50.00.00",
+    "UGSName": "Искусствознание",
+    "ParentDirectionID": 153,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "50.06.01",
+    "DirectionID": 16739,
+    "Name": "Искусствоведение",
+    "QualificationCode": "",
+    "UGSCode": "50.00.00",
+    "UGSName": "Искусствознание",
+    "ParentDirectionID": 153,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "51.06.01",
+    "DirectionID": 16759,
+    "Name": "Культурология",
+    "QualificationCode": "",
+    "UGSCode": "51.00.00",
+    "UGSName": "Культуроведение и социокультурные проекты",
+    "ParentDirectionID": 291,
+    "EducationLevel": "Кадры высшей квалификации (Аспирантура)"
+  },
+  {
+    "NewCode": "54.03.01",
+    "DirectionID": 16841,
+    "Name": "Дизайн",
+    "QualificationCode": "",
+    "UGSCode": "54.00.00",
+    "UGSName": "Изобразительное и прикладные виды искусств",
+    "ParentDirectionID": 320,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "54.03.02",
+    "DirectionID": 16842,
+    "Name": "Декоративно-прикладное искусство и народные промыслы",
+    "QualificationCode": "",
+    "UGSCode": "54.00.00",
+    "UGSName": "Изобразительное и прикладные виды искусств",
+    "ParentDirectionID": 320,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "21.03.01",
+    "DirectionID": 16998,
+    "Name": "Нефтегазовое дело",
+    "UGSCode": "21.00.00",
+    "UGSName": "Прикладная геология, горное дело, нефтегазовое дело и геодезия",
+    "ParentDirectionID": 393,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "54.05.01",
+    "DirectionID": 17075,
+    "Name": "Монументально-декоративное искусство",
+    "UGSCode": "54.00.00",
+    "UGSName": "Изобразительное и прикладные виды искусств",
+    "ParentDirectionID": 320,
+    "EducationLevel": "Специалитет"
+  },
+  {
+    "NewCode": "07.04.04",
+    "DirectionID": 17113,
+    "Name": "Градостроительство",
+    "UGSCode": "07.00.00",
+    "UGSName": "Архитектура",
+    "ParentDirectionID": 103,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "13.04.01",
+    "DirectionID": 17191,
+    "Name": "Теплоэнергетика и теплотехника",
+    "UGSCode": "13.00.00",
+    "UGSName": "Электро- и теплоэнергетика",
+    "ParentDirectionID": 1,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "23.05.01",
+    "DirectionID": 17222,
+    "Name": "Наземные транспортно-технологические средства",
+    "UGSCode": "23.00.00",
+    "UGSName": "Техника и технологии наземного транспорта",
+    "ParentDirectionID": 166,
+    "EducationLevel": "Специалитет"
+  },
+  {
+    "NewCode": "40.02.01",
+    "DirectionID": 17248,
+    "Name": "Право и организация социального обеспечения",
+    "UGSCode": "40.00.00",
+    "UGSName": "Юриспруденция",
+    "ParentDirectionID": 149,
+    "EducationLevel": "СПО"
+  },
+  {
+    "NewCode": "09.04.01",
+    "DirectionID": 17301,
+    "Name": "Информатика и вычислительная техника",
+    "UGSCode": "09.00.00",
+    "UGSName": "Информатика и вычислительная техника",
+    "ParentDirectionID": 44,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "45.04.02",
+    "DirectionID": 17323,
+    "Name": "Лингвистика",
+    "UGSCode": "45.00.00",
+    "UGSName": "Языкознание и литературоведение",
+    "ParentDirectionID": 177,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "21.05.02",
+    "DirectionID": 17346,
+    "Name": "Прикладная геология",
+    "UGSCode": "21.00.00",
+    "UGSName": "Прикладная геология, горное дело, нефтегазовое дело и геодезия",
+    "ParentDirectionID": 393,
+    "EducationLevel": "Специалитет"
+  },
+  {
+    "NewCode": "18.04.01",
+    "DirectionID": 17363,
+    "Name": "Химическая технология",
+    "UGSCode": "18.00.00",
+    "UGSName": "Химические технологии",
+    "ParentDirectionID": 430,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "38.04.02",
+    "DirectionID": 17369,
+    "Name": "Менеджмент",
+    "UGSCode": "38.00.00",
+    "UGSName": "Экономика и управление",
+    "ParentDirectionID": 94,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "15.04.02",
+    "DirectionID": 17411,
+    "Name": "Технологические машины и оборудование",
+    "UGSCode": "15.00.00",
+    "UGSName": "Машиностроение",
+    "ParentDirectionID": 451,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "27.04.02",
+    "DirectionID": 17433,
+    "Name": "Управление качеством",
+    "UGSCode": "27.00.00",
+    "UGSName": "Управление в технических системах",
+    "ParentDirectionID": 414,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "40.03.01",
+    "DirectionID": 17489,
+    "Name": "Юриспруденция",
+    "UGSCode": "40.00.00",
+    "UGSName": "Юриспруденция",
+    "ParentDirectionID": 149,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "43.02.11",
+    "DirectionID": 17507,
+    "Name": "Гостиничный сервис",
+    "UGSCode": "43.00.00",
+    "UGSName": "Сервис и туризм",
+    "ParentDirectionID": 108,
+    "EducationLevel": "СПО"
+  },
+  {
+    "NewCode": "20.04.01",
+    "DirectionID": 17512,
+    "Name": "Техносферная безопасность",
+    "UGSCode": "20.00.00",
+    "UGSName": "Техносферная безопасность и природообустройство",
+    "ParentDirectionID": 424,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "07.04.01",
+    "DirectionID": 17514,
+    "Name": "Архитектура",
+    "UGSCode": "07.00.00",
+    "UGSName": "Архитектура",
+    "ParentDirectionID": 103,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "23.04.01",
+    "DirectionID": 17536,
+    "Name": "Технология транспортных процессов",
+    "UGSCode": "23.00.00",
+    "UGSName": "Техника и технологии наземного транспорта",
+    "ParentDirectionID": 166,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "21.05.03",
+    "DirectionID": 17558,
+    "Name": "Технология геологической разведки",
+    "UGSCode": "21.00.00",
+    "UGSName": "Прикладная геология, горное дело, нефтегазовое дело и геодезия",
+    "ParentDirectionID": 393,
+    "EducationLevel": "Специалитет"
+  },
+  {
+    "NewCode": "24.05.07",
+    "DirectionID": 17590,
+    "Name": "Самолето- и вертолетостроение",
+    "UGSCode": "24.00.00",
+    "UGSName": "Авиационная и ракетно-космическая техника",
+    "ParentDirectionID": 343,
+    "EducationLevel": "Специалитет"
+  },
+  {
+    "NewCode": "38.04.01",
+    "DirectionID": 17598,
+    "Name": "Экономика",
+    "UGSCode": "38.00.00",
+    "UGSName": "Экономика и управление",
+    "ParentDirectionID": 94,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "08.03.01",
+    "DirectionID": 17599,
+    "Name": "Строительство",
+    "UGSCode": "08.00.00",
+    "UGSName": "Техника и технологии строительства",
+    "ParentDirectionID": 47,
+    "EducationLevel": "Бакалавриат"
+  },
+  {
+    "NewCode": "11.04.01",
+    "DirectionID": 17621,
+    "Name": "Радиотехника",
+    "UGSCode": "11.00.00",
+    "UGSName": "Электроника, радиотехника и системы связи",
+    "ParentDirectionID": 353,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "15.04.01",
+    "DirectionID": 17638,
+    "Name": "Машиностроение",
+    "UGSCode": "15.00.00",
+    "UGSName": "Машиностроение",
+    "ParentDirectionID": 451,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "15.04.05",
+    "DirectionID": 17650,
+    "Name": "Конструкторско-технологическое обеспечение машиностроительных производств",
+    "UGSCode": "15.00.00",
+    "UGSName": "Машиностроение",
+    "ParentDirectionID": 451,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "09.04.02",
+    "DirectionID": 17662,
+    "Name": "Информационные системы и технологии",
+    "UGSCode": "09.00.00",
+    "UGSName": "Информатика и вычислительная техника",
+    "ParentDirectionID": 44,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "21.05.04",
+    "DirectionID": 17673,
+    "Name": "Горное дело",
+    "UGSCode": "21.00.00",
+    "UGSName": "Прикладная геология, горное дело, нефтегазовое дело и геодезия",
+    "ParentDirectionID": 393,
+    "EducationLevel": "Специалитет"
+  },
+  {
+    "NewCode": "15.02.07",
+    "DirectionID": 17748,
+    "Name": "Автоматизация технологических процессов и производств (по отраслям)",
+    "UGSCode": "15.00.00",
+    "UGSName": "Машиностроение",
+    "ParentDirectionID": 451,
+    "EducationLevel": "СПО"
+  },
+  {
+    "NewCode": "23.04.03",
+    "DirectionID": 17751,
+    "Name": "Эксплуатация транспортно-технологических машин и комплексов",
+    "UGSCode": "23.00.00",
+    "UGSName": "Техника и технологии наземного транспорта",
+    "ParentDirectionID": 166,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "22.04.02",
+    "DirectionID": 17755,
+    "Name": "Металлургия",
+    "UGSCode": "22.00.00",
+    "UGSName": "Технологии материалов",
+    "ParentDirectionID": 216,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "08.04.01",
+    "DirectionID": 17764,
+    "Name": "Строительство",
+    "UGSCode": "08.00.00",
+    "UGSName": "Техника и технологии строительства",
+    "ParentDirectionID": 47,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "15.02.08",
+    "DirectionID": 17812,
+    "Name": "Технология машиностроения",
+    "UGSCode": "15.00.00",
+    "UGSName": "Машиностроение",
+    "ParentDirectionID": 451,
+    "EducationLevel": "СПО"
+  },
+  {
+    "NewCode": "21.05.01",
+    "DirectionID": 17818,
+    "Name": "Прикладная геодезия",
+    "UGSCode": "21.00.00",
+    "UGSName": "Прикладная геология, горное дело, нефтегазовое дело и геодезия",
+    "ParentDirectionID": 393,
+    "EducationLevel": "Специалитет"
+  },
+  {
+    "NewCode": "22.02.06",
+    "DirectionID": 17824,
+    "Name": "Сварочное производство",
+    "UGSCode": "22.00.00",
+    "UGSName": "Технологии материалов",
+    "ParentDirectionID": 216,
+    "EducationLevel": "СПО"
+  },
+  {
+    "NewCode": "21.02.08",
+    "DirectionID": 17829,
+    "Name": "Прикладная геодезия",
+    "UGSCode": "21.00.00",
+    "UGSName": "Прикладная геология, горное дело, нефтегазовое дело и геодезия",
+    "ParentDirectionID": 393,
+    "EducationLevel": "СПО"
+  },
+  {
+    "NewCode": "13.02.11",
+    "DirectionID": 17834,
+    "Name": "Техническая эксплуатация и обслуживание электрического и электромеханического оборудования (по отраслям)",
+    "UGSCode": "13.00.00",
+    "UGSName": "Электро- и теплоэнергетика",
+    "ParentDirectionID": 1,
+    "EducationLevel": "СПО"
+  },
+  {
+    "NewCode": "23.02.03",
+    "DirectionID": 17870,
+    "Name": "Техническое обслуживание и ремонт автомобильного транспорта",
+    "UGSCode": "23.00.00",
+    "UGSName": "Техника и технологии наземного транспорта",
+    "ParentDirectionID": 166,
+    "EducationLevel": "СПО"
+  },
+  {
+    "NewCode": "08.05.01",
+    "DirectionID": 17893,
+    "Name": "Строительство уникальных зданий и сооружений",
+    "UGSCode": "08.00.00",
+    "UGSName": "Техника и технологии строительства",
+    "ParentDirectionID": 47,
+    "EducationLevel": "Специалитет"
+  },
+  {
+    "NewCode": "19.04.02",
+    "DirectionID": 17916,
+    "Name": "Продукты питания из растительного сырья",
+    "UGSCode": "19.00.00",
+    "UGSName": "Промышленная экология и биотехнологии",
+    "ParentDirectionID": 129,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "13.04.02",
+    "DirectionID": 17936,
+    "Name": "Электроэнергетика и электротехника",
+    "UGSCode": "13.00.00",
+    "UGSName": "Электро- и теплоэнергетика",
+    "ParentDirectionID": 1,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "21.02.11",
+    "DirectionID": 17944,
+    "Name": "Геофизические методы поисков и разведки месторождений полезных ископаемых",
+    "UGSCode": "21.00.00",
+    "UGSName": "Прикладная геология, горное дело, нефтегазовое дело и геодезия",
+    "ParentDirectionID": 393,
+    "EducationLevel": "СПО"
+  },
+  {
+    "NewCode": "09.02.04",
+    "DirectionID": 17955,
+    "Name": "Информационные системы (по отраслям)",
+    "UGSCode": "09.00.00",
+    "UGSName": "Информатика и вычислительная техника",
+    "ParentDirectionID": 44,
+    "EducationLevel": "СПО"
+  },
+  {
+    "NewCode": "21.02.13",
+    "DirectionID": 17966,
+    "Name": "Геологическая съемка, поиски и разведка месторождений полезных ископаемых",
+    "UGSCode": "21.00.00",
+    "UGSName": "Прикладная геология, горное дело, нефтегазовое дело и геодезия",
+    "ParentDirectionID": 393,
+    "EducationLevel": "СПО"
+  },
+  {
+    "NewCode": "09.02.01",
+    "DirectionID": 17974,
+    "Name": "Компьютерные системы и комплексы",
+    "UGSCode": "09.00.00",
+    "UGSName": "Информатика и вычислительная техника",
+    "ParentDirectionID": 44,
+    "EducationLevel": "СПО"
+  },
+  {
+    "NewCode": "21.02.02",
+    "DirectionID": 17992,
+    "Name": "Бурение нефтяных и газовых скважин",
+    "UGSCode": "21.00.00",
+    "UGSName": "Прикладная геология, горное дело, нефтегазовое дело и геодезия",
+    "ParentDirectionID": 393,
+    "EducationLevel": "СПО"
+  },
+  {
+    "NewCode": "38.02.01",
+    "DirectionID": 17998,
+    "Name": "Экономика и бухгалтерский учет (по отраслям)",
+    "QualificationCode": "null",
+    "UGSCode": "38.00.00",
+    "UGSName": "Экономика и управление",
+    "ParentDirectionID": 94,
+    "EducationLevel": "СПО"
+  },
+  {
+    "NewCode": "15.02.01",
+    "DirectionID": 18000,
+    "Name": "Монтаж и техническая эксплуатация промышленного оборудования (по отраслям)",
+    "UGSCode": "15.00.00",
+    "UGSName": "Машиностроение",
+    "ParentDirectionID": 451,
+    "EducationLevel": "СПО"
+  },
+  {
+    "NewCode": "08.02.01",
+    "DirectionID": 18002,
+    "Name": "Строительство и эксплуатация зданий и сооружений",
+    "UGSCode": "08.00.00",
+    "UGSName": "Техника и технологии строительства",
+    "ParentDirectionID": 47,
+    "EducationLevel": "СПО"
+  },
+  {
+    "NewCode": "05.04.06",
+    "DirectionID": 18117,
+    "Name": "Экология и природопользование",
+    "UGSCode": "05.00.00",
+    "UGSName": "Науки о земле",
+    "ParentDirectionID": 145,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "27.04.05",
+    "DirectionID": 18132,
+    "Name": "Инноватика",
+    "UGSCode": "27.00.00",
+    "UGSName": "Управление в технических системах",
+    "ParentDirectionID": 414,
+    "EducationLevel": "Магистратура"
+  },
+  {
+    "NewCode": "21.05.06",
+    "DirectionID": 18146,
+    "Name": "Нефтегазовые техника и технологии",
+    "UGSCode": "21.00.00",
+    "UGSName": "Прикладная геология, горное дело, нефтегазовое дело и геодезия",
+    "ParentDirectionID": 393,
+    "EducationLevel": "Специалитет"
+  },
+  {
+    "NewCode": "18.02.12",
+    "DirectionID": 22917,
+    "Name": "Технология аналитического контроля химических соединений",
+    "UGSCode": "18.00.00",
+    "UGSName": "Химические технологии",
+    "ParentDirectionID": 430,
+    "EducationLevel": "СПО"
+  },
+  {
+    "NewCode": "09.02.07",
+    "DirectionID": 22925,
+    "Name": "Информационные системы и программирование",
+    "UGSCode": "09.00.00",
+    "UGSName": "Информатика и вычислительная техника",
+    "ParentDirectionID": 44,
+    "EducationLevel": "СПО"
+  },
+  {
+    "NewCode": "23.02.07",
+    "DirectionID": 22946,
+    "Name": "Техническое обслуживание и ремонт двигателей, систем и агрегатов автомобилей",
+    "UGSCode": "23.00.00",
+    "UGSName": "Техника и технологии наземного транспорта",
+    "ParentDirectionID": 166,
+    "EducationLevel": "СПО"
+  },
+  {
+    "NewCode": "18.02.12",
+    "DirectionID": 22956,
+    "Name": "Технология аналитического контроля химических соединений",
+    "UGSCode": "18.00.00",
+    "UGSName": "Химические технологии",
+    "ParentDirectionID": 430,
+    "EducationLevel": "СПО"
+  },
+  {
+    "NewCode": "15.02.12",
+    "DirectionID": 22961,
+    "Name": "Монтаж, техническое обслуживание и ремонт промышленного оборудования (по отраслям)",
+    "UGSCode": "15.00.00",
+    "UGSName": "Машиностроение",
+    "ParentDirectionID": 451,
+    "EducationLevel": "СПО"
+  },
+  {
+    "NewCode": "21.04.02",
+    "DirectionID": 15337,
+    "Name": "Землеустройство и кадастры",
+    "UGSCode": "21.04.02",
+    "UGSName": "Землеустройство и кадастры",
+    "ParentDirectionID": 451,
+    "EducationLevel": "СПО"
+  }
+]

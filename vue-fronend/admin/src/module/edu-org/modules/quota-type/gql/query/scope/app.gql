@@ -1,0 +1,7 @@
+#import "../../fragment/EduQuotaType.gql"
+
+query {
+   edu_quotaType__items: edu_quotaType_list {
+     ...EduQuotaType
+   }
+}

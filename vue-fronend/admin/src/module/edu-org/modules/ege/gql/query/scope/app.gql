@@ -1,0 +1,9 @@
+#import "../../fragment/EduEge.gql"
+
+query {
+   edu_ege__items: edu_ege_list {
+     ...EduEge
+   }
+}
+
+

@@ -1,0 +1,39 @@
+type Mutation {
+
+  edu_rating_admin_create: ResultWithPayload
+
+  edu_rating_admin_make_actual(
+    id: String
+  ): ResultWithPayload
+
+  edu_rating_admin_update(
+    id: String,
+    action: String,
+    model: JSON
+  ): ResultWithPayload
+
+  edu_rating_admin_generate(
+    id: String
+  ): ResultWithPayload
+
+  edu_rating_admin_actionMultiple(
+    action: String,
+    ids: [String],
+    selectAll: Boolean,
+    selectFilter: JSON
+  ): ResultWithPayload
+}
+
+
+type Query {
+  edu_rating_admin_recordset(filter: JSON, nav: QueryInputNav): EduRatingConnection
+  edu_rating_admin_list(filter: JSON, nav: QueryInputNav): [EduRating]
+  edu_rating_admin_filters: JSON
+  edu_rating_admin_single(filter: JSON, nav: QueryInputNav): EduRating
+  edu_rating_admin_rating_fetch(sheetId: String): [EduCompetition]
+}
+
+type EduRating {
+  adminUrl: String
+  actions: JSON
+}

@@ -1,0 +1,8 @@
+fragment ResponseState on ResponseState {
+  success
+  messages
+  redirect
+  events
+  rate
+}
+

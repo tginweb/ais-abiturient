@@ -1,0 +1,11 @@
+#import "../fragment/UserAdmin.gql"
+
+query(
+   $filter: JSON
+) {
+   res: user_admin_single(filter: $filter) {
+      ...UserAdmin
+   }
+}
+
+

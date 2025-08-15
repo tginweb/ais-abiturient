@@ -1,0 +1,17 @@
+type Mutation {
+  edu_admission_admin_syncWithAis: ResultWithPayload
+  edu_admission_admin_fill(ids: [String]): ResultWithPayload
+  edu_admission_admin_fill_gosline(ids: [String]): ResultWithPayload
+  edu_admission_admin_epguExport(ids: [String]): ResultWithPayload
+}
+
+type Query {
+  edu_admission_admin_recordset(filter: JSON, nav: QueryInputNav): EduAdmissionConnection
+  edu_admission_admin_filters: JSON
+}
+
+type EduAdmission {
+  adminUrl: String
+  actions: JSON
+  subdocsTree: [EduEntityRowNode]
+}

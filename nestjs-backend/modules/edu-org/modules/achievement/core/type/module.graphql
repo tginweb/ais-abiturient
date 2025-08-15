@@ -1,0 +1,26 @@
+type Query {
+  edu_achievement_statuses: [EduAchievementStatus]
+  edu_achievement_types: [EduAchievementType]
+}
+
+type EduAchievementTypeConnection {
+  nodes: [EduAchievementType]
+  info: QueryInfo
+}
+
+type EduAchievementType {
+  _id: String
+  id: Int
+  name: String
+  fields: JSON
+  docRole: String
+  epguDocTypeId: Int
+}
+
+type EduAchievementStatus {
+  id: String
+  title: String
+}
+
+
+

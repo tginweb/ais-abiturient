@@ -1,0 +1,10 @@
+fragment EduEpguTaskBase on EduEpguTask {
+  _id
+  id
+  parent
+  name
+  type
+  subtype
+  idJwt
+}
+

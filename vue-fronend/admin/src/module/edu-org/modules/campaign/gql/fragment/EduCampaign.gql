@@ -1,0 +1,10 @@
+
+fragment EduCampaign on EduCampaign {
+  _id
+  id
+  uid
+  name
+  urlAdmin
+}
+
+

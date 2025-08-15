@@ -1,0 +1,17 @@
+type Mutation {
+  edu_competition_admin_syncWithAis: ResultWithPayload
+  edu_competition_admin_fill(ids: [String]): ResultWithPayload
+  edu_competition_admin_makeZachisl(ids: [String]): ResultWithPayload
+  edu_competition_admin_recalc_places(ids: [String]): ResultWithPayload
+}
+
+type Query {
+  edu_competition_admin_listGraph(filter: JSON, nav: QueryInputNav): EduCompetitionConnection
+  edu_competition_admin_filtersTree: JSON
+  edu_competition_admin_single(filter: JSON, nav: QueryInputNav): EduCompetition
+}
+
+type EduCompetition {
+  adminUrl: String
+  actions: JSON
+}

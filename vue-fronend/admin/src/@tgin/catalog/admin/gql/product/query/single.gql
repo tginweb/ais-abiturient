@@ -1,0 +1,11 @@
+#import "../fragment/ProductElementAdmin.gql"
+
+query(
+    $iblock: Int,
+    $filter: ProductElementFilter,
+    $elementDetail: Boolean = true
+) {
+    res: catalog_admin_product(iblock: $iblock, filter: $filter) {
+        ...ProductElementAdmin
+    }
+}

@@ -1,0 +1,6 @@
+
+query {
+    res: logger_admin_events_filters
+}
+
+

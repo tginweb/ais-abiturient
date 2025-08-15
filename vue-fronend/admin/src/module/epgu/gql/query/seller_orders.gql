@@ -1,0 +1,19 @@
+#import "~module/main/gql/fragments/QueryInfo.gql"
+#import "~module/sale/gql/fragments/Order.gql"
+
+query(
+   $mode: String,
+   $where: OrderFilter,
+   $nav: QueryNavInput = {},
+) {
+   res: cabSeller_orders(mode: $mode, where: $where, nav: $nav) {
+     info {
+       ...QueryInfo
+     }
+     nodes {
+       ...Order
+     }
+   }
+}
+
+

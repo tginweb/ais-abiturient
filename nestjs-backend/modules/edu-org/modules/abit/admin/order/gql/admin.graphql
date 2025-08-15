@@ -1,0 +1,34 @@
+type Mutation {
+    edu_order_admin_changeOperator(
+        ids: [String],
+        operatorId: String
+    ): ResultWithPayload
+
+    edu_order_admin_changeInstitute(
+        ids: [String],
+        instituteId: String
+    ): ResultWithPayload
+
+    edu_order_admin_changeDecree(
+        ids: [String],
+        decreeNid: Int
+    ): ResultWithPayload
+
+    edu_order_admin_syncWithUsers(ids: [Int]): ResultWithPayload
+    edu_order_admin_mailSend(ids: [Int]): ResultWithPayload
+    edu_order_admin_fill(ids: [Int]): ResultWithPayload
+
+    edu_order_admin_fileAdd(orderId: String, model: JSON): ResultWithPayload
+    edu_order_admin_fileUpdate(orderId: String, fileId: String, model: JSON): ResultWithPayload
+
+    edu_order_admin_update(
+        _id: String,
+        model: JSON
+    ): ResultWithPayload
+
+    edu_order_admin__edu_set_original(
+        id: String,
+        status: Boolean
+    ): ResultWithPayload
+}
+

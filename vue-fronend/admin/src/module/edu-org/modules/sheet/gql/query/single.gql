@@ -1,0 +1,11 @@
+#import "../fragment/EduSheet.gql"
+
+query(
+   $filter: JSON
+) {
+   res: edu_sheet_admin_single(filter: $filter) {
+      ...EduSheet
+   }
+}
+
+

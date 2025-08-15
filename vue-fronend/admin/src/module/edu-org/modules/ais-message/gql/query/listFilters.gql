@@ -1,0 +1,4 @@
+query {
+   res: edu_ais_message_listFilters
+}
+

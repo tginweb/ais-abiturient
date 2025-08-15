@@ -1,0 +1,15 @@
+fragment EduAdmissionTeaser on EduAdmission {
+  _id
+  id
+  abbr
+  yr
+  name
+  cfac
+  direct_name
+  spec_name
+  cfob
+  clevel
+  ccampaign
+  cdirection
+}
+

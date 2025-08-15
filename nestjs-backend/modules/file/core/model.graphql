@@ -1,0 +1,47 @@
+
+input FileQueryInputFilter {
+  id: Int
+  ids: [Int]
+
+  slug: String
+  slugs: [String]
+
+  name: String
+  name_: FilterConditionString
+
+  taxonomy: String
+  taxonomies: [String]
+}
+
+type FileConnection {
+  nodes: [File]
+  info: QueryInfo
+}
+
+type FileEpgu {
+  uid: String
+  type: String
+}
+
+type File {
+  _id: String
+  id: String
+  nid: Int
+  relDocType: String
+  relDocId: String
+  relDocPath: String
+  mimetype: String
+  originalname: String
+  filename: String
+  filesize: Int
+  role: String
+  roleComputed: String
+  roleComputedLabel: String
+  children: [File]
+  parentId: String
+  downloadUrl: String
+  depth: Int
+  epgu: FileEpgu
+  order: EduOrder
+  actions: JSON
+}

@@ -1,0 +1,13 @@
+
+fragment EduAisEntrantSubject on EduAisEntrantSubject {
+    csubject
+    mark
+    numege
+    verified
+    cresultSourceType
+    markdate
+    subject {
+        name
+    }
+}
+
