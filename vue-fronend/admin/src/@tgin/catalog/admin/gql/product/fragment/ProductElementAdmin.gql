@@ -1,6 +1,0 @@
-#import "@tgin/catalog/core/gql/product/fragments/ProductElement.gql"
-
-fragment ProductElementAdmin on ProductElement {
-  ...ProductElement
-}
-

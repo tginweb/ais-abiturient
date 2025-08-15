@@ -1,6 +1,0 @@
-
-fragment DeliveryService on DeliveryService {
-  ID
-  NAME
-}
-

@@ -1,8 +1,0 @@
-
-fragment OrderStatus on OrderStatus {
-  ID
-  NAME
-  COLOR
-  TYPE
-}
-

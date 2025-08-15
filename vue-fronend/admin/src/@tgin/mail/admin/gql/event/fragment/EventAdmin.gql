@@ -1,6 +1,0 @@
-#import "@tgin/mail/core/gql/event/fragment/Event.gql"
-
-fragment MailEventAdmin on MailEvent {
-  ...MailEvent
-}
-

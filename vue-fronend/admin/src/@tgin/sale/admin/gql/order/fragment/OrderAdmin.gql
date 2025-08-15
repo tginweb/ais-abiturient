@@ -1,7 +1,0 @@
-#import "@tgin/sale/core/gql/order/fragments/Order.gql"
-
-fragment OrderAdmin on Order {
-  ...Order
-  ACTIONS
-}
-

@@ -1,8 +1,0 @@
-mutation(
-    $id: Int
-)
-{
-    res: sale_pub_buyer_company_default(
-        id: $id
-    )
-}

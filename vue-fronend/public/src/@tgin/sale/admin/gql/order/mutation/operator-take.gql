@@ -1,7 +1,0 @@
-mutation(
-  $id: String
-) {
-   res: edu_order_admin_operator_take(
-      id: $id
-   )
-}

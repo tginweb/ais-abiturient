@@ -1,4 +1,0 @@
-
-query {
-   entity__typesInfo: entity_types_info
-}

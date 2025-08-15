@@ -1,8 +1,0 @@
-
-fragment File on File {
-  ID
-  SRC
-  FILE_SIZE
-  ORIGINAL_NAME
-}
-

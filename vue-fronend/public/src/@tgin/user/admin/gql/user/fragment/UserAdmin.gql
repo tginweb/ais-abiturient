@@ -1,9 +1,0 @@
-#import "@tgin/user/core/gql/fragments/User.gql"
-
-fragment UserAdmin on User {
-    ...User
-    orders {
-        nid
-        fio
-    }
-}

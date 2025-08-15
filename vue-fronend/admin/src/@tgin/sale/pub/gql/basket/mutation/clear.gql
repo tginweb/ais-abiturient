@@ -1,8 +1,0 @@
-#import "@tgin/sale/core/gql/basket/fragments/Basket.gql"
-
-mutation
-{
-  res: sale_pub_basket_clear {
-    ...Basket
-  }
-}

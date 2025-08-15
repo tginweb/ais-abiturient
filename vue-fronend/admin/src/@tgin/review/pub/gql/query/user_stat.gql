@@ -1,6 +1,0 @@
-query
-{
-    res: review_pub_user_stat {
-       COUNT
-    }
-}

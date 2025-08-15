@@ -1,7 +1,0 @@
-#import "../fragments/User.gql"
-
-mutation ($data: AuthRegister) {
-  res: user_register(data: $data) {
-    ...User
-  }
-}

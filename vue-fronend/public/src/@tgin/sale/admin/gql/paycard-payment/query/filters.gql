@@ -1,4 +1,0 @@
-query {
-   res: sale_admin_paycard_payment_filters
-}
-

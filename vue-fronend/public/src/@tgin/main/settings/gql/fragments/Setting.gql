@@ -1,7 +1,0 @@
-
-fragment Setting on Setting {
-  key
-  value
-}
-
-

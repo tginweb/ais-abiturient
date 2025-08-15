@@ -1,9 +1,0 @@
-#import "@tgin/mail/core/gql/event/fragment/EventType.gql"
-
-query {
-    res: sale_admin_order_events {
-        ...MailEventType
-    }
-}
-
-

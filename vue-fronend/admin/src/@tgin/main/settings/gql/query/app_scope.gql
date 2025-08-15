@@ -1,7 +1,0 @@
-#import "../fragments/Setting.gql"
-
-query {
-   settings__app_scope: settings_app_scope {
-     ...Setting
-   }
-}

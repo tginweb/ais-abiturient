@@ -1,5 +1,0 @@
-mutation
-{
-  res: catalog_fav_clear
-}
-

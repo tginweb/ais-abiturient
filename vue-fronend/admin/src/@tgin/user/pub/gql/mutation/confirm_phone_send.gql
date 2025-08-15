@@ -1,8 +1,0 @@
-mutation(
-    $phone: String
-)
-{
-    res: user_pub_confirm_phone_send(
-        phone: $phone
-    )
-}

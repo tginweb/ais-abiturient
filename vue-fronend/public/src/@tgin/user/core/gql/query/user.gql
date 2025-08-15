@@ -1,8 +1,0 @@
-#import "../fragments/User.gql"
-
-query {
-   res: user_fetch {
-      ...User
-   }
-}
-

@@ -1,7 +1,0 @@
-
-fragment TaggerTeaser on TaggerTag {
-   _id
-   id
-   name
-   color
-}

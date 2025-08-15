@@ -1,7 +1,0 @@
-fragment Location on Location {
-
-  ID
-  CODE
-  NAME
-}
-

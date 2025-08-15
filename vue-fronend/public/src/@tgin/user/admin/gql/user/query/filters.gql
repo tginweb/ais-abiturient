@@ -1,3 +1,0 @@
-query {
-   res: user_admin_listFilters
-}

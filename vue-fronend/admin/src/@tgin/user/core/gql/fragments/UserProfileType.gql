@@ -1,6 +1,0 @@
-
-fragment UserProfileType on UserProfileType {
-  CODE
-  NAME
-}
-

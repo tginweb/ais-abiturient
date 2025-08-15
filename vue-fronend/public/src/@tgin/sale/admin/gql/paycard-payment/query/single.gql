@@ -1,9 +1,0 @@
-#import "../fragment/PaycardPaymentAdmin.gql"
-
-query(
-    $filter: PaycardPaymentFilter
-) {
-    res: sale_admin_paycard_payment_single(filter: $filter) {
-        ...PaycardPaymentAdmin
-    }
-}

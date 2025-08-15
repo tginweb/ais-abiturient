@@ -1,8 +1,0 @@
-mutation(
-    $sid: String
-)
-{
-  res: sale_pub_paycard_default(
-    sid: $sid
-  )
-}
